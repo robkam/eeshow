@@ -1,0 +1,232 @@
+There are two distinct directories for fped source files: those directly on
+our repo, under hw/modules, and those on kicad-libs/modules
+
+The idea is being able to provide layouters with .mod output files, and also
+letting them commit .mod files if they choses to modify them.
+
+Fped can be thought of not exactly as a footprint builder itself, but more
+like a footprint creator wizard, because in fact, it's basically that: you
+have .fped files, but most of them aren't defining a single footprint, but
+a variety of them using a specific template.
+
+Once fped has been used as a wizard to create a footprint, it's sometimes
+needed to be fixed by hand (maybe pin numbering or ordering, small
+differences not accounted for on the wizard, etc).
+
+In this case, fped and .fpd files aren't themselves files used by kicad, but
+tools used to create files that *are* kicad files.  So, what we're adding to
+the repository is two distinct although related things.  First, under
+modules/ there are our .fpd files, which are in turn used to generate
+footprints.  These footprints are later on stored under this directory,
+footprints/, because we need to keep version control of these files in case
+some manual modifications are needed to these files.
+
+We keep the following table to store the origin of all .mod files, so we
+know if they have been manually modified or not.  This way, we won't
+overwrite any manually modified footprint even if the wizard (original .fpd
+file) has been modified.
+
+
+File name		Original file				Version						Notes
+neo900-legacy.mod	Non lib associated footprints								Unmodified
+101-00271-82.mod	modules/101-00271-82.fpd		dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+CPL-WBF-00D3.mod	modules/CPL-WBF-00D3.fpd		dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+DF9.mod			modules/DF9.fpd				dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+M50-315XX.mod		modules/M50-315XX.fpd			dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+MNR-series.mod		modules/MNR-series.fpd			dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+YFC.mod			modules/YFC.fpd				dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+bga.mod			modules/bga.fpd				dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+dfn.mod			kicad-libs/modules/dfn.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+header.mod		kicad-libs/modules/header.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+lga.mod			kicad-libs/modules/lga.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+luxeon3020.mod		modules/luxeon3020.fpd			dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+msl0104.mod		kicad-libs/modules/msl0104.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+qfn.mod			kicad-libs/modules/qfn.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+smd-dil.mod		modules/smd-dil.fpd			dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+sot.mod			kicad-libs/modules/sot.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+ssop.mod		kicad-libs/modules/ssop.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+stdpass.mod		kicad-libs/modules/stdpass.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+stqfn20.mod		kicad-libs/modules/stqfn20.fpd		e9464fddac7fadae7a3b472d25949e513d38eb34	Unmodified
+uDFN-9.mod		modules/uDFN-9.fpd			dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+vemd10940f.mod		modules/vemd10940f.fpd			dba9399879248fffa3b023cff37d4b3facd87c74	Unmodified
+
+
+
+
+COMPONENT	FOOTPRINT		NOTES	STATUS
+
+					alt
+L201	stdpass:1008			-	exists
+P201	neo900-legacy:SD-47590-0001	-	exists
+U201	neo900-legacy:SOT457-6		-	exists
+U202	neo900-legacy:R-XBGA-N6-0.5	CYZP	exists
+U203	neo900-legacy:S-PVQFN-N24-0.5	RGE	exists
+
+G301+	neo900-legacy:PAD-3.5X2.5	-	exists
+P301	neo900:N900-BATTCONN		-	exists
+U301	smd-dil:SMD-DIL-6-0.35		DSF	exists
+U302	neo900-legacy:S-PVSON-N10-4X3	DRK	exists
+U303	neo900-legacy:S-XBGA-N9-0.5	YZFR	exists
+?	neo900-legacy:TP-1.25		-	exists (BATTID, etc.)
+?	neo900-legacy:1PIN-HOLE		-	exists (BQ_PGM)
+
+U401	neo900-legacy:R-XBGA-N6-0.5	CYZP	= U202
+U402	stqfn20:STQFN-20		-	exists
+U403+	neo900-legacy:R-XBGA-N12-0.4	YFF	exists
+U405	bga:BGA-6			-	exists	(BGA, 6, 0.4 mm)
+U407+	lga:LGA-12-1.7x2-RUT		RUT	exists
+U409	neo900-legacy:R-XBGA-N6-0.5	CYZP	= U202
+
+M501	neo900-legacy:P*S8		-	exists
+T501	neo900-legacy:SC88A		SOT-353	exists
+TP501+	neo900-legacy:TP-0.75		-	exists
+TP543+	neo900-legacy:TP-1.25		-	exists
+J501+	OPT-MINI-RF-TAP			-	missing
+
+P601	neo900-legacy:SJ106220		-	exists
+P602	-				-	missing (SIM holder)
+U601	bga:BGA-8			YZP	exists	(BGA, 8, 0.5 mm)
+U602	neo900:R-PUQFN-N12		RUT	exists (lga:LGA-12-1.7x2-RUT could also be used)
+U603+	smd-dil:SMD-DIL-6-0.35		DSF	= U301
+U608+	smd-dil:SMD-DIL-8-0.35		DQE	exists
+U610+	qfn:QFN20-UEEE			-	exists
+U612+	neo900-legacy:SOT666IP		-	exists
+
+P701+	-				-	undefined
+U701	neo900-legacy:TSNP-7-10		-	exists
+U702	CPL-WBF-00D3:CPL-WBF-00D3      	-	exists
+U703+	dfn:DFN-6-0.65mm		-	exists
+U705	neo900-legacy:SC70-6		-	exists
+U706	stqfn20:STQFN-20		-	= U402
+
+J801	OPT-MINI-RF-TAP			-	= J501
+P801+	neo900-legacy:N900-SPRING-A	-	exists
+P803	neo900-legacy:1PIN-1.5-0.8	-	exists
+P804	neo900-legacy:1PIN-1.5SQ-0.8	-	exists
+U801	neo900-legacy:WL18XXMOD		-	exists
+U802	neo900-legacy:QFN-16+4+E-0.5	-	exists (16-QFN w/ corner pads)
+TP801+	neo900-legacy:TP-0.75		-	= TP501
+
+S901	neo900-legacy:LGA-DIL-12+2	-	exists (STQFN-ish)
+S902	lga:LGA-20-3x4.5-BMX055		-	exists
+S902	lga:LGA-8-2.5x2.5-BME280	-	exists
+U901	neo900-legacy:SOT23		-	exists (TSOT-3L = SOT23, ok)
+U902	neo900:TMD2671			-	exists
+
+M1001+	neo900-legacy:SPK0415HM4H-B	-	exists
+P1001	neo900-legacy:2403-260-00031	-	exists
+U1001	neo900-legacy:S-PBGA-N87-0.5	ZAS	exists
+U1002	neo900-legacy:S-PWQFN-N20-0.5	RTJ	exists
+
+L1101	neo900-legacy:MPZ1608		-	exists (0603)
+P1101	neo900-legacy:N900-HEADSET	-	exists
+U1101	neo900-legacy:S-PWQFN-N20-0.5	RTJ	= U1002
+U1102	YFC:YFC				YFC	exists
+U1103	neo900-legacy:S-PWQFN-N16-0.5	RTE	exists
+U1104	neo900-legacy:SOT23-5		DBV	exists
+U1105	neo900-legacy:R-PDSO-G8-0.65	DGK	exists
+
+G1201+	neo900-legacy:N900-SPRING-A	-	= P801
+G1207+	neo900-legacy:PAD-3.5X2.5	-	= G301
+TP1201+	neo900-legacy:TP-1.25		-	= TP543
+VIB1201	neo900-legacy:PREC-MICRO-304-106 -	exists
+
+U1301	neo900-legacy:QFN-32+E-0.5	-	exists
+U1302	neo900-legacy:TRF7960_61	-	exists
+X1301	neo900-legacy:XO-3225		-	exists
+
+D1401	vemd10940f:VEMD10940F		-	exists
+D1402	neo900-legacy:VSMB2948SL	-	exists
+Q1401	neo900-legacy:SC89-3		SOT-523	exists
+U1401	smd-dil:SMD-DIL-6-0.5		-	exists
+U1402	stqfn20:STQFN-20		-	= U402
+
+P1501+	neo900-legacy:DF40C-60DP-0.4V	-	exists
+P1502+	neo900-legacy:DF40C-60DS-0.4V	-	exists
+R1501+	MNR-Series:MNR-15		-	exists
+U1501+	qfn:QFN24-VGGD-8		-	exists
+
+CON1601+ DF9:DF9-21-1V			-	exists (verify pattern prohibited zone)
+D1601	neo900-legacy:CRS02		SOD-123	exists (looks okay)
+TP1601+	neo900-legacy:1PIN-1.5-0.8	-	= P803
+TP1603+	neo900-legacy:TP-0.75		-	= TP501
+Q1601+	sot:SOT-563			SSMini6	exists
+U1601	neo900-legacy:QFN-16+E-0.5	-	exists
+
+CON1701+ DF9:DF9-21-1V			-	exists (verify pattern prohibited zone)
+CON1703	M50-315XX:M50-31510		-	exists
+G1701	neo900-legacy:PAD-3.5X1.5	-	exists
+LED1701	neo900-legacy:SMLP36RGB2W3	-	exists
+LED1702+ luxeon3020:LUXEON-3020		-	exists
+P1701	neo900-legacy:ST1W008S4BR1500	-	exists
+U1702	neo900:TMD2671			-	= U902
+U1704	neo900-legacy:SOT23		-	= U901
+U1701+	uDFN-9:uDFN-0			-	exists
+
+B1801+	neo900-legacy:N900-BUTTON	-	exists
+D1803	sot:SOT-563			-	= Q1601
+P-CAMERA1801 neo900-legacy:EVQQ0	-	exists
+P-LOCK1801 neo900-legacy:ESE-16J001	-	exists
+P-MINUS1801 neo900-legacy:EVQP40B3M	-	exists
+P-ON1801 neo900-legacy:EVQP40B3M	-	= P-PLUS1801
+P-PLUS1801 neo900-legacy:EVQP40B3M	-	= P-PLUS1801
+Q1801	sot:SOT-563			-	= Q1601
+U1801	neo900-legacy:LPCC-24		RTW	exists (weird name, pad dubious)
+
+D1901	neo900-legacy:CRS02		SOD-123	= D1601
+L1901	neo900-legacy:SMD-1212		-	exists
+L1905+	neo900-legacy:ACM2012H		-	exists
+Q1901	sot:SOT-563			-	= Q1601
+P1901	neo900-legacy:500024-6471	-	exists
+U1901	dfn:DFN-6-0.65mm-TH		DRV	exists
+U1902	smd-dil:SMD-DIL-6-0.35		DSF	= U301
+U1903	neo900-legacy:QFN-32+E-0.5	-	exists
+U1904+	neo900-legacy:SOT666IP		-	= U612
+
+P2001	neo900-legacy:DF37NB-20SD-0.4V	-	exists
+U2001+	neo900-legacy:R-XBGA-N12-0.5	YZT	exists
+U2003	neo900-legacy:SOT457-6		-	= U201
+
+LED2101+ neo900-legacy:MSL0201RGB	-	exists
+LED2105+ msl0104:MSL0104		-	exists
+U2101+	neo900-legacy:YZR0036		YZR	exists
+U2102	neo900-legacy:QFN-24+E-0.5	RTW	= U1801
+U2103	neo900-legacy:SOT666IP		-	= U612
+
+P2201	neo900-legacy:105017-0001	-	exists
+U2201+	neo900-legacy:SOT23-5		DBV	= U1104
+U2203+	neo900-legacy:XO-2520		-	exists (looks horrible)
+
+P2301	neo900:BBCONN			-	exists (but can we use that ?)
+P2302	header:HDR-10x2-50mil		-	exists
+U2301	-				-	= U1501
+U2302	ssop:TSSOP-16			-	exists (close enough approx)
+U2303	stqfn20:STQFN-20		-	= U402
+
+CON2401	header:HDR-2x1-100mil		-	exists
+
+P2501	neo900:BEAGLEBOARD-XM-CAM	-	exists
+CON2501+ header:HDR-34x1-50mil		-	exists
+P2502	header:HDR-2x2-50mil		-	exists
+
+exists = exists in a library, needs review
+missing = footprint type is defined, but we have no CAD drawing yet
+undefined = footprint is not defined/specified yet
+WRONG = we have footprint, but it's incorrect
+
+Caps
+----
+
+0402	2u2;10V 2u2[>=6.3V]
+0603	4u7;10V	8u2;10V; 10u[>=6.3V]
+0805	47u[>=6.3V] 10u[>=6.3V] 22u[>=6.3V]
+
+
+SOT aliases
+-----------
+
+https://en.wikipedia.org/wiki/Small-outline_transistor
+
+SOT-353	SC70-5	SC88A	TSSOP-5	UMT5
+SOT-363	SC70-6	SC88	TSSOP-6	IMT6	US6	S-Mini6
+SOT-523	SC89

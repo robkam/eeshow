@@ -1,0 +1,207 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 1 39
+Title "GTA04b7.sch"
+Date "16 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 720 800 800 800
+F0 "GTA04b7_SS_1" 60
+F1 "GTA04b7_SS_1.sch" 60
+$EndSheet
+$Sheet
+S 2920 800 800 800
+F0 "GTA04b7_SS_2" 60
+F1 "GTA04b7_SS_2.sch" 60
+$EndSheet
+$Sheet
+S 5120 800 800 800
+F0 "GTA04b7_SS_3" 60
+F1 "GTA04b7_SS_3.sch" 60
+$EndSheet
+$Sheet
+S 7320 800 800 800
+F0 "GTA04b7_SS_4" 60
+F1 "GTA04b7_SS_4.sch" 60
+$EndSheet
+$Sheet
+S 9520 800 800 800
+F0 "GTA04b7_SS_5" 60
+F1 "GTA04b7_SS_5.sch" 60
+$EndSheet
+$Sheet
+S 11720 800 800 800
+F0 "GTA04b7_SS_6" 60
+F1 "GTA04b7_SS_6.sch" 60
+$EndSheet
+$Sheet
+S 13920 800 800 800
+F0 "GTA04b7_SS_7" 60
+F1 "GTA04b7_SS_7.sch" 60
+$EndSheet
+$Sheet
+S 16120 800 800 800
+F0 "GTA04b7_SS_8" 60
+F1 "GTA04b7_SS_8.sch" 60
+$EndSheet
+$Sheet
+S 18320 800 800 800
+F0 "GTA04b7_SS_9" 60
+F1 "GTA04b7_SS_9.sch" 60
+$EndSheet
+$Sheet
+S 20520 800 800 800
+F0 "GTA04b7_SS_10" 60
+F1 "GTA04b7_SS_10.sch" 60
+$EndSheet
+$Sheet
+S 22720 800 800 800
+F0 "GTA04b7_SS_11" 60
+F1 "GTA04b7_SS_11.sch" 60
+$EndSheet
+$Sheet
+S 24920 800 800 800
+F0 "GTA04b7_SS_12" 60
+F1 "GTA04b7_SS_12.sch" 60
+$EndSheet
+$Sheet
+S 27120 800 800 800
+F0 "GTA04b7_SS_13" 60
+F1 "GTA04b7_SS_13.sch" 60
+$EndSheet
+$Sheet
+S 29320 800 800 800
+F0 "GTA04b7_SS_14" 60
+F1 "GTA04b7_SS_14.sch" 60
+$EndSheet
+$Sheet
+S 31520 800 800 800
+F0 "GTA04b7_SS_15" 60
+F1 "GTA04b7_SS_15.sch" 60
+$EndSheet
+$Sheet
+S 33720 800 800 800
+F0 "GTA04b7_SS_16" 60
+F1 "GTA04b7_SS_16.sch" 60
+$EndSheet
+$Sheet
+S 35920 800 800 800
+F0 "GTA04b7_SS_17" 60
+F1 "GTA04b7_SS_17.sch" 60
+$EndSheet
+$Sheet
+S 38120 800 800 800
+F0 "GTA04b7_SS_18" 60
+F1 "GTA04b7_SS_18.sch" 60
+$EndSheet
+$Sheet
+S 40320 800 800 800
+F0 "GTA04b7_SS_19" 60
+F1 "GTA04b7_SS_19.sch" 60
+$EndSheet
+$Sheet
+S 42520 800 800 800
+F0 "GTA04b7_SS_20" 60
+F1 "GTA04b7_SS_20.sch" 60
+$EndSheet
+$Sheet
+S 44720 800 800 800
+F0 "GTA04b7_SS_21" 60
+F1 "GTA04b7_SS_21.sch" 60
+$EndSheet
+$Sheet
+S 46920 800 800 800
+F0 "GTA04b7_SS_22" 60
+F1 "GTA04b7_SS_22.sch" 60
+$EndSheet
+$Sheet
+S 49120 800 800 800
+F0 "GTA04b7_SS_23" 60
+F1 "GTA04b7_SS_23.sch" 60
+$EndSheet
+$Sheet
+S 51320 800 800 800
+F0 "GTA04b7_SS_24" 60
+F1 "GTA04b7_SS_24.sch" 60
+$EndSheet
+$Sheet
+S 53520 800 800 800
+F0 "GTA04b7_SS_25" 60
+F1 "GTA04b7_SS_25.sch" 60
+$EndSheet
+$Sheet
+S 55720 800 800 800
+F0 "GTA04b7_SS_26" 60
+F1 "GTA04b7_SS_26.sch" 60
+$EndSheet
+$Sheet
+S 57920 800 800 800
+F0 "GTA04b7_SS_27" 60
+F1 "GTA04b7_SS_27.sch" 60
+$EndSheet
+$Sheet
+S 60120 800 800 800
+F0 "GTA04b7_SS_28" 60
+F1 "GTA04b7_SS_28.sch" 60
+$EndSheet
+$Sheet
+S 62320 800 800 800
+F0 "GTA04b7_SS_29" 60
+F1 "GTA04b7_SS_29.sch" 60
+$EndSheet
+$Sheet
+S 64520 800 800 800
+F0 "GTA04b7_SS_30" 60
+F1 "GTA04b7_SS_30.sch" 60
+$EndSheet
+$Sheet
+S 66720 800 800 800
+F0 "GTA04b7_SS_31" 60
+F1 "GTA04b7_SS_31.sch" 60
+$EndSheet
+$Sheet
+S 68920 800 800 800
+F0 "GTA04b7_SS_32" 60
+F1 "GTA04b7_SS_32.sch" 60
+$EndSheet
+$Sheet
+S 71120 800 800 800
+F0 "GTA04b7_SS_33" 60
+F1 "GTA04b7_SS_33.sch" 60
+$EndSheet
+$Sheet
+S 73320 800 800 800
+F0 "GTA04b7_SS_34" 60
+F1 "GTA04b7_SS_34.sch" 60
+$EndSheet
+$Sheet
+S 75520 800 800 800
+F0 "GTA04b7_SS_35" 60
+F1 "GTA04b7_SS_35.sch" 60
+$EndSheet
+$Sheet
+S 77720 800 800 800
+F0 "GTA04b7_SS_36" 60
+F1 "GTA04b7_SS_36.sch" 60
+$EndSheet
+$Sheet
+S 79920 800 800 800
+F0 "GTA04b7_SS_37" 60
+F1 "GTA04b7_SS_37.sch" 60
+$EndSheet
+$Sheet
+S 82120 800 800 800
+F0 "GTA04b7_SS_38" 60
+F1 "GTA04b7_SS_38.sch" 60
+$EndSheet
+$EndSCHEMATC

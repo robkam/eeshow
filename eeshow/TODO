@@ -1,0 +1,124 @@
+Bugs:
+- selecting history while showing index can cause segfault;
+  index can also be invoked while in history, so far without problems;
+  probably best to just not support this type of interaction, or implement
+  proper mode transitions
+- after moving around for a while, current sheet seems to get somehow separated
+  from current list. This causes the "go up" box to disappear and the sheet
+  number shown on hover becomes -1. This happens rarely, cause still unknown.
+  No other problems were observed. "Home" usually solves this.
+- when switching from label pop-up to label pop-up (e.g., on Neo900 sheet 20),
+  the logic may get confused and cause a segfault, apparently as the result of
+  infinite recursion [removed call to input_update as work-around]
+- eeshow fails to properly prepend path names when using relative paths inside
+  a repository (see comment in file/git-file.c:try_related)
+- eeshow produces lots of complaints and generates a confusing history when
+  loading a specific revision with [rev:]file.ext
+- recording bbox does not take into account "extra" flags. Thus, if we have an
+  invisible item placed far out, cro.c:end_common can produce weird sizes.
+
+Parsing and input processing:
+- unify alignment, direction
+- on parse error, politely complain, don't terminate [almost there]
+- convert assert(0) to proper error indications (BUG or such)
+- quoted strings can have embedded double quotes, with \" (see parse_field)
+- check what happens with UTF-8 (c4puter/motherboard)
+- track renames
+- test immunity to deletions more thoroughly (top sheet, sub-sheet, library,
+  component, project, page layout)
+- implement related_other_repo
+- when in related_same_repo, still handle symlinks in repo leading out to
+  non-repo file
+- likewise, symlinks leading to other repo
+- check if dir/subsheet-1 includes further subsheets from ./ or from dir/
+- likewise, does it affect component library search path ?
+- when looking for a file, consider that it may have been deleted/moved, and
+  then don't magically resurrect it from the repo
+- seems that atoms in sexpr can contain \ -  rules not entirely clear
+- text fields in header can contain newlines as \\n
+
+Data model:
+- implement destructors
+- check for memory leaks
+- sheets appearing multiple times are parsed anew each time. Should we try
+  to combine them ?
+- likewise, reuse sheets and libraries that are the same in the next/previous
+  revision (according to their OID)
+
+Visualization (dwg.c and such):
+- glabel: build for "right" style, then rotate poly (like hlabel)
+- show open pins / wires
+- check remaining alignment / direction / rotation cases in switch statements
+- support mirroring (and detect-complain if unexpected) [should be done now]
+- should get rid of gfx_user()
+- page layout: still doesn't expand all the %X formats (only %K missing now)
+- page layout: text may contain newlines
+- page layout: support maxheight and maxwidth
+
+Rendering/Text:
+- better text size guessing also for FIG
+- consider switching to Hershey fonts (that's what eeschema uses, right ?)
+  (goal: prevent font geometry from changing when scaling)
+- ~ as overline (grep for ~ in out.fig) [ done for Cairo, FIG still missing ]
+- maybe let user set PNG size [we have zoom level]
+
+Rendering/Lines:
+- support line thickness ?
+- find out why in Cairo PDF non-dashed lines disappear if CAIRO_LINE_CAP_ROUND
+
+Rendering/Other:
+- diff area algorithm will fill anything resembling a closed path, no matter
+  how little is inside (e.g., a changed large but empty rectangle will be
+  filled)
+- interaction with eda-tools/genkicat fails: catalog text is lost
+- strings in page layout (included expanded) can contain newlines as \n
+
+GUI:
+- dragging can be slow. maybe reusing old content and only redrawing new
+  will help ?
+- highlight nets ?
+- we use find_corresponding_sheet way too often. Consider changing curr_sheet
+  to new_sheet and old_sheet.
+- introduce location string, as command-line argument, e.g.,
+  [top-sheet/]rev-old,rev-new[,x,y[,zoom]]
+  or maybe (allowing for sheets from completely different sources):
+  [revA]:[topA]:[sheetA][,[revB]:[topB]:[sheetB]][@x,y[,zoom]]
+  [revA]:[topA]:[sheetA][,[revB]:[topB]:[sheetB]][@x,y[,radius]]
+  shape: circle ? rectangle ?
+- set/use location string via clipboard
+- incremental search with / ? and maybe Ctrl-S and Ctrl-R
+  https://www.gnu.org/software/emacs/manual/html_node/emacs/Repeat-Isearch.html#Repeat-Isearch
+- allow changing font size
+- maybe allow changing diff contrast
+- define consistent concept for keybord shortcuts
+- would be nice to be able to reload design without quit, restart
+- would be nice to be able to invoke PDF viewer on data sheets [WIP]
+- if invoked without file name, eeshow should show file dialog
+
+GUI/history
+- should have quick way to show diff of a single commit
+- in history, set font to non-bold if showing details
+- add scrolling with keys to history
+- add manual selection with Up/Down/Enter
+- "what I am selecting" indication (color of frames of sheets in history)
+  is not very clear.
+- list expansion: Joerg suggested to add pop-up, offset to the right, and
+  keep list items fixed
+- slightly delay opening of expanded view of commit, to prevent list from
+  "jerking" when moving the mouse pointer
+
+GUI/sheets:
+- need a way to change new/old sheet association, in case automatic selection
+  fails (reserved hotkeys: Left/Right)
+
+GUI/glabels:
+- maybe indicate how many times label is used on each sheet
+- maybe indicate how it is used
+- there can be "hanging" pop-ups, by design. See comment in
+  gui/glabel.c:hover_glabel
+
+GUI/index:
+- needs keyboard shortcut to invoke
+- add keyboard shortcuts (cursor, Enter)
+- examine interaction with background, suppress conflicts
+- show sheet numbers [now we have file names; check with paths, etc.]

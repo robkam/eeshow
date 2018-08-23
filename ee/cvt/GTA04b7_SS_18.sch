@@ -1,0 +1,492 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 19 39
+Title "GTA04b7.sch"
+Date "17 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes -2800 -650 0    200   ~ 0
+Hackerbus
+Text Notes -9300 350 0    70   ~ 0
+(c) 2015 Golden Delicious Computers GmbH&Co. KG. Licensed under CC-BY-SA.
+Text Notes 600 150 0    70   ~ 0
+V2b
+Text Notes -9100 -6250 0    70   ~ 0
+NOTE: this is mangling up Breakout and Lower board connectors\nSignals may have to be fed through the breakout board connector increasing resistance
+Text Notes -7400 -950 0    70   ~ 0
+Missing 10 level shifter chip (or do we really have the space for 10x discrete T+R+D ca. 3x3mm each?)
+Text Notes -7400 -750 0    70   ~ 0
+Missing 6x 2R for alternate function select (do we have the space for ca. 2.5 x 5mm?)
+$Comp
+L DINA4_L #FRAME36
+U 1 1 578CDABE
+P -9400 -450
+	1    -9400 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME36
+U 2 1 578CDB22
+P -3000 -450
+F 0 "#FRAME36" H -2950 500 100  0000 L BNN
+F 1 "Date:" H -2950 500 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME36" H -2500 499 100  0000 L BNN
+F 1 "16 Jul 2016 23:57:11" H -2500 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME36" H -150 499 100  0000 L BNN
+F 1 "Sheet:" H -150 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME36" H 400 499 100  0000 L BNN
+F 1 "18/38" H 400 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME36" H 500 899 100  0000 L BNN
+F 1 "REV:" H 500 899 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME36" H -2950 1200 100  0000 L BNN
+F 1 "TITLE:" H -2950 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME36" H -2950 900 100  0000 L BNN
+F 1 "Document Number:" H -2950 900 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME36" H -2300 1200 100  0000 L BNN
+F 1 "GTA04b7" H -2300 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+	2    -3000 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP1
+U 1 1 578CDBEA
+P -6800 -1450
+F 0 "TP1" H -6810 -1460 65  0001 L TNN
+F 1 "GND" H -6870 -1431 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -1660 65  0001 L TNN
+	1    -6800 -1450
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP3
+U 1 1 578CDCB2
+P -6800 -1850
+F 0 "TP3" H -6810 -1860 65  0001 L TNN
+F 1 "GND" H -6870 -1831 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -2060 65  0001 L TNN
+	1    -6800 -1850
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP4
+U 1 1 578CDD7A
+P -5000 -1850
+F 0 "TP4" H -5010 -1860 65  0001 L TNN
+F 1 "GND" H -5070 -1830 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -2060 65  0001 L TNN
+	1    -5000 -1850
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP5
+U 1 1 578CDE42
+P -5000 -1450
+F 0 "TP5" H -5010 -1460 65  0001 L TNN
+F 1 "GND" H -5070 -1430 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -1660 65  0001 L TNN
+	1    -5000 -1450
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP6
+U 1 1 578CDF0A
+P -6800 -2050
+F 0 "TP6" H -6810 -2060 65  0001 L TNN
+F 1 "UART_CTS" H -6870 -2031 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -2260 65  0001 L TNN
+	1    -6800 -2050
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP7
+U 1 1 578CDFD2
+P -6800 -2250
+F 0 "TP7" H -6810 -2260 65  0001 L TNN
+F 1 "UART_TX" H -6870 -2231 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -2460 65  0001 L TNN
+	1    -6800 -2250
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP8
+U 1 1 578CE09A
+P -6800 -2450
+F 0 "TP8" H -6810 -2460 65  0001 L TNN
+F 1 "GPIO_b" H -6870 -2431 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -2660 65  0001 L TNN
+	1    -6800 -2450
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP9
+U 1 1 578CE162
+P -6800 -2650
+F 0 "TP9" H -6810 -2660 65  0001 L TNN
+F 1 "GPIO_d" H -6870 -2631 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -2860 65  0001 L TNN
+	1    -6800 -2650
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP10
+U 1 1 578CE22A
+P -6800 -2850
+F 0 "TP10" H -6810 -2860 65  0001 L TNN
+F 1 "GPIO_f/3V3" H -6870 -2831 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -3060 65  0001 L TNN
+	1    -6800 -2850
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP11
+U 1 1 578CE2F2
+P -6800 -3050
+F 0 "TP11" H -6810 -3060 65  0001 L TNN
+F 1 "VBUS" H -6870 -3031 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -3260 65  0001 L TNN
+	1    -6800 -3050
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP12
+U 1 1 578CE3BA
+P -6800 -3250
+F 0 "TP12" H -6810 -3260 65  0001 L TNN
+F 1 "VBAT" H -6870 -3231 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -3460 65  0001 L TNN
+	1    -6800 -3250
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP13
+U 1 1 578CE482
+P -5000 -2050
+F 0 "TP13" H -5010 -2060 65  0001 L TNN
+F 1 "UART_RTS" H -5070 -2030 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -2260 65  0001 L TNN
+	1    -5000 -2050
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP14
+U 1 1 578CE54A
+P -5000 -2250
+F 0 "TP14" H -5010 -2260 65  0001 L TNN
+F 1 "UART_RX" H -5070 -2230 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -2460 65  0001 L TNN
+	1    -5000 -2250
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP15
+U 1 1 578CE612
+P -5000 -2450
+F 0 "TP15" H -5010 -2460 65  0001 L TNN
+F 1 "GPIO_a" H -5070 -2430 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -2660 65  0001 L TNN
+	1    -5000 -2450
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP16
+U 1 1 578CE6DA
+P -5000 -2650
+F 0 "TP16" H -5010 -2660 65  0001 L TNN
+F 1 "GPIO_c" H -5070 -2630 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -2860 65  0001 L TNN
+	1    -5000 -2650
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP17
+U 1 1 578CE7A2
+P -5000 -2850
+F 0 "TP17" H -5010 -2860 65  0001 L TNN
+F 1 "GPIO_e" H -5070 -2830 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -3060 65  0001 L TNN
+	1    -5000 -2850
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP18
+U 1 1 578CE86A
+P -5000 -3050
+F 0 "TP18" H -5010 -3060 65  0001 L TNN
+F 1 "VSYS" H -5070 -3030 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -3260 65  0001 L TNN
+	1    -5000 -3050
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP19
+U 1 1 578CE932
+P -5000 -3250
+F 0 "TP19" H -5010 -3260 65  0001 L TNN
+F 1 "VBAT" H -5070 -3230 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -3460 65  0001 L TNN
+	1    -5000 -3250
+	1    0    0    -1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP20
+U 1 1 578CE9FA
+P -3300 -4750
+F 0 "TP20" H -3310 -4760 65  0001 L TNN
+F 1 "USB_DP" H -3370 -4730 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -3310 -4960 65  0001 L TNN
+	1    -3300 -4750
+	0    -1    -1    0
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP21
+U 1 1 578CEAC2
+P -3100 -4750
+F 0 "TP21" H -3110 -4760 65  0001 L TNN
+F 1 "USB_GND" H -3170 -4730 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -3110 -4960 65  0001 L TNN
+	1    -3100 -4750
+	0    -1    -1    0
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP22
+U 1 1 578CEB8A
+P -2900 -4750
+F 0 "TP22" H -2910 -4760 65  0001 L TNN
+F 1 "USB_DM" H -2970 -4730 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -2910 -4960 65  0001 L TNN
+	1    -2900 -4750
+	0    -1    -1    0
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP25
+U 1 1 578CEC52
+P -6800 -1650
+F 0 "TP25" H -6810 -1660 65  0001 L TNN
+F 1 "NFC_GND" H -6870 -1631 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -6810 -1860 65  0001 L TNN
+	1    -6800 -1650
+	-1    0    0    1
+$EndComp
+$Comp
+L PIN-PIN-0.8 TP26
+U 1 1 578CED1A
+P -5000 -1650
+F 0 "TP26" H -5010 -1660 65  0001 L TNN
+F 1 "NFC_ANT" H -5070 -1630 100  0000 R TNN
+F 2 "1PIN-1.5-0.8" H -5010 -1860 65  0001 L TNN
+	1    -5000 -1650
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$72
+U 1 1 578CED7E
+P -7700 1550
+F 0 "#U$72" H -7790 -1650 70  0000 L BNN
+F 1 "GND" H -7790 -1650 70  0000 L BNN
+F 2 "" H -7700 -1550 60 0001 C CNN
+F 3 "" H -7700 -1550 60 0001 C CNN
+	1    -7700 -1550
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$354
+U 1 1 578CEDE2
+P -7000 1250
+F 0 "#U$354" H -7090 -1350 70  0000 L BNN
+F 1 "GND" H -7090 -1350 70  0000 L BNN
+F 2 "" H -7000 -1250 60 0001 C CNN
+F 3 "" H -7000 -1250 60 0001 C CNN
+	1    -7000 -1250
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$355
+U 1 1 578CEE46
+P -4800 1250
+F 0 "#U$355" H -4890 -1350 70  0000 L BNN
+F 1 "GND" H -4890 -1350 70  0000 L BNN
+F 2 "" H -4800 -1250 60 0001 C CNN
+F 3 "" H -4800 -1250 60 0001 C CNN
+	1    -4800 -1250
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$356
+U 1 1 578CEEAA
+P -3100 3850
+F 0 "#U$356" H -3190 -3950 70  0000 L BNN
+F 1 "GND" H -3190 -3950 70  0000 L BNN
+F 2 "" H -3100 -3850 60 0001 C CNN
+F 3 "" H -3100 -3850 60 0001 C CNN
+	1    -3100 -3850
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	-5000 -3250 -6800 -3250
+Wire Wire Line
+	-6800 -3250 -7700 -3250
+Connection ~ -6800 -3250
+Text Label -7760 -3201 2    65   ~ 0
+BATT/5.1A
+Wire Wire Line
+	-7700 -1650 -6800 -1650
+Wire Wire Line
+	-6800 -1450 -7000 -1450
+Wire Wire Line
+	-7000 -1450 -7000 -1850
+Wire Wire Line
+	-7000 -1850 -6800 -1850
+Wire Wire Line
+	-7000 -1350 -7000 -1450
+Connection ~ -7000 -1450
+Wire Wire Line
+	-5000 -1850 -4800 -1850
+Wire Wire Line
+	-4800 -1850 -4800 -1450
+Wire Wire Line
+	-4800 -1450 -5000 -1450
+Wire Wire Line
+	-4800 -1450 -4800 -1350
+Connection ~ -4800 -1450
+Wire Wire Line
+	-3100 -4750 -3100 -3950
+Wire Wire Line
+	-6800 -2850 -7200 -2850
+Text Label -7260 -2801 2    65   ~ 0
+N$339
+Wire Wire Line
+	-6800 -2650 -7200 -2650
+Text Label -7260 -2601 2    65   ~ 0
+N$340
+Wire Wire Line
+	-6800 -2450 -7200 -2450
+Text Label -7260 -2401 2    65   ~ 0
+N$341
+Wire Wire Line
+	-5000 -2450 -4600 -2450
+Text Label -4540 -2415 0    65   ~ 0
+N$347
+Wire Wire Line
+	-5000 -2650 -4600 -2650
+Text Label -4540 -2615 0    65   ~ 0
+N$349
+Wire Wire Line
+	-5000 -2850 -4600 -2850
+Text Label -4540 -2815 0    65   ~ 0
+N$351
+Wire Wire Line
+	-4300 -1650 -5000 -1650
+Text Label -4240 -1615 0    65   ~ 0
+NFC-ANT/16.4B
+Wire Wire Line
+	-6800 -2050 -7200 -2050
+Text Label -7260 -2001 2    65   ~ 0
+UART3_CTS
+Wire Wire Line
+	-5000 -2050 -4600 -2050
+Text Label -4540 -2015 0    65   ~ 0
+UART3_RTS
+Wire Wire Line
+	-5000 -2250 -4600 -2250
+Text Label -4540 -2215 0    65   ~ 0
+UART3_RX
+Wire Wire Line
+	-6800 -2250 -7200 -2250
+Text Label -7260 -2201 2    65   ~ 0
+UART3_TX
+Wire Wire Line
+	-3300 -4750 -3300 -5250
+Text Label -3265 -5310 1    65   ~ 0
+USB-WWAN-D+/6.3B
+Wire Wire Line
+	-2900 -4750 -2900 -5250
+Text Label -2865 -5310 1    65   ~ 0
+USB-WWAN-D-/6.3B
+Wire Wire Line
+	-6800 -3050 -7700 -3050
+Text Label -7760 -3001 2    65   ~ 0
+VBUS/3.1B
+Wire Wire Line
+	-5000 -3050 -4300 -3050
+Text Label -4240 -3015 0    65   ~ 0
+VSYS/19.1D
+Text GLabel -5000 -3250 0 10 UnSpc
+BATT
+Text GLabel -6800 -3250 2 10 UnSpc
+BATT
+Text GLabel -6800 -1650 2 10 UnSpc
+GND
+Text GLabel -7700 -1650 1 10 UnSpc
+GND
+Text GLabel -6800 -1450 2 10 UnSpc
+GND
+Text GLabel -6800 -1850 2 10 UnSpc
+GND
+Text GLabel -7000 -1350 1 10 UnSpc
+GND
+Text GLabel -5000 -1850 0 10 UnSpc
+GND
+Text GLabel -5000 -1450 0 10 UnSpc
+GND
+Text GLabel -4800 -1350 1 10 UnSpc
+GND
+Text GLabel -3100 -4750 3 10 UnSpc
+GND
+Text GLabel -3100 -3950 1 10 UnSpc
+GND
+Text Label -6800 -2850 0    10   ~ 0
+N$339
+Text Label -6800 -2650 0    10   ~ 0
+N$340
+Text Label -6800 -2450 0    10   ~ 0
+N$341
+Text Label -5000 -2450 2    10   ~ 0
+N$347
+Text Label -5000 -2650 2    10   ~ 0
+N$349
+Text Label -5000 -2850 2    10   ~ 0
+N$351
+Text GLabel -5000 -1650 0 10 UnSpc
+NFC-ANT
+Text Label -6800 -2050 0    10   ~ 0
+UART3_CTS
+Text Label -5000 -2050 2    10   ~ 0
+UART3_RTS
+Text Label -5000 -2250 2    10   ~ 0
+UART3_RX
+Text Label -6800 -2250 0    10   ~ 0
+UART3_TX
+Text GLabel -3300 -4750 3 10 UnSpc
+USB-WWAN-D+
+Text GLabel -2900 -4750 3 10 UnSpc
+USB-WWAN-D-
+Text GLabel -6800 -3050 2 10 UnSpc
+VBUS
+Text GLabel -5000 -3050 0 10 UnSpc
+VSYS
+$EndSCHEMATC

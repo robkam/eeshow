@@ -1,0 +1,4 @@
+#!/bin/sh
+#get the URLof the pdf datasheet for a silego product, input searchstring as parameter, return URL via stdout
+#v1.01 JR
+echo -n $(wget -q  http://www.silego.com/softdoc/datasheet.html?filterPN=${1} -O -|sed -n "s%.*href\=\"\([^ ]*${1}[^ ]*pdf\)\".*%\1%;T;p;q" )

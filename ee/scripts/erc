@@ -1,0 +1,37 @@
+#!/bin/sh
+#
+# erc - Set up ERC settings for the Neo900 project
+#
+# Idea and prototype by Joerg Reisenweber, this implementation by
+# Werner Almesberger.
+#
+
+#
+# This script is VERY fragile and is affected by window manager behaviour.
+#
+# Use as follows:
+# - start eeschema and open the ERC dialog
+# - start this script
+# - move the mouse over the ERC dialog
+# The script should then switch to the "Options" tab and change some of the
+# error and warning settings.
+#
+
+#
+# The key sequences make the the following changes:
+#
+# 1) Initialize to Default
+# 2) Tri vs. Output: W -> OK
+# 3) Power Out vs. Bidir: W -> OK
+# 4) Power Out vs. Tri: E -> OK
+# 5) OC vs. Tri: W -> OK
+# 6) Power Out vs. Power Out: E -> OK
+#
+
+xdotool search --name --onlyvisible --sync 'Electrical Rules Checker' \
+    key --delay 300 Right Down space \
+    Down Down Down Down Right space space \
+    Down Down Down Down Right space space \
+    Right space \
+    Down space space \
+    Right Right Right Right Up space

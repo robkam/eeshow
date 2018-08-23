@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TSA5A22366
+D Dual SPDT analog switch
+F http://www.ti.com.cn/cn/lit/ds/symlink/ts5a22366.pdf
+$ENDCMP
+#
+#End Doc Library

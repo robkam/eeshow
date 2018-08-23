@@ -1,0 +1,203 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 28 39
+Title "GTA04b7.sch"
+Date "17 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes -2800 -650 0    200   ~ 0
+eMMC
+Text Notes -9300 350 0    70   ~ 0
+(c) 2014 Golden Delicious Computers GmbH&Co. KG. Licensed under CC-BY-SA.
+Text Notes -9200 -6450 0    70   ~ 0
+INCOMPLETE in V2
+Text Notes 600 150 0    70   ~ 0
+V2b
+Text Notes -5200 -2450 1    70   ~ 0
+to some 1.8V MMC interface
+Text Notes -5800 -5950 0    70   ~ 0
+nreswarm
+$Comp
+L DINA4_L #FRAME26
+U 1 1 578D9446
+P -9400 -450
+	1    -9400 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME26
+U 2 1 578D94AA
+P -3000 -450
+F 0 "#FRAME26" H -2950 500 100  0000 L BNN
+F 1 "Date:" H -2950 500 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME26" H -2500 499 100  0000 L BNN
+F 1 "16 Jul 2016 23:57:11" H -2500 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME26" H -150 499 100  0000 L BNN
+F 1 "Sheet:" H -150 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME26" H 400 499 100  0000 L BNN
+F 1 "27/38" H 400 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME26" H 500 899 100  0000 L BNN
+F 1 "REV:" H 500 899 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME26" H -2950 1200 100  0000 L BNN
+F 1 "TITLE:" H -2950 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME26" H -2950 900 100  0000 L BNN
+F 1 "Document Number:" H -2950 900 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME26" H -2300 1200 100  0000 L BNN
+F 1 "GTA04b7" H -2300 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+	2    -3000 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-3 #U$174
+U 1 1 578D950E
+P -3800 4350
+F 0 "#U$174" H -3920 -4449 70  0000 L BNN
+F 1 "GND3" H -3920 -4449 70  0000 L BNN
+F 2 "" H -3800 -4350 60 0001 C CNN
+F 3 "" H -3800 -4350 60 0001 C CNN
+	1    -3800 -4350
+	1    0    0    -1
+$EndComp
+$Comp
+L EMMC-169 U2701
+U 1 1 578D95D6
+P -4500 -3050
+F 0 "U2701" H -4659 -2010 50  0000 L BNN
+F 1 "EMMC-169" H -4630 -4140 50  0000 L BNN
+F 2 "EMMC-BGA-N169-0.5" H -4510 -3260 65  0001 L TNN
+	1    -4500 -3050
+	1    0    0    -1
+$EndComp
+$Comp
+L EMMC-169 U2701
+U 2 1 578D963A
+P -4400 -5350
+F 0 "U2701" H -4889 -4610 70  0000 L BNN
+F 1 "EMMC-169" H -4900 -6150 70  0000 L BNN
+F 2 "EMMC-BGA-N169-0.5" H -4410 -5560 65  0001 L TNN
+	2    -4400 -5350
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	-5100 -5150 -5100 -5050
+Wire Wire Line
+	-5100 -5050 -5100 -4950
+Wire Wire Line
+	-5100 -4950 -5100 -4850
+Wire Wire Line
+	-5100 -4850 -5100 -4750
+Wire Wire Line
+	-5100 -5150 -5200 -5150
+Connection ~ -5100 -5050
+Connection ~ -5100 -4950
+Connection ~ -5100 -4850
+Connection ~ -5100 -5150
+Text Label -5260 -5101 2    65   ~ 0
+1V8-CPU/25.4B
+Wire Wire Line
+	-5100 -5350 -5100 -5450
+Wire Wire Line
+	-5100 -5450 -5100 -5550
+Wire Wire Line
+	-5100 -5550 -5100 -5650
+Wire Wire Line
+	-5100 -5650 -5200 -5650
+Connection ~ -5100 -5450
+Connection ~ -5100 -5550
+Connection ~ -5100 -5650
+Text Label -5260 -5601 2    65   ~ 0
+3V3-CPU/29.3A
+Wire Wire Line
+	-3800 -5450 -3800 -5550
+Wire Wire Line
+	-3800 -5550 -3800 -5650
+Wire Wire Line
+	-3800 -5650 -3800 -5750
+Wire Wire Line
+	-3800 -4750 -3800 -4850
+Wire Wire Line
+	-3800 -4850 -3800 -4950
+Wire Wire Line
+	-3800 -5050 -3800 -4950
+Wire Wire Line
+	-3800 -5050 -3800 -5150
+Wire Wire Line
+	-3800 -5450 -3800 -5150
+Wire Wire Line
+	-3800 -4750 -3800 -4450
+Connection ~ -3800 -5550
+Connection ~ -3800 -5650
+Connection ~ -3800 -4850
+Connection ~ -3800 -4950
+Connection ~ -3800 -5050
+Connection ~ -3800 -5150
+Connection ~ -3800 -5450
+Connection ~ -3800 -4750
+Wire Wire Line
+	-3800 -5950 -3300 -5950
+Text GLabel -5100 -5150 0 10 UnSpc
+1V8-CPU
+Text GLabel -5100 -5050 0 10 UnSpc
+1V8-CPU
+Text GLabel -5100 -4950 0 10 UnSpc
+1V8-CPU
+Text GLabel -5100 -4850 0 10 UnSpc
+1V8-CPU
+Text GLabel -5100 -4750 0 10 UnSpc
+1V8-CPU
+Text GLabel -5100 -5350 0 10 UnSpc
+3V3-CPU
+Text GLabel -5100 -5450 0 10 UnSpc
+3V3-CPU
+Text GLabel -5100 -5550 0 10 UnSpc
+3V3-CPU
+Text GLabel -5100 -5650 0 10 UnSpc
+3V3-CPU
+Text GLabel -3800 -5450 2 10 UnSpc
+GND3
+Text GLabel -3800 -5550 2 10 UnSpc
+GND3
+Text GLabel -3800 -5650 2 10 UnSpc
+GND3
+Text GLabel -3800 -5750 2 10 UnSpc
+GND3
+Text GLabel -3800 -4750 2 10 UnSpc
+GND3
+Text GLabel -3800 -4850 2 10 UnSpc
+GND3
+Text GLabel -3800 -4950 2 10 UnSpc
+GND3
+Text GLabel -3800 -5050 2 10 UnSpc
+GND3
+Text GLabel -3800 -5150 2 10 UnSpc
+GND3
+Text GLabel -3800 -4450 1 10 UnSpc
+GND3
+Text Label -3800 -5950 0    10   ~ 0
+N$4
+$EndSCHEMATC

@@ -1,0 +1,24 @@
+Setup
+-----
+
+git clone https://neo900.org/git/ee neo900-ee
+cd neo900-ee
+git reset --hard 57eebdcf573311c049bc57527bc03a517aff0fef
+
+cd ..
+
+git clone git://projects.qi-hardware.com/kicad-libs.git
+cd kicad-libs
+git reset --hard 143fa7fe10cabbfe1cb12d010c7426d482d7e6f4
+
+cd ..
+
+./genpng ref
+
+
+Run test
+--------
+
+./genpng
+./comp
+qiv -t _diff*.png

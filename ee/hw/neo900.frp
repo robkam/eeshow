@@ -1,0 +1,4585 @@
+.HEA
+.TIM Monday, 11 September 2017 'amt' 10:26:33
+.APP "Eeschema (2017-09-09 revision 8c7175b00)-master"
+
+.ADD_COM     C206     "47n"
+.ADD_COM     C204     "4u7;10V"
+.ADD_COM     C205     "8u2;10V"
+.ADD_COM     C208     "10u"
+.ADD_COM     C207     "4.7uF"
+.ADD_COM     L201     "MAMK2520T1R0M"
+.ADD_COM     R202     "317"
+.ADD_COM     R203     "5k23"
+.ADD_COM     R204     "30k9"
+.ADD_COM     U203     "BQ24297RGE"
+.ADD_COM     R201     "(0)"
+.ADD_COM     U202     "TPS22963CYZP"
+.ADD_COM     C202     "1u"
+.ADD_COM     C203     "100n"
+.ADD_COM     C201     "2u2;10V"
+.ADD_COM     U201     "IP4220CZ6"
+.ADD_COM     P201     "USB-AB-47590-0001"
+.ADD_COM     TP304     "VBAT"
+.ADD_COM     TP303     "BGND"
+.ADD_COM     TP302     "BATTID"
+.ADD_COM     C301     "10uF"
+.ADD_COM     C309     "100nF"
+.ADD_COM     C310     "100nF"
+.ADD_COM     C303     "100nF"
+.ADD_COM     C304     "100nF"
+.ADD_COM     C305     "100nF"
+.ADD_COM     D301     "V5.5MLA0603N"
+.ADD_COM     D302     "V5.5MLA0603N"
+.ADD_COM     P301     "BATT-3PIN-N900"
+.ADD_COM     TP301     "BQ_PGM"
+.ADD_COM     R309     "10k"
+.ADD_COM     R311     "100"
+.ADD_COM     R312     "NTCG163JF103F"
+.ADD_COM     R310     "1k"
+.ADD_COM     R307     "10k"
+.ADD_COM     R304     "10k"
+.ADD_COM     R301     "20mR"
+.ADD_COM     R305     "10k"
+.ADD_COM     U302     "BQ27200DRK"
+.ADD_COM     U303     "BQ27421YZFR-G1A_(4V2)"
+.ADD_COM     R306     "0"
+.ADD_COM     C307     "10uF"
+.ADD_COM     R308     "100k"
+.ADD_COM     C308     "10uF"
+.ADD_COM     C306     "1nF"
+.ADD_COM     R313     "NTCG163JF103F"
+.ADD_COM     U301     "SN74AUP1G04DSF"
+.ADD_COM     C302     "100nF"
+.ADD_COM     R302     "1M"
+.ADD_COM     R303     "1M"
+.ADD_COM     G301     "SHIELDPAD-3.5X2.5"
+.ADD_COM     G302     "SHIELDPAD-3.5X2.5"
+.ADD_COM     G303     "SHIELDPAD-3.5X2.5"
+.ADD_COM     R314     "10k"
+.ADD_COM     C404     "100n"
+.ADD_COM     C405     "100n"
+.ADD_COM     C406     "100n"
+.ADD_COM     C407     "100n"
+.ADD_COM     C409     "100n"
+.ADD_COM     C410     "100n"
+.ADD_COM     R402     "(0)"
+.ADD_COM     R405     "20mR"
+.ADD_COM     R410     "20mR"
+.ADD_COM     R419     "20mR"
+.ADD_COM     R404     "10k"
+.ADD_COM     R406     "10k"
+.ADD_COM     R409     "10k"
+.ADD_COM     R411     "10k"
+.ADD_COM     R418     "10k"
+.ADD_COM     R420     "10k"
+.ADD_COM     U401     "TPS22963CYZP"
+.ADD_COM     U403     "INA231YFF"
+.ADD_COM     U404     "INA231YFF"
+.ADD_COM     U406     "INA231YFF"
+.ADD_COM     U407     "TXS4555RUT"
+.ADD_COM     U408     "TXS4555RUT"
+.ADD_COM     U402     "SLG46533V"
+.ADD_COM     C411     "100n"
+.ADD_COM     C412     "100n"
+.ADD_COM     C414     "1u"
+.ADD_COM     C416     "1u"
+.ADD_COM     C413     "1u"
+.ADD_COM     C415     "1u"
+.ADD_COM     U405     "ADA4505-1ACBZ"
+.ADD_COM     R413     "100k"
+.ADD_COM     R416     "105k"
+.ADD_COM     R415     "180k"
+.ADD_COM     R412     "180k"
+.ADD_COM     R414     "2"
+.ADD_COM     C408     "100n"
+.ADD_COM     R417     "1M1"
+.ADD_COM     C403     "100n"
+.ADD_COM     R407     "100k"
+.ADD_COM     R403     "100k"
+.ADD_COM     R408     "100k"
+.ADD_COM     R401     "100k"
+.ADD_COM     C401     "1u"
+.ADD_COM     C402     "100n"
+.ADD_COM     C419     "100n"
+.ADD_COM     C418     "100n"
+.ADD_COM     C417     "100n"
+.ADD_COM     U409     "TPS22964CYZP"
+.ADD_COM     C420     "1u"
+.ADD_COM     C509     "47u"
+.ADD_COM     C501     "10p"
+.ADD_COM     C503     "39p"
+.ADD_COM     C505     "47u"
+.ADD_COM     C507     "10p"
+.ADD_COM     C508     "39p"
+.ADD_COM     C510     "47u"
+.ADD_COM     C502     "10p"
+.ADD_COM     C504     "39p"
+.ADD_COM     C506     "47u"
+.ADD_COM     TP547     "CTS"
+.ADD_COM     TP555     "MODEM_DP"
+.ADD_COM     TP556     "MODEM_DM"
+.ADD_COM     TP552     "DCD"
+.ADD_COM     TP553     "DSR"
+.ADD_COM     TP554     "DTR"
+.ADD_COM     GPIO501     "MODEM_IGT"
+.ADD_COM     TP560     "LC"
+.ADD_COM     M501     "PHS8"
+.ADD_COM     TP545     "PCB-CLK"
+.ADD_COM     TP543     "PCM-OUT"
+.ADD_COM     TP544     "PCM-IN"
+.ADD_COM     TP546     "PCM-SYNC"
+.ADD_COM     TP559     "PWR_IND"
+.ADD_COM     TP551     "RING"
+.ADD_COM     TP549     "RTS"
+.ADD_COM     TP548     "RX"
+.ADD_COM     TP561     "STATUS"
+.ADD_COM     T501     "UMG5N"
+.ADD_COM     TP558     "EMERG"
+.ADD_COM     TP550     "TX"
+.ADD_COM     TP562     "WAKEUP"
+.ADD_COM     J502     "CELL_IN"
+.ADD_COM     J501     "ANT_DRX"
+.ADD_COM     TP528     "VSIM_B"
+.ADD_COM     TP529     "MODEM_RST_B"
+.ADD_COM     TP530     "MODEM_DATA_B"
+.ADD_COM     TP531     "MODEM_CLK_B"
+.ADD_COM     TP532     "MODEM_CD_B"
+.ADD_COM     TP557     "VUSB_MODEM"
+.ADD_COM     TP501     "MODEM_A7"
+.ADD_COM     TP502     "MODEM_F14"
+.ADD_COM     TP503     "MODEM_F15"
+.ADD_COM     TP504     "MODEM_G4"
+.ADD_COM     TP505     "MODEM_H13"
+.ADD_COM     TP506     "MODEM_K12"
+.ADD_COM     TP507     "MODEM_K13"
+.ADD_COM     TP508     "MODEM_L5"
+.ADD_COM     TP509     "MODEM_L6"
+.ADD_COM     TP510     "MODEM_L7"
+.ADD_COM     TP511     "MODEM_L8"
+.ADD_COM     TP512     "MODEM_L9"
+.ADD_COM     TP513     "MODEM_L10"
+.ADD_COM     TP514     "MODEM_L11"
+.ADD_COM     TP515     "MODEM_L12"
+.ADD_COM     TP516     "MODEM_L13"
+.ADD_COM     TP517     "MODEM_N12"
+.ADD_COM     TP533     "MODEM_C12"
+.ADD_COM     TP534     "MODEM_C13"
+.ADD_COM     TP535     "MODEM_D12"
+.ADD_COM     TP536     "MODEM_D13"
+.ADD_COM     TP537     "MODEM_D14"
+.ADD_COM     TP538     "MODEM_E12"
+.ADD_COM     TP539     "MODEM_E13"
+.ADD_COM     TP540     "MODEM_E14"
+.ADD_COM     TP541     "MODEM_F13"
+.ADD_COM     TP542     "MODEM_G13"
+.ADD_COM     R501     "0"
+.ADD_COM     R502     "0"
+.ADD_COM     R503     "0"
+.ADD_COM     R504     "0"
+.ADD_COM     R505     "0"
+.ADD_COM     R506     "0"
+.ADD_COM     R507     "0"
+.ADD_COM     R508     "0"
+.ADD_COM     R509     "0"
+.ADD_COM     R510     "0"
+.ADD_COM     TP518     "MODEM_F16"
+.ADD_COM     TP519     "MODEM_G14"
+.ADD_COM     TP520     "MODEM_G15"
+.ADD_COM     TP521     "MODEM_G16"
+.ADD_COM     TP522     "MODEM_H15"
+.ADD_COM     TP523     "MODEM_J14"
+.ADD_COM     TP524     "MODEM_J15"
+.ADD_COM     TP525     "MODEM_J16"
+.ADD_COM     TP526     "MODEM_M12"
+.ADD_COM     TP527     "MODEM_M13"
+.ADD_COM     R512     "100k"
+.ADD_COM     R511     "100k"
+.ADD_COM     P601     "SF7W006S4ER1500"
+.ADD_COM     U607     "SN74AUP1G32DSF"
+.ADD_COM     U606     "SN74AUP1G32DSF"
+.ADD_COM     U601     "SN74LVC1G123YZP"
+.ADD_COM     U603     "SN74AUP2G07DSF"
+.ADD_COM     U608     "SN74AUP1G74DQE"
+.ADD_COM     U609     "SN74AUP1G74DQE"
+.ADD_COM     U610     "FSA2866"
+.ADD_COM     U611     "FSA2866"
+.ADD_COM     C604     "100n"
+.ADD_COM     C603     "1u"
+.ADD_COM     C602     "1u"
+.ADD_COM     R601     "470k"
+.ADD_COM     C601     "100n"
+.ADD_COM     R606     "100k"
+.ADD_COM     R605     "100k"
+.ADD_COM     C606     "100n"
+.ADD_COM     C607     "100n"
+.ADD_COM     U604     "SN74AUP1G32DSF"
+.ADD_COM     C605     "100n"
+.ADD_COM     R608     "47k"
+.ADD_COM     U605     "SN74AUP1G04DSF"
+.ADD_COM     R612     "51"
+.ADD_COM     R613     "51"
+.ADD_COM     R614     "51"
+.ADD_COM     C610     "220n"
+.ADD_COM     C608     "1n"
+.ADD_COM     U612     "ESDA6V1-5P6"
+.ADD_COM     P602     "101-00271-82"
+.ADD_COM     C611     "220n"
+.ADD_COM     C609     "1n"
+.ADD_COM     R611     "51"
+.ADD_COM     R610     "51"
+.ADD_COM     R609     "51"
+.ADD_COM     U613     "ESDA6V1-5P6"
+.ADD_COM     R607     "100k"
+.ADD_COM     U602     "LSF0204DRUT"
+.ADD_COM     R602     "100k"
+.ADD_COM     R603     "100k"
+.ADD_COM     R604     "100k"
+.ADD_COM     D601     "V5.5MLA0603N"
+.ADD_COM     C702     "1nF"
+.ADD_COM     C701     "DNP"
+.ADD_COM     C707     "1nF"
+.ADD_COM     C704     "15pF"
+.ADD_COM     C705     "100nF"
+.ADD_COM     C706     "1nF"
+.ADD_COM     C703     "15pF"
+.ADD_COM     P701     "GNSS_RF"
+.ADD_COM     P702     "GNSS_GND"
+.ADD_COM     L703     "8n2;LQW15AN8N2G00D"
+.ADD_COM     L701     "DNP"
+.ADD_COM     L702     "DNP"
+.ADD_COM     L704     "DNP"
+.ADD_COM     R703     "100k"
+.ADD_COM     R701     "0"
+.ADD_COM     R702     "0"
+.ADD_COM     R707     "10k"
+.ADD_COM     R706     "10k"
+.ADD_COM     U705     "PE4259"
+.ADD_COM     U704     "LMV221SD"
+.ADD_COM     U703     "LMV221SD"
+.ADD_COM     P703     "CELL_GND"
+.ADD_COM     P705     "CELL_GND"
+.ADD_COM     P704     "CELL_RF"
+.ADD_COM     U701     "BGM1034N7"
+.ADD_COM     J701     "GNSS_IN"
+.ADD_COM     U702     "CPL-WBF-00D3"
+.ADD_COM     U706     "SLG46533V"
+.ADD_COM     C710     "100nF"
+.ADD_COM     L705     "DNP"
+.ADD_COM     C709     "0R"
+.ADD_COM     L706     "DNP"
+.ADD_COM     C708     "0R"
+.ADD_COM     C712     "1uF"
+.ADD_COM     C711     "1uF"
+.ADD_COM     R711     "2M"
+.ADD_COM     R713     "2M"
+.ADD_COM     R710     "5M"
+.ADD_COM     R712     "5M"
+.ADD_COM     R708     "5M"
+.ADD_COM     R709     "2M"
+.ADD_COM     R716     "100k"
+.ADD_COM     R717     "100k"
+.ADD_COM     R714     "5M"
+.ADD_COM     R715     "2M"
+.ADD_COM     R704     "100k"
+.ADD_COM     R705     "100k"
+.ADD_COM     C806     "1n"
+.ADD_COM     C804     "100n"
+.ADD_COM     C805     "100n"
+.ADD_COM     D801     "V5.5MLA0603N"
+.ADD_COM     L801     "MLZ1608M100W"
+.ADD_COM     L802     "120n"
+.ADD_COM     R801     "2"
+.ADD_COM     P803     "FM_TX+"
+.ADD_COM     P804     "FM_TX-"
+.ADD_COM     U802     "SI4721-B20-GM"
+.ADD_COM     U801     "WL1837MODGIMOC"
+.ADD_COM     C803     "1u"
+.ADD_COM     C801     "100n"
+.ADD_COM     C802     "10u"
+.ADD_COM     L804     "1.3nF"
+.ADD_COM     L803     "NC"
+.ADD_COM     C807     "1p"
+.ADD_COM     J801     "WL_ANT1"
+.ADD_COM     J802     "WL_ANT2"
+.ADD_COM     R802     "50"
+.ADD_COM     TP801     "WL_TX"
+.ADD_COM     TP802     "WL_RX"
+.ADD_COM     P801     "WLAN_RF"
+.ADD_COM     P802     "WLAN_GND"
+.ADD_COM     TP813     "WL_GPIO4"
+.ADD_COM     R803     "0"
+.ADD_COM     TP812     "WL_RSV2"
+.ADD_COM     TP811     "WL_RSV1"
+.ADD_COM     TP808     "WL_GPIO9"
+.ADD_COM     TP809     "WL_GPIO10"
+.ADD_COM     TP807     "WL_GPIO11"
+.ADD_COM     TP810     "WL_GPIO12"
+.ADD_COM     TP814     "WL_RSV3"
+.ADD_COM     TP805     "WL_UART_DBG"
+.ADD_COM     TP806     "BT_UART_DBG"
+.ADD_COM     C810     "470n"
+.ADD_COM     C811     "470n"
+.ADD_COM     C809     "470n"
+.ADD_COM     C808     "470n"
+.ADD_COM     C902     "10u"
+.ADD_COM     C904     "100n"
+.ADD_COM     C901     "100n"
+.ADD_COM     C903     "100n"
+.ADD_COM     C905     "100n"
+.ADD_COM     S901     "LIS302DLTR"
+.ADD_COM     S903     "BME280"
+.ADD_COM     S902     "BMX055"
+.ADD_COM     R901     "10k"
+.ADD_COM     R902     "10k"
+.ADD_COM     R903     "10k"
+.ADD_COM     R904     "10k"
+.ADD_COM     C906     "1u"
+.ADD_COM     C907     "1u"
+.ADD_COM     R905     "22"
+.ADD_COM     U902     "TMD26713"
+.ADD_COM     U901     "MLX90248ESE"
+.ADD_COM     C908     "10n"
+.ADD_COM     C909     "100p"
+.ADD_COM     R906     "100k"
+.ADD_COM     C1009     "3.3nF"
+.ADD_COM     C1017     "2.2uF"
+.ADD_COM     C1020     "100n"
+.ADD_COM     C1018     "2.2uF"
+.ADD_COM     C1021     "100n"
+.ADD_COM     C1005     "3.3nF"
+.ADD_COM     C1019     "2.2uF"
+.ADD_COM     C1022     "100n"
+.ADD_COM     C1006     "3.3nF"
+.ADD_COM     C1007     "3.3nF"
+.ADD_COM     C1008     "3.3nF"
+.ADD_COM     L1003     "tdb."
+.ADD_COM     L1004     "tbd."
+.ADD_COM     L1005     "tbd."
+.ADD_COM     R1001     "100"
+.ADD_COM     R1005     "560"
+.ADD_COM     R1006     "560"
+.ADD_COM     R1007     "560"
+.ADD_COM     R1008     "560"
+.ADD_COM     R1009     "560"
+.ADD_COM     R1010     "560"
+.ADD_COM     R1011     "560"
+.ADD_COM     R1012     "560"
+.ADD_COM     R1002     "560"
+.ADD_COM     R1003     "560"
+.ADD_COM     U1001     "tlv320aic34"
+.ADD_COM     R1004     "1k"
+.ADD_COM     C1010     "10u"
+.ADD_COM     C1011     "100n"
+.ADD_COM     C1012     "27p"
+.ADD_COM     C1023     "1n"
+.ADD_COM     C1025     "1n"
+.ADD_COM     C1013     "100n"
+.ADD_COM     C1014     "100n"
+.ADD_COM     C1015     "100n"
+.ADD_COM     C1016     "100n"
+.ADD_COM     C1024     "1n"
+.ADD_COM     C1026     "1n"
+.ADD_COM     D1001     "V5.5MLA0603N"
+.ADD_COM     D1003     "V5.5MLA0603N"
+.ADD_COM     D1002     "V5.5MLA0603N"
+.ADD_COM     D1004     "V5.5MLA0603N"
+.ADD_COM     L1006     "MPZ1608S221A"
+.ADD_COM     L1007     "MPZ1608S221A"
+.ADD_COM     L1008     "MPZ1608S221A"
+.ADD_COM     L1009     "MPZ1608S221A"
+.ADD_COM     P1001     "SPEAKER"
+.ADD_COM     P1002     "SPEAKER"
+.ADD_COM     TP1001     "SPKR_L_P"
+.ADD_COM     TP1002     "SPKR_L_M"
+.ADD_COM     TP1003     "SPKR_R_P"
+.ADD_COM     TP1004     "SPKR_R_M"
+.ADD_COM     U1002     "TPA2012D2RTJ"
+.ADD_COM     C1003     "100n"
+.ADD_COM     C1001     "27p"
+.ADD_COM     C1004     "100n"
+.ADD_COM     C1002     "27p"
+.ADD_COM     L1001     "tbd"
+.ADD_COM     L1002     "tbd"
+.ADD_COM     M1001     "SPK0415HM4H"
+.ADD_COM     M1002     "SPK0415HM4H"
+.ADD_COM     C1112     "1u"
+.ADD_COM     C1105     "470n"
+.ADD_COM     C1120     "22p"
+.ADD_COM     C1103     "470n"
+.ADD_COM     C1106     "470n"
+.ADD_COM     C1121     "22p"
+.ADD_COM     C1104     "470n"
+.ADD_COM     C1113     "1u"
+.ADD_COM     C1108     "2.2uF"
+.ADD_COM     C1101     "33n"
+.ADD_COM     C1102     "33n"
+.ADD_COM     C1107     "1n"
+.ADD_COM     D1102     "V5.5MLA0603N"
+.ADD_COM     D1104     "V5.5MLA0603N"
+.ADD_COM     D1101     "V5.5MLA0603N"
+.ADD_COM     D1103     "V5.5MLA0603N"
+.ADD_COM     D1105     "V5.5MLA0603N"
+.ADD_COM     HS-1101     "HS_GND"
+.ADD_COM     HS-1102     "HS_SH"
+.ADD_COM     HS-1103     "HS_R"
+.ADD_COM     HS-1104     "HS_SW"
+.ADD_COM     HS-1105     "HS_L"
+.ADD_COM     HS-1106     "HS_M"
+.ADD_COM     L1101     "MPZ1608S221A"
+.ADD_COM     L1102     "120R@100MHz"
+.ADD_COM     L1103     "600R@100MHz"
+.ADD_COM     L1104     "600R@100MHz"
+.ADD_COM     L1105     "600R@100MHz"
+.ADD_COM     L1106     "120R@100MHz"
+.ADD_COM     P1101     "N900-HEADSET"
+.ADD_COM     R1120     "1M"
+.ADD_COM     R1123     "470k"
+.ADD_COM     R1101     "220"
+.ADD_COM     R1104     "2k"
+.ADD_COM     R1102     "2k2"
+.ADD_COM     R1103     "2k2"
+.ADD_COM     R1110     "10k"
+.ADD_COM     U1101     "TPA6130A2RTJ"
+.ADD_COM     U1103     "TS3A225ERTE"
+.ADD_COM     C1109     "1n"
+.ADD_COM     U1102     "TS5A22366"
+.ADD_COM     C1111     "1u"
+.ADD_COM     C1110     "1u"
+.ADD_COM     C1114     "1u"
+.ADD_COM     R1122     "1M"
+.ADD_COM     R1107     "1k"
+.ADD_COM     R1108     "1k"
+.ADD_COM     C1117     "1u"
+.ADD_COM     C1118     "1u"
+.ADD_COM     R1113     "6k8"
+.ADD_COM     R1115     "22k"
+.ADD_COM     R1117     "22k"
+.ADD_COM     R1119     "47k"
+.ADD_COM     R1121     "47k"
+.ADD_COM     R1111     "470"
+.ADD_COM     R1112     "1k"
+.ADD_COM     R1118     "22k"
+.ADD_COM     R1114     "22k"
+.ADD_COM     R1116     "6k8"
+.ADD_COM     R1106     "1k"
+.ADD_COM     U1104     "TLV70225DBV"
+.ADD_COM     U1105     "TLV1702DGK"
+.ADD_COM     R1109     "4k7"
+.ADD_COM     C1119     "100n"
+.ADD_COM     R1124     "1k"
+.ADD_COM     C1122     "1n"
+.ADD_COM     C1123     "1n"
+.ADD_COM     C1124     "100p"
+.ADD_COM     C1125     "100p"
+.ADD_COM     C1116     "1u"
+.ADD_COM     C1115     "1u"
+.ADD_COM     TP1201     "VIB+"
+.ADD_COM     TP1202     "VIB-"
+.ADD_COM     VIB1201     "PREC-MICRO-304-106"
+.ADD_COM     G1201     "SHIELDN900"
+.ADD_COM     G1205     "SHIELDN900"
+.ADD_COM     G1207     "SHIELDPAD-3.5X2.5"
+.ADD_COM     G1202     "SHIELDN900"
+.ADD_COM     G1206     "SHIELDN900"
+.ADD_COM     G1208     "SHIELDPAD-3.5X2.5"
+.ADD_COM     G1203     "SHIELDN900"
+.ADD_COM     G1209     "SHIELDPAD-3.5X2.5"
+.ADD_COM     G1204     "SHIELDN900"
+.ADD_COM     N1201     "N900_case_assembly"
+.ADD_COM     N1202     "N97-CAMERA-HOLE"
+.ADD_COM     N1205     "headset_jack"
+.ADD_COM     N1203     "STENCIL-TOP"
+.ADD_COM     N1204     "STENCIL-BOTTOM"
+.ADD_COM     D1201     "LTST-S270KxKT"
+.ADD_COM     R1201     "18k"
+.ADD_COM     D1202     "LTST-S270KxKT"
+.ADD_COM     R1202     "2k7"
+.ADD_COM     D1203     "LTST-S270KxKT"
+.ADD_COM     R1203     "1k"
+.ADD_COM     D1204     "LTST-S270KxKT"
+.ADD_COM     R1204     "1k"
+.ADD_COM     D1205     "LTST-S270KxKT"
+.ADD_COM     R1205     "12k"
+.ADD_COM     D1206     "DNP"
+.ADD_COM     R1206     "DNP"
+.ADD_COM     D1207     "DNP"
+.ADD_COM     R1207     "DNP"
+.ADD_COM     D1208     "DNP"
+.ADD_COM     R1208     "DNP"
+.ADD_COM     TP1203     "DBG_1_P"
+.ADD_COM     TP1204     "DBG_1_M"
+.ADD_COM     TP1205     "DBG_2_P"
+.ADD_COM     TP1207     "DBG_3_P"
+.ADD_COM     TP1206     "DBG_2_M"
+.ADD_COM     TP1208     "DBG_3_M"
+.ADD_COM     R1209     "0"
+.ADD_COM     C1302     "2.2uF"
+.ADD_COM     C1303     "10n"
+.ADD_COM     C1304     "2.2uF"
+.ADD_COM     C1305     "10n"
+.ADD_COM     C1322     "10p"
+.ADD_COM     C1327     "47p"
+.ADD_COM     C1316     "1.5nF"
+.ADD_COM     C1328     "10p"
+.ADD_COM     C1317     "1.5nF"
+.ADD_COM     C1308     "10n"
+.ADD_COM     C1318     "1.2nF"
+.ADD_COM     C1320     "680p"
+.ADD_COM     C1321     "DNP"
+.ADD_COM     C1323     "220p"
+.ADD_COM     C1325     "100p"
+.ADD_COM     C1326     "27p"
+.ADD_COM     C1329     "DNP"
+.ADD_COM     C1309     "2.2uF"
+.ADD_COM     C1310     "10n"
+.ADD_COM     C1319     "1.2nF"
+.ADD_COM     C1324     "680p"
+.ADD_COM     C1311     "2.2uF"
+.ADD_COM     C1312     "10n"
+.ADD_COM     C1313     "2.2uF"
+.ADD_COM     C1306     "8p"
+.ADD_COM     C1307     "8p"
+.ADD_COM     C1314     "2.2uF"
+.ADD_COM     C1315     "10n"
+.ADD_COM     L1301     "150n"
+.ADD_COM     L1302     "330n"
+.ADD_COM     R1307     "1k"
+.ADD_COM     U1302     "TRF7970A"
+.ADD_COM     X1301     "NX3225GA-27.12M-STD-CRG-2"
+.ADD_COM     C1301     "(47p)"
+.ADD_COM     D1301     "LTST-C190KRKT"
+.ADD_COM     R1302     "150"
+.ADD_COM     R1301     "150"
+.ADD_COM     U1301     "MKL16Z128VFM4"
+.ADD_COM     C1330     "100n"
+.ADD_COM     C1331     "1u"
+.ADD_COM     R1305     "0"
+.ADD_COM     R1304     "0"
+.ADD_COM     R1303     "0"
+.ADD_COM     R1306     "0"
+.ADD_COM     C1401     "1n"
+.ADD_COM     C1403     "100n"
+.ADD_COM     D1401     "VEMD10940F"
+.ADD_COM     D1402     "VSMB2948SL"
+.ADD_COM     R1401     "4M7"
+.ADD_COM     R1406     "10M"
+.ADD_COM     R1403     "50k"
+.ADD_COM     R1404     "33k"
+.ADD_COM     R1409     "10k"
+.ADD_COM     R1402     "1M5"
+.ADD_COM     R1411     "4R7"
+.ADD_COM     R1405     "22k"
+.ADD_COM     U1402     "SLG46533V"
+.ADD_COM     Q1401     "DMN26D0UT"
+.ADD_COM     R1410     "1M"
+.ADD_COM     C1404     "100n"
+.ADD_COM     R1408     "10k"
+.ADD_COM     R1407     "10k"
+.ADD_COM     U1401     "NX3V1G66GM"
+.ADD_COM     C1402     "100n"
+.ADD_COM     R1412     "10k"
+.ADD_COM     P1502     "DF40HC-60DS-0.4V"
+.ADD_COM     P1504     "DF40HC-60DS-0.4V"
+.ADD_COM     U1501     "XRA1201P"
+.ADD_COM     U1502     "XRA1201"
+.ADD_COM     C1501     "100nF"
+.ADD_COM     C1502     "100nF"
+.ADD_COM     C1503     "100nF"
+.ADD_COM     P1501     "DF40C-60DP-0.4V"
+.ADD_COM     P1503     "DF40C-60DP-0.4V"
+.ADD_COM     R1501     "MNR15ERRPJ104"
+.ADD_COM     U1503     "XRA1201"
+.ADD_COM     R1502     "MNR15ERRPJ104"
+.ADD_COM     TP1501     "USB_HB_DP"
+.ADD_COM     TP1502     "USB_HB_DM"
+.ADD_COM     TP1503     "VBUS"
+.ADD_COM     TP1504     "OTG_DM"
+.ADD_COM     TP1505     "OTG_DP"
+.ADD_COM     TP1506     "OTG_ID"
+.ADD_COM     TP1507     "VIB_P"
+.ADD_COM     TP1508     "VIB_M"
+.ADD_COM     TP1601     "USB_DP"
+.ADD_COM     TP1602     "USB_DM"
+.ADD_COM     CON1601     "DF9-21S-1V"
+.ADD_COM     CON1602     "DF9-21S-1V"
+.ADD_COM     C1601     "100p"
+.ADD_COM     R1609     "100k"
+.ADD_COM     U1601     "ADP1653"
+.ADD_COM     L1602     "2u2;MDMK3030T2R2MM"
+.ADD_COM     L1601     "ferrite"
+.ADD_COM     D1601     "RSX101M-30"
+.ADD_COM     C1602     "10u"
+.ADD_COM     C1603     "4u7;_12V"
+.ADD_COM     Q1601     "FC6946010R"
+.ADD_COM     Q1602     "FC6946010R"
+.ADD_COM     R1601     "100"
+.ADD_COM     R1602     "100"
+.ADD_COM     R1603     "100"
+.ADD_COM     R1604     "100"
+.ADD_COM     Q1603     "FC6946010R"
+.ADD_COM     Q1604     "FC6946010R"
+.ADD_COM     R1605     "100"
+.ADD_COM     R1606     "100"
+.ADD_COM     R1607     "100"
+.ADD_COM     R1608     "100"
+.ADD_COM     F1601     "0ZCH0175FF2E"
+.ADD_COM     TP1603     "DTR"
+.ADD_COM     TP1604     "DTR"
+.ADD_COM     TP1605     "DTR"
+.ADD_COM     TP1606     "DTR"
+.ADD_COM     TP1607     "DTR"
+.ADD_COM     TP1608     "DTR"
+.ADD_COM     TP1609     "DTR"
+.ADD_COM     TP1610     "DTR"
+.ADD_COM     TP1611     "DTR"
+.ADD_COM     TP1612     "DTR"
+.ADD_COM     TP1613     "DTR"
+.ADD_COM     TP1614     "DTR"
+.ADD_COM     TP1615     "DTR"
+.ADD_COM     C1701     "1uF"
+.ADD_COM     C1702     "1uF"
+.ADD_COM     C1705     "100nF"
+.ADD_COM     TP1701     "SD_CD"
+.ADD_COM     R1701     "22"
+.ADD_COM     U1704     "MLX90248ESE"
+.ADD_COM     P1701     "ST1W008S4BR1500"
+.ADD_COM     U1702     "TMD26713"
+.ADD_COM     C1704     "22uF"
+.ADD_COM     LED1702     "L130-5780002011001"
+.ADD_COM     LED1703     "L130-5780002011001"
+.ADD_COM     CON1701     "DF9-21P-1V"
+.ADD_COM     CON1702     "DF9-21P-1V"
+.ADD_COM     C1703     "10nF"
+.ADD_COM     LED1701     "LED-RGB-SMLP36"
+.ADD_COM     CON1703     "M50-3151042"
+.ADD_COM     U1701     "SP7538P"
+.ADD_COM     U1703     "SP7538P"
+.ADD_COM     U1705     "SP7538P"
+.ADD_COM     U1706     "SP7538P"
+.ADD_COM     D1701     "V9MLA0603N"
+.ADD_COM     G1701     "SHIELDPAD-3.5X2.5"
+.ADD_COM     B1803     "BUTTONMAEANDER"
+.ADD_COM     B1807     "BUTTONMAEANDER"
+.ADD_COM     B1811     "BUTTONMAEANDER"
+.ADD_COM     B1815     "BUTTONMAEANDER"
+.ADD_COM     B1819     "BUTTONMAEANDER"
+.ADD_COM     B1823     "BUTTONMAEANDER"
+.ADD_COM     B1827     "BUTTONMAEANDER"
+.ADD_COM     B1831     "BUTTONMAEANDER"
+.ADD_COM     B1835     "BUTTONMAEANDER"
+.ADD_COM     B1839     "BUTTONMAEANDER"
+.ADD_COM     B1802     "BUTTONMAEANDER"
+.ADD_COM     B1806     "BUTTONMAEANDER"
+.ADD_COM     B1810     "BUTTONMAEANDER"
+.ADD_COM     B1814     "BUTTONMAEANDER"
+.ADD_COM     B1818     "BUTTONMAEANDER"
+.ADD_COM     B1822     "BUTTONMAEANDER"
+.ADD_COM     B1826     "BUTTONMAEANDER"
+.ADD_COM     B1830     "BUTTONMAEANDER"
+.ADD_COM     B1834     "BUTTONMAEANDER"
+.ADD_COM     B1838     "BUTTONMAEANDER"
+.ADD_COM     B1801     "BUTTONMAEANDER"
+.ADD_COM     B1805     "BUTTONMAEANDER"
+.ADD_COM     B1809     "BUTTONMAEANDER"
+.ADD_COM     B1813     "BUTTONMAEANDER"
+.ADD_COM     B1817     "BUTTONMAEANDER"
+.ADD_COM     B1821     "BUTTONMAEANDER"
+.ADD_COM     B1825     "BUTTONMAEANDER"
+.ADD_COM     B1829     "BUTTONMAEANDER"
+.ADD_COM     B1833     "BUTTONMAEANDER"
+.ADD_COM     B1837     "BUTTONMAEANDER"
+.ADD_COM     B1804     "BUTTONMAEANDER"
+.ADD_COM     B1808     "BUTTONMAEANDER"
+.ADD_COM     B1812     "BUTTONMAEANDER"
+.ADD_COM     C1801     "100n"
+.ADD_COM     U1801     "TCA8418RTW"
+.ADD_COM     R1801     "1M"
+.ADD_COM     R1802     "1M"
+.ADD_COM     B1816     "BUTTONMAEANDER"
+.ADD_COM     B1820     "BUTTONMAEANDER"
+.ADD_COM     B1824     "BUTTONMAEANDER"
+.ADD_COM     B1828     "BUTTONMAEANDER"
+.ADD_COM     B1832     "BUTTONMAEANDER"
+.ADD_COM     B1836     "BUTTONMAEANDER"
+.ADD_COM     Q1801     "NX3008PBKV"
+.ADD_COM     D1803     "NXP_BAS16VV,115"
+.ADD_COM     D1807     "V5.5MLA0603N"
+.ADD_COM     D1806     "V5.5MLA0603N"
+.ADD_COM     D1801     "V5.5MLA0603N"
+.ADD_COM     D1804     "V5.5MLA0603N"
+.ADD_COM     D1805     "V5.5MLA0603N"
+.ADD_COM     D1802     "V5.5MLA0603N"
+.ADD_COM     P-CAMERA1801     "EVQ-Q0G03K"
+.ADD_COM     P-LOCK1801     "ESE16J001"
+.ADD_COM     P-MINUS1801     "EVQP42B3M"
+.ADD_COM     P-ON1801     "EVQP40B3M"
+.ADD_COM     P-PLUS1801     "EVQP42B3M"
+.ADD_COM     C1902     "1u"
+.ADD_COM     C1904     "1u;50V"
+.ADD_COM     D1901     "RSX101M-30"
+.ADD_COM     L1901     "10uH,750mA,LQH3NPN100NM0"
+.ADD_COM     L1902     "ACM2012H"
+.ADD_COM     L1903     "ACM2012H"
+.ADD_COM     L1904     "ACM2012H"
+.ADD_COM     P1901     "N900-DISPLAY"
+.ADD_COM     R1903     "DNP"
+.ADD_COM     R1913     "0"
+.ADD_COM     U1901     "TPS61160DRV"
+.ADD_COM     C1901     "220n"
+.ADD_COM     Q1901     "PMBT3906VS"
+.ADD_COM     C1905     "DNP"
+.ADD_COM     R1905     "DNP"
+.ADD_COM     R1902     "DNP"
+.ADD_COM     R1901     "0"
+.ADD_COM     R1907     "10"
+.ADD_COM     R1911     "10"
+.ADD_COM     R1915     "15"
+.ADD_COM     R1914     "0"
+.ADD_COM     R1906     "4k7"
+.ADD_COM     R1912     "0"
+.ADD_COM     R1904     "100k"
+.ADD_COM     U1902     "SN74AUP1G04DSF"
+.ADD_COM     C1903     "100n"
+.ADD_COM     U1906     "ESDA25-4BP6"
+.ADD_COM     C1913     "100n"
+.ADD_COM     C1914     "100n"
+.ADD_COM     C1915     "100n"
+.ADD_COM     C1916     "100n"
+.ADD_COM     C1917     "100n"
+.ADD_COM     U1904     "ESDA6V1-5P6"
+.ADD_COM     U1905     "ESDA6V1-5P6"
+.ADD_COM     U1908     "ESDA6V1-5P6"
+.ADD_COM     L1906     "120R/100MHz"
+.ADD_COM     L1907     "120R/100MHz"
+.ADD_COM     L1908     "120R/100MHz"
+.ADD_COM     L1909     "120R/100MHz"
+.ADD_COM     L1910     "120R/100MHz"
+.ADD_COM     L1905     "ACM2012H"
+.ADD_COM     C1918     "1n"
+.ADD_COM     C1919     "1n"
+.ADD_COM     C1909     "4.7uF"
+.ADD_COM     C1912     "1n"
+.ADD_COM     C1911     "1n"
+.ADD_COM     C1910     "1n"
+.ADD_COM     C1907     "100n"
+.ADD_COM     C1906     "100n"
+.ADD_COM     R1910     "10"
+.ADD_COM     R1908     "560;1%"
+.ADD_COM     R1909     "560;1%"
+.ADD_COM     U1903     "CRTOUCH"
+.ADD_COM     C1908     "1n"
+.ADD_COM     U1907     "ESDA6V1-5P6"
+.ADD_COM     C2003     "27pF"
+.ADD_COM     C2005     "2.2uF"
+.ADD_COM     C2004     "27pF"
+.ADD_COM     C2006     "2.2uF"
+.ADD_COM     C2007     "2.2uF"
+.ADD_COM     C2001     "100nF"
+.ADD_COM     C2002     "100nF"
+.ADD_COM     L2001     "~"
+.ADD_COM     N2001     "N97-CAMERA"
+.ADD_COM     P2001     "DF37NB-20DS-0.4/N97CAM"
+.ADD_COM     R2001     "47"
+.ADD_COM     R2002     "47"
+.ADD_COM     R2003     "100"
+.ADD_COM     R2004     "100"
+.ADD_COM     U2001     "TS3DS26227"
+.ADD_COM     U2002     "TS3DS26227"
+.ADD_COM     U2003     "IP4220CZ6"
+.ADD_COM     C2101     "2.2uF"
+.ADD_COM     C2104     "100n"
+.ADD_COM     C2108     "2.2uF"
+.ADD_COM     C2111     "100n"
+.ADD_COM     C2102     "1u"
+.ADD_COM     C2109     "1u"
+.ADD_COM     C2103     "100n"
+.ADD_COM     C2110     "100n"
+.ADD_COM     LED2101     "MSL0201RGB"
+.ADD_COM     LED2107     "MSL0201RGB"
+.ADD_COM     LED2103     "MSL0201RGB"
+.ADD_COM     LED2108     "MSL0201RGB"
+.ADD_COM     LED2109     "LTST-C190KRKT"
+.ADD_COM     LED2104     "MSL0201RGB"
+.ADD_COM     LED2110     "LTST-C190KFKT"
+.ADD_COM     LED2111     "LTST-C190TBKT"
+.ADD_COM     R2101     "tbd."
+.ADD_COM     R2103     "tbd."
+.ADD_COM     R2102     "tbd."
+.ADD_COM     R2104     "tbd."
+.ADD_COM     U2101     "LP55281YZR"
+.ADD_COM     U2103     "LP55281YZR"
+.ADD_COM     LED2102     "MSL0201RGB"
+.ADD_COM     C2105     "470n"
+.ADD_COM     C2106     "470n"
+.ADD_COM     C2107     "1u"
+.ADD_COM     U2102     "LP55231"
+.ADD_COM     LED2105     "MSL0104RGBU1"
+.ADD_COM     LED2106     "MSL0104RGBU1"
+.ADD_COM     U2104     "ESDA6V1-5P6"
+.ADD_COM     P2201     "105017-0001"
+.ADD_COM     U2203     "CSX-252FAP32768"
+.ADD_COM     C2201     "1u"
+.ADD_COM     U2204     "SG-210STF_19.2000ML"
+.ADD_COM     C2202     "100n"
+.ADD_COM     U2201     "TPS73601DBV"
+.ADD_COM     R2201     "44k2"
+.ADD_COM     R2202     "34k0"
+.ADD_COM     U2202     "TPS73618DBV"
+.ADD_COM     P2301     "852-10-100-10-001000"
+.ADD_COM     U2303     "SLG46533V"
+.ADD_COM     C2303     "100nF"
+.ADD_COM     U2302     "NX3L4051PW"
+.ADD_COM     C2302     "100nF"
+.ADD_COM     C2301     "100nF"
+.ADD_COM     P2302     "852-10-020-10-001000"
+.ADD_COM     D2301     "LTST-C190KRKT"
+.ADD_COM     U2301     "XRA1201P"
+.ADD_COM     R2301     "47"
+.ADD_COM     R2302     "10k"
+.ADD_COM     R2303     "10k"
+.ADD_COM     CON2401     "DNP"
+.ADD_COM     R2402     "10k"
+.ADD_COM     R2401     "10k"
+.ADD_COM     P2502     "852-10-020-10-001000"
+.ADD_COM     CON2501     "CONN_34"
+.ADD_COM     CON2502     "CONN_34"
+.ADD_COM     P2501     "852-80-034-10-001101"
+
+
+.ADD_TER   U203   19     "Net-(C206-Pad1)"
+.TER       C206   1
+            L201   2
+            U203   20
+
+.ADD_TER   R312   2     "BATTEMP_CHARGER"
+.TER       U203   11
+            R203   1
+            R204   2
+
+.ADD_TER   U203   2     "OTG_DP"
+.TER       TP1601   1
+            U201   3
+
+.ADD_TER   U203   3     "OTG_DM"
+.TER       TP1602   1
+            U201   4
+
+.ADD_TER   TP1604   P     "I2C3_SCL"
+.TER       U203   5
+
+.ADD_TER   U203   6     "I2C3_SDA"
+.TER       TP1603   P
+
+.ADD_TER   U203   7     "CHG_INT"
+.TER       U1501   1
+
+.ADD_TER   R1501   8     "CHG_OTG"
+.TER       U203   8
+            U1502   13
+
+.ADD_TER   U203   10     "Net-(R202-Pad2)"
+.TER       R202   2
+
+.ADD_TER   U203   21     "Net-(C206-Pad2)"
+.TER       C206   2
+
+.ADD_TER   U203   23     "Net-(C205-Pad2)"
+.TER       C205   2
+
+.ADD_TER   F1601   1     "BATT"
+.TER       R306   1
+            U303   C2
+            R302   1
+            U203   13
+            U203   14
+            C301   1
+
+.ADD_TER   U401   A2     "VSYS"
+.TER       U401   B2
+            C401   1
+            C208   1
+            R201   1
+            L201   1
+            C202   1
+            U202   B2
+            U202   A2
+            U203   15
+            U203   16
+            R402   1
+
+.ADD_TER   U203   22     "Net-(C207-Pad1)"
+.TER       R203   2
+            C207   1
+
+.ADD_TER   U1002   9     "VBAT_SWITCHED"
+.TER       D1402   A
+            CON1601   8
+            U202   A1
+            R412   2
+            R414   1
+            L1601   2
+            U409   A2
+            U409   B2
+            R201   2
+            C420   1
+            C203   1
+            U610   10
+            U611   10
+            C604   1
+            C605   1
+            C801   1
+            C802   1
+            U202   B1
+            U801   46
+            U801   47
+            C1010   1
+            C1011   1
+            C1012   1
+            U1002   3
+            U1002   13
+            U1103   13
+            U1103   16
+
+.ADD_TER   D1301   A     "1V8"
+.TER       U1302   16
+            C1903   1
+            C1402   1
+            C1303   1
+            C1302   1
+            R1203   1
+            R1121   2
+            R1119   2
+            C1330   1
+            C1331   1
+            U1301   7
+            R1120   2
+            U1902   6
+            U1502   21
+            U1501   21
+            U1401   6
+            L1005   2
+            U801   38
+            C803   1
+            U802   10
+            C804   1
+            C710   1
+            U706   1
+            U701   1
+            U705   6
+            C702   1
+            Q1604   5
+            Q1604   2
+            Q1603   5
+            Q1603   2
+            U602   1
+            U605   6
+            R608   2
+            U603   5
+            U604   6
+            C607   1
+            C606   1
+            R605   2
+            R606   2
+            C601   1
+            R601   2
+            C603   1
+            U1503   21
+            U1503   23
+            C1404   1
+            U609   8
+            U609   7
+            U608   8
+            U608   7
+            U601   D2
+            U601   D1
+            U601   B1
+            U606   6
+            U607   6
+            Q1602   5
+            U202   C2
+            Q1602   2
+            Q1601   5
+            C1503   1
+            U1402   1
+            C1502   1
+            U301   6
+            C302   1
+            Q1601   2
+            C1501   1
+            U1502   18
+            C403   1
+            R1609   1
+            C412   1
+            C411   1
+            U402   1
+            U408   1
+            U407   1
+            D1401   K
+            R1401   2
+            U1301   15
+
+.ADD_TER   U1702   3     "GND2"
+.TER       U901   3
+            C908   2
+            C1704   2
+            P1701   S4
+            P1701   S3
+            P1701   S2
+            P1701   S1
+            P1701   6
+            CON1701   15
+            CON1701   5
+            CON1701   17
+            CON1701   7
+            CON1701   11
+            CON1702   1
+            CON1702   11
+            C909   2
+            U1704   3
+            C906   2
+            U902   3
+            C907   2
+            D1701   1
+            G1701   1
+            U1706   3
+            U1705   3
+            C1705   2
+            U1703   3
+            C1702   2
+            C1703   2
+            U1701   3
+            C1701   2
+            CON1703   10
+            CON1703   9
+            CON1703   6
+            CON1703   5
+
+.ADD_TER   U2202   5     "1V8_U"
+.TER       C901   1
+            C903   1
+            C905   1
+            S901   1
+            S901   7
+            S901   12
+            U2303   1
+            U2204   4
+            C2303   1
+            C2201   1
+            U2203   4
+            S903   2
+            S903   6
+            S903   8
+            S902   3
+            S902   7
+            S902   13
+            R901   1
+            R902   1
+            L1907   1
+            L1909   1
+            R2401   1
+            C1909   1
+            R1910   1
+            R2402   1
+            C1801   1
+            U2103   C3
+            U2101   C4
+            U2101   C3
+            R906   1
+            C2004   1
+            U2301   21
+            U2301   18
+            C2006   1
+            C2301   1
+            C2001   1
+            P2001   12
+            P2001   13
+            R2302   1
+            U2001   A2
+            P1501   58
+            U2002   A2
+            R2303   1
+
+.ADD_TER   U704   1     "2V7"
+.TER       U703   1
+            C703   1
+            C705   1
+            C704   1
+            U802   11
+            CON1602   12
+            U1102   D2
+            C1111   1
+            U1302   2
+            C1115   1
+            C1311   1
+            C1310   1
+            C805   1
+
+.ADD_TER   P1901   M4     "GND3"
+.TER       P1503   2
+            P1501   59
+            C1918   2
+            P1501   29
+            C1919   2
+            C1003   2
+            C1001   2
+            C1909   2
+            C1912   2
+            C1911   2
+            C1910   2
+            C1907   2
+            C1906   2
+            C1004   2
+            C1002   2
+            P1501   32
+            U1903   EXP
+            U1903   8
+            M1001   6
+            M1001   7
+            U1903   23
+            U1903   14
+            U1903   25
+            P1503   32
+            C1801   2
+            C1908   2
+            M1001   8
+            M1001   2
+            P1501   2
+            M1001   5
+            U1907   2
+            P1503   29
+            P1503   59
+            C2003   2
+            C2005   2
+            M1002   6
+            G1204   1
+            C2004   2
+            M1002   7
+            C2006   2
+            C2007   2
+            M1002   8
+            G1209   1
+            C2001   2
+            C2002   2
+            M1002   5
+            P2001   2
+            G1203   1
+            P2001   5
+            P2001   8
+            P2001   11
+            P2001   14
+            P2001   17
+            P2001   M1
+            P2001   M2
+            U2202   2
+            R2202   1
+            U2201   2
+            G1208   1
+            G1206   1
+            G1202   1
+            G1207   1
+            G1205   1
+            U2001   B2
+            U2001   C2
+            P2201   5/GN
+            U2104   2
+            LED2106   5
+            LED2106   4
+            LED2106   3
+            LED2105   5
+            LED2105   4
+            U2002   B2
+            U2002   C2
+            LED2105   3
+            P1901   64
+            C2107   2
+            G1201   1
+            U2103   F5
+            U2103   F4
+            U2103   A5
+            U2103   D1
+            U2103   F1
+            U2103   E4
+            U2103   C4
+            U2103   B2
+            U2101   F5
+            U2101   F4
+            U2101   A5
+            U2101   D1
+            U2101   F1
+            U2101   E4
+            U2101   B2
+            U1908   2
+            U1905   2
+            U1904   2
+            R2104   1
+            R2102   1
+            R2103   1
+            R2101   1
+            C2110   1
+            C2103   1
+            C1917   2
+            C1916   2
+            C1902   2
+            C2109   1
+            C2102   1
+            C2111   2
+            C1915   2
+            C2108   2
+            C1904   2
+            C1914   2
+            C2104   2
+            C1913   2
+            P1901   M1
+            U1906   2
+            P1901   M2
+            C2101   2
+            C1903   2
+            U1902   3
+            P1901   M3
+            R1915   1
+            P1901   1
+            P1901   2
+            P1901   3
+            P1901   4
+            P1901   7
+            P1901   20
+            P1901   60
+            P1901   11
+            P1901   21
+            P1901   32
+            P1901   42
+            P1901   52
+            P1901   23
+            P1901   33
+            P1901   14
+            P1901   25
+            P1901   45
+            P1901   55
+            P1901   27
+            P1901   58
+            P1901   39
+            R1903   1
+            R1913   1
+            U2003   2
+            C1905   2
+            C1901   2
+            U1901   3
+
+.ADD_TER   U1901   6     "VBAT_SWITCHED_U"
+.TER       C2101   1
+            P2001   16
+            P2001   15
+            C2104   1
+            L1901   2
+            C2108   1
+            C2111   1
+            C1902   1
+            C2007   1
+            LED2109   A
+            LED2110   A
+            LED2111   A
+            U2101   A1
+            U2101   D3
+            U2103   A1
+            U2103   D3
+
+.ADD_TER   CON2401   2     "GND4"
+.TER       P2301   19C
+            P2301   20C
+            P2301   19B
+            P2301   20B
+
+.ADD_TER   TP1605   P     "OTG_ID"
+.TER       U201   1
+
+.ADD_TER   U203   1     "VBUS"
+.TER       CON1601   18
+            U201   6
+            C204   1
+            U203   24
+            C201   1
+
+.ADD_TER   U402   10     "/Modem Power/EN_VUSB_MODEM"
+.TER       U409   C2
+
+.ADD_TER   M501   N5     "VUSB_MODEM"
+.TER       TP557   P
+            U409   B1
+            U409   A1
+
+.ADD_TER   U608   5     "MUX_SEL_Q"
+.TER       U402   5
+            U610   20
+
+.ADD_TER   U402   4     "MUX_SEL"
+.TER       U608   2
+            U611   20
+            U1501   14
+
+.ADD_TER   U402   3     "CPU_PWR_EN"
+.TER       U1502   11
+            R1501   6
+
+.ADD_TER   U402   2     "CPU_3V_n1V8"
+.TER       U1501   13
+
+.ADD_TER   U1301   24     "SWP_nRESET"
+.TER       U402   20
+
+.ADD_TER   U613   1     "SWIO_2"
+.TER       U1301   27
+            P602   C6
+            R1301   2
+            U402   19
+
+.ADD_TER   R1302   2     "SWIO_1"
+.TER       U402   18
+            U1301   28
+            U612   3
+            P601   C6
+
+.ADD_TER   R401   1     "VSIM_A"
+.TER       M501   K15
+
+.ADD_TER   R401   2     "Net-(R401-Pad2)"
+.TER       R403   2
+            U402   6
+
+.ADD_TER   R408   2     "VSIM_B"
+.TER       TP528   P
+
+.ADD_TER   U402   13     "Net-(R407-Pad2)"
+.TER       R408   1
+            R407   2
+
+.ADD_TER   U402   14     "/Modem Power/VSEL_2_3V_n1V8"
+.TER       U408   12
+
+.ADD_TER   U402   15     "/Modem Power/VSEL_2_EN"
+.TER       U408   11
+
+.ADD_TER   U407   12     "/Modem Power/VSEL_1_3V_n1V8"
+.TER       U402   16
+
+.ADD_TER   U407   11     "/Modem Power/VSEL_1_EN"
+.TER       U402   17
+
+.ADD_TER   C408   1     "VINTANA2"
+.TER       U405   A2
+
+.ADD_TER   U405   A1     "VSIM_SENSE"
+.TER       R417   2
+
+.ADD_TER   R413   2     "Net-(R412-Pad1)"
+.TER       R412   1
+            U405   C1
+
+.ADD_TER   U405   C2     "Net-(R415-Pad1)"
+.TER       R416   2
+            R415   1
+            R417   1
+
+.ADD_TER   C415   1     "VSIM_1"
+.TER       P601   C1
+            C610   1
+            U612   6
+            U407   3
+            U611   19
+
+.ADD_TER   U408   3     "VSIM_2"
+.TER       P602   C1
+            U611   15
+            C611   1
+            C416   1
+            U613   3
+
+.ADD_TER   C507   1     "VMODEM1"
+.TER       C508   1
+            C510   1
+            M501   N3
+            R406   2
+            R405   2
+            M501   N4
+
+.ADD_TER   C501   1     "VMODEM3"
+.TER       C503   1
+            C505   1
+            R419   2
+            M501   P13
+            M501   N13
+            R420   2
+
+.ADD_TER   C506   1     "VMODEM2"
+.TER       C504   1
+            C502   1
+            R410   2
+            M501   B3
+            M501   A4
+            R411   2
+
+.ADD_TER   U403   D2     "Net-(C405-Pad1)"
+.TER       R406   1
+            C405   1
+
+.ADD_TER   U403   D3     "Net-(C404-Pad1)"
+.TER       C404   1
+            R404   1
+
+.ADD_TER   C410   1     "Net-(C410-Pad1)"
+.TER       U406   D2
+            R420   1
+
+.ADD_TER   R418   1     "Net-(C409-Pad1)"
+.TER       C409   1
+            U406   D3
+
+.ADD_TER   C407   1     "Net-(C407-Pad1)"
+.TER       U404   D2
+            R411   1
+
+.ADD_TER   C406   1     "Net-(C406-Pad1)"
+.TER       R409   1
+            U404   D3
+
+.ADD_TER   R409   2     "VMODEM"
+.TER       U403   B1
+            U403   D1
+            C402   1
+            R404   2
+            C419   1
+            C418   1
+            C417   1
+            R419   1
+            U404   B1
+            U401   B1
+            U404   D1
+            R410   1
+            U406   B1
+            U406   D1
+            U406   B3
+            U401   A1
+            R418   2
+            R405   1
+            R402   2
+            R1201   1
+
+.ADD_TER   U403   A3     "INA231_INT"
+.TER       U404   A3
+            U406   A3
+
+.ADD_TER   U303   A2     "I2C2_SDA"
+.TER       U1101   7
+            U1103   2
+            U1402   9
+            U402   9
+            U1301   21
+            CON1602   3
+            U406   A2
+            U404   B3
+            U1001   L6
+            U404   A2
+            U706   9
+            U1503   20
+            U1502   20
+            U403   A2
+            U802   8
+            U1601   4
+            U1501   20
+
+.ADD_TER   U1502   19     "I2C2_SCL"
+.TER       U1501   19
+            U706   8
+            U802   7
+            U403   A1
+            U403   B3
+            U1601   3
+            U403   C3
+            U404   A1
+            U404   C3
+            U406   A1
+            U406   C3
+            U1001   L9
+            U1503   19
+            U1301   20
+            U1103   1
+            U1101   8
+            CON1602   14
+            U1402   8
+            U402   8
+            U303   A3
+
+.ADD_TER   U402   7     "MODEM_EN"
+.TER       U401   C2
+
+.ADD_TER   U407   2     "/Modem Power/VSIM"
+.TER       U408   2
+            R414   2
+            C413   1
+            C414   1
+            R415   2
+
+.ADD_TER   U303   B1     "Net-(R314-Pad2)"
+.TER       R314   2
+
+.ADD_TER   U610   19     "nBATTERY_PRESENT"
+.TER       U301   4
+
+.ADD_TER   R302   2     "Net-(R302-Pad2)"
+.TER       U301   2
+            R303   2
+
+.ADD_TER   U2302   12     "BATTID_U"
+.TER       R309   2
+            P1501   51
+
+.ADD_TER   R311   2     "Net-(D302-Pad2)"
+.TER       D302   2
+            TP302   P
+
+.ADD_TER   C306   2     "Net-(C306-Pad2)"
+.TER       U303   A1
+            R308   1
+
+.ADD_TER   U1501   8     "BQ_GPOUT"
+.TER       C306   1
+
+.ADD_TER   U1402   3     "BQ_GPIO"
+.TER       U1401   4
+
+.ADD_TER   R310   2     "Net-(C307-Pad1)"
+.TER       C307   1
+            D301   2
+            TP304   P
+            R306   2
+            U303   C3
+            R307   2
+
+.ADD_TER   C309   1     "Net-(C309-Pad1)"
+.TER       R310   1
+
+.ADD_TER   C303   1     "Net-(C303-Pad1)"
+.TER       R305   2
+
+.ADD_TER   C305   1     "Net-(C305-Pad1)"
+.TER       R307   1
+
+.ADD_TER   C304   1     "Net-(C304-Pad1)"
+.TER       R304   2
+
+.ADD_TER   P2302   15     "HDQ"
+.TER       R309   1
+
+.ADD_TER   U303   B3     "/Battery/BQ.VDD"
+.TER       R308   2
+            C308   1
+
+.ADD_TER   R304   1     "/Battery/BGND"
+.TER       R301   2
+            TP303   P
+
+.ADD_TER   TP555   P     "USB_MODEM_DP"
+.TER       M501   P4
+
+.ADD_TER   M501   P5     "USB_MODEM_DM"
+.TER       TP556   P
+
+.ADD_TER   M501   H16     "LC_IND"
+.TER       U1501   7
+            TP560   P
+
+.ADD_TER   J701   2     "GNSS_IN"
+.TER       M501   E1
+
+.ADD_TER   TP554   P     "Net-(M501-PadP8)"
+.TER       M501   P8
+
+.ADD_TER   TP552   P     "Net-(M501-PadN9)"
+.TER       M501   N9
+
+.ADD_TER   TP553   P     "Net-(M501-PadP9)"
+.TER       M501   P9
+
+.ADD_TER   R511   1     "/3G/4G Modem/VMIC"
+.TER       M501   C14
+
+.ADD_TER   R701   2     "ANT_GNSS_DC"
+.TER       M501   D5
+
+.ADD_TER   M501   M15     "Net-(C509-Pad1)"
+.TER       C509   1
+
+.ADD_TER   R1501   3     "VGNSS"
+.TER       R1205   1
+            M501   K16
+            U1502   8
+            R703   1
+
+.ADD_TER   U610   3     "MODEM_RST_A"
+.TER       M501   L14
+
+.ADD_TER   M501   L15     "MODEM_CLK_A"
+.TER       U610   4
+
+.ADD_TER   TP545   P     "MCBSP4_CLKX"
+.TER       M501   M8
+
+.ADD_TER   M501   M10     "MCBSP4_DR"
+.TER       TP543   P
+
+.ADD_TER   TP544   P     "MCBSP4_DX"
+.TER       M501   M7
+
+.ADD_TER   TP546   P     "MCBSP4_FSX"
+.TER       M501   M9
+
+.ADD_TER   U1501   4     "PWR_IND"
+.TER       TP559   P
+            D1203   K
+            M501   M4
+
+.ADD_TER   U1502   3     "STATUS"
+.TER       M501   B14
+            TP561   P
+
+.ADD_TER   TP558   P     "Net-(M501-PadN14)"
+.TER       M501   N14
+            T501   4
+
+.ADD_TER   TP562   P     "MODEM_WAKEUP"
+.TER       M501   H14
+            U1502   1
+
+.ADD_TER   T501   1     "MODEM_IGT"
+.TER       U1502   15
+            GPIO501   P
+
+.ADD_TER   M501   N10     "UART1_CTS"
+.TER       TP549   P
+
+.ADD_TER   TP547   P     "UART1_RTS"
+.TER       M501   N8
+
+.ADD_TER   TP550   P     "UART1_RX"
+.TER       M501   P12
+
+.ADD_TER   TP548   P     "UART1_TX"
+.TER       M501   P11
+
+.ADD_TER   T501   5     "/3G/4G Modem/ON_KEY"
+.TER       M501   L16
+
+.ADD_TER   TP551   P     "RING"
+.TER       M501   P10
+            U1502   2
+
+.ADD_TER   M501   K14     "MODEM_DATA_A"
+.TER       U610   5
+
+.ADD_TER   U603   6     "MODEM_CD_A"
+.TER       M501   M14
+
+.ADD_TER   TP530   P     "MODEM_DATA_B"
+.TER       U610   9
+
+.ADD_TER   TP531   P     "MODEM_CLK_B"
+.TER       U610   8
+
+.ADD_TER   TP529   P     "MODEM_RST_B"
+.TER       U610   7
+
+.ADD_TER   TP532   P     "MODEM_CD_B"
+.TER       U603   4
+
+.ADD_TER   J502   1     "Net-(J502-Pad1)"
+.TER       M501   K1
+
+.ADD_TER   U702   3     "CELL_ANT_TRX"
+.TER       J502   2
+
+.ADD_TER   J501   1     "CELL_ANT_DRX"
+.TER       C709   2
+            L706   1
+
+.ADD_TER   M501   A12     "Net-(J501-Pad2)"
+.TER       J501   2
+
+.ADD_TER   M501   A7     "Net-(M501-PadA7)"
+.TER       TP501   P
+
+.ADD_TER   TP502   P     "Net-(M501-PadF14)"
+.TER       M501   F14
+
+.ADD_TER   TP503   P     "Net-(M501-PadF15)"
+.TER       M501   F15
+
+.ADD_TER   M501   G4     "Net-(M501-PadG4)"
+.TER       TP504   P
+
+.ADD_TER   TP505   P     "Net-(M501-PadH13)"
+.TER       M501   H13
+
+.ADD_TER   TP506   P     "Net-(M501-PadK12)"
+.TER       M501   K12
+
+.ADD_TER   TP507   P     "Net-(M501-PadK13)"
+.TER       M501   K13
+
+.ADD_TER   M501   L5     "Net-(M501-PadL5)"
+.TER       TP508   P
+
+.ADD_TER   TP509   P     "Net-(M501-PadL6)"
+.TER       M501   L6
+
+.ADD_TER   M501   L7     "Net-(M501-PadL7)"
+.TER       TP510   P
+
+.ADD_TER   M501   L8     "Net-(M501-PadL8)"
+.TER       TP511   P
+
+.ADD_TER   TP512   P     "Net-(M501-PadL9)"
+.TER       M501   L9
+
+.ADD_TER   TP513   P     "Net-(M501-PadL10)"
+.TER       M501   L10
+
+.ADD_TER   TP514   P     "Net-(M501-PadL11)"
+.TER       M501   L11
+
+.ADD_TER   M501   L12     "Net-(M501-PadL12)"
+.TER       TP515   P
+
+.ADD_TER   TP516   P     "Net-(M501-PadL13)"
+.TER       M501   L13
+
+.ADD_TER   M501   N12     "Net-(M501-PadN12)"
+.TER       TP517   P
+
+.ADD_TER   M501   C12     "Net-(M501-PadC12)"
+.TER       TP533   P
+            R501   1
+
+.ADD_TER   TP534   P     "Net-(M501-PadC13)"
+.TER       M501   C13
+            R502   1
+
+.ADD_TER   R503   1     "Net-(M501-PadD12)"
+.TER       TP535   P
+            M501   D12
+
+.ADD_TER   TP536   P     "Net-(M501-PadD13)"
+.TER       M501   D13
+            R504   1
+
+.ADD_TER   TP537   P     "Net-(M501-PadD14)"
+.TER       M501   D14
+            R505   1
+
+.ADD_TER   TP538   P     "Net-(M501-PadE12)"
+.TER       M501   E12
+            R506   1
+
+.ADD_TER   R507   1     "Net-(M501-PadE13)"
+.TER       M501   E13
+            TP539   P
+
+.ADD_TER   M501   E14     "Net-(M501-PadE14)"
+.TER       TP540   P
+            R508   1
+
+.ADD_TER   R509   1     "Net-(M501-PadF13)"
+.TER       M501   F13
+            TP541   P
+
+.ADD_TER   R510   1     "Net-(M501-PadG13)"
+.TER       TP542   P
+            M501   G13
+
+.ADD_TER   M501   F16     "Net-(M501-PadF16)"
+.TER       TP518   P
+
+.ADD_TER   M501   G14     "Net-(M501-PadG14)"
+.TER       TP519   P
+
+.ADD_TER   M501   G15     "Net-(M501-PadG15)"
+.TER       TP520   P
+
+.ADD_TER   M501   G16     "Net-(M501-PadG16)"
+.TER       TP521   P
+
+.ADD_TER   M501   H15     "Net-(M501-PadH15)"
+.TER       TP522   P
+
+.ADD_TER   M501   J14     "Net-(M501-PadJ14)"
+.TER       TP523   P
+
+.ADD_TER   TP524   P     "Net-(M501-PadJ15)"
+.TER       M501   J15
+
+.ADD_TER   M501   J16     "Net-(M501-PadJ16)"
+.TER       TP525   P
+
+.ADD_TER   M501   M12     "Net-(M501-PadM12)"
+.TER       TP526   P
+
+.ADD_TER   M501   M13     "Net-(M501-PadM13)"
+.TER       TP527   P
+
+.ADD_TER   R1501   2     "MODEM_VMIC_SENSE"
+.TER       U1502   7
+            R511   2
+            R512   1
+
+.ADD_TER   R1204   1     "VEXT"
+.TER       M501   M5
+
+.ADD_TER   U612   4     "Net-(P601-PadC3)"
+.TER       R613   2
+            P601   C3
+
+.ADD_TER   U612   1     "Net-(P601-PadC7)"
+.TER       R614   2
+            P601   C7
+
+.ADD_TER   C602   2     "Net-(C602-Pad2)"
+.TER       U601   B2
+
+.ADD_TER   R601   1     "Net-(C602-Pad1)"
+.TER       U601   C2
+            C602   1
+
+.ADD_TER   U609   5     "/SIM cards and switch/CPU_nMODEM_Q"
+.TER       U610   1
+
+.ADD_TER   U609   3     "/SIM cards and switch/nCPU_MODEM_Q"
+.TER       U611   1
+
+.ADD_TER   U609   2     "MUX_CPU_nMODEM"
+.TER       U1501   15
+
+.ADD_TER   U606   4     "/SIM cards and switch/CD_SWITCH"
+.TER       U604   2
+            U607   2
+
+.ADD_TER   U603   3     "Net-(U603-Pad3)"
+.TER       U604   4
+
+.ADD_TER   U603   1     "Net-(U603-Pad1)"
+.TER       U607   4
+
+.ADD_TER   U607   1     "/SIM cards and switch/CD_A_SIM"
+.TER       R606   1
+            U610   2
+
+.ADD_TER   U604   1     "/SIM cards and switch/CD_B_SIM"
+.TER       R605   1
+            U610   6
+
+.ADD_TER   R612   1     "/SIM cards and switch/SIM_RST_1"
+.TER       U611   18
+            U610   18
+
+.ADD_TER   U611   17     "/SIM cards and switch/SIM_CLK_1"
+.TER       R613   1
+            U610   17
+
+.ADD_TER   U610   16     "/SIM cards and switch/SIM_DATA_1"
+.TER       R614   1
+            U611   16
+
+.ADD_TER   R612   2     "Net-(C608-Pad1)"
+.TER       P601   C2
+            C608   1
+            U612   5
+
+.ADD_TER   P602   SW1     "/SIM cards and switch/SIM_CD_2"
+.TER       R608   1
+            U610   15
+            R607   2
+            D601   2
+
+.ADD_TER   R611   1     "/SIM cards and switch/SIM_RST_2"
+.TER       U611   14
+            U610   14
+
+.ADD_TER   U611   13     "/SIM cards and switch/SIM_CLK_2"
+.TER       R610   1
+            U610   13
+
+.ADD_TER   U611   12     "/SIM cards and switch/SIM_DATA_2"
+.TER       R609   1
+            U610   12
+
+.ADD_TER   P602   C2     "Net-(C609-Pad1)"
+.TER       C609   1
+            R611   2
+            U613   4
+
+.ADD_TER   P602   C3     "Net-(P602-PadC3)"
+.TER       R610   2
+            U613   5
+
+.ADD_TER   U613   6     "Net-(P602-PadC7)"
+.TER       R609   2
+            P602   C7
+
+.ADD_TER   U1502   4     "CPU_CD_2"
+.TER       R607   1
+
+.ADD_TER   R602   1     "Net-(R602-Pad1)"
+.TER       U602   10
+            U611   3
+
+.ADD_TER   R602   2     "/SIM cards and switch/VSIMCPU"
+.TER       R604   2
+            U602   12
+            U611   2
+            R603   2
+            U602   11
+
+.ADD_TER   U602   9     "Net-(R603-Pad1)"
+.TER       U611   4
+            R603   1
+
+.ADD_TER   U602   8     "Net-(R604-Pad1)"
+.TER       R604   1
+            U611   5
+
+.ADD_TER   U602   2     "CPU_SIM_RST"
+.TER       U1501   11
+
+.ADD_TER   U601   A2     "Net-(U601-PadA2)"
+.TER       U606   2
+            U605   2
+
+.ADD_TER   U601   C1     "MUX_STROBE"
+.TER       U606   1
+            R1502   2
+            U1503   2
+
+.ADD_TER   U609   1     "Net-(U605-Pad4)"
+.TER       U608   1
+            U605   4
+
+.ADD_TER   U608   6     "nRESWARM"
+.TER       U609   6
+
+.ADD_TER   L702   1     "Net-(C701-Pad1)"
+.TER       R702   1
+            P704   1
+            C701   1
+
+.ADD_TER   L704   1     "/Modem Antennas/CELL_RF_TUNE"
+.TER       R702   2
+            C701   2
+            U702   1
+
+.ADD_TER   U701   3     "/Modem Antennas/GNSS_RF"
+.TER       L701   1
+            P701   1
+
+.ADD_TER   R704   2     "Net-(R704-Pad2)"
+.TER       U704   4
+
+.ADD_TER   R707   1     "Net-(R707-Pad1)"
+.TER       U704   6
+
+.ADD_TER   R706   1     "Net-(R706-Pad1)"
+.TER       U703   6
+
+.ADD_TER   U701   2     "VGNSS_OVERRIDE"
+.TER       U705   4
+            R703   2
+            R1501   4
+            U1502   10
+
+.ADD_TER   U701   4     "Net-(L703-Pad2)"
+.TER       L703   2
+
+.ADD_TER   L703   1     "Net-(L703-Pad1)"
+.TER       U701   5
+
+.ADD_TER   U701   6     "/Modem Antennas/ANT_GNSS"
+.TER       U705   3
+
+.ADD_TER   U702   2     "Net-(U702-Pad2)"
+.TER       U704   2
+
+.ADD_TER   U703   2     "Net-(U702-Pad6)"
+.TER       U702   6
+
+.ADD_TER   C708   2     "Net-(C708-Pad2)"
+.TER       L705   1
+            C709   1
+
+.ADD_TER   R801   1     "FM_TX"
+.TER       P803   1
+            D801   2
+            C708   1
+
+.ADD_TER   J701   1     "/Modem Antennas/GNSS_IN_TAP"
+.TER       U705   5
+
+.ADD_TER   R710   2     "ADC2"
+.TER       R712   2
+            C706   1
+            R706   2
+
+.ADD_TER   R707   2     "ADC1"
+.TER       R708   2
+            C707   1
+            R714   2
+
+.ADD_TER   C712   1     "/Modem Antennas/CELL_PWM_OUT_V"
+.TER       R717   1
+            R713   1
+            U706   12
+
+.ADD_TER   R705   1     "/Modem Antennas/CELL_MON_OUT_EN"
+.TER       U706   17
+
+.ADD_TER   U706   15     "/Modem Antennas/CELL_PWM_IN"
+.TER       R716   2
+
+.ADD_TER   U706   16     "/Modem Antennas/CELL_PWM_OUT"
+.TER       R717   2
+
+.ADD_TER   U706   18     "/Modem Antennas/CELL_MON_IN_EN"
+.TER       R704   1
+
+.ADD_TER   R715   1     "/Modem Antennas/CELL_PWM_IN_V"
+.TER       C711   1
+            R716   1
+
+.ADD_TER   R712   1     "/Modem Antennas/OUT_DIV_BIAS"
+.TER       R713   2
+            U706   7
+
+.ADD_TER   R708   1     "/Modem Antennas/IN_DIV"
+.TER       R709   2
+            U706   6
+
+.ADD_TER   R705   2     "Net-(R705-Pad2)"
+.TER       U703   4
+
+.ADD_TER   R714   1     "/Modem Antennas/IN_DIV_BIAS"
+.TER       R715   2
+            U706   14
+
+.ADD_TER   U706   13     "/Modem Antennas/OUT_DIV"
+.TER       R711   2
+            R710   1
+
+.ADD_TER   C1121   2     "FM_RX"
+.TER       C1120   2
+            C806   1
+
+.ADD_TER   R801   2     "Net-(L801-Pad2)"
+.TER       L801   2
+
+.ADD_TER   U802   2     "Net-(C806-Pad2)"
+.TER       C806   2
+
+.ADD_TER   R1502   3     "FM_nRST"
+.TER       U802   5
+            U1503   3
+
+.ADD_TER   C811   1     "Net-(C811-Pad1)"
+.TER       U802   16
+
+.ADD_TER   U1501   6     "FM_nINT"
+.TER       U802   18
+
+.ADD_TER   U802   9     "CLK32KHZ"
+.TER       U801   36
+
+.ADD_TER   U801   40     "WLAN_EN"
+.TER       U1502   16
+
+.ADD_TER   U801   42     "Net-(TP805-PadP)"
+.TER       TP805   P
+
+.ADD_TER   U801   41     "BT_EN"
+.TER       U1502   17
+
+.ADD_TER   TP806   P     "Net-(TP806-PadP)"
+.TER       U801   43
+
+.ADD_TER   U801   18     "Net-(J802-Pad1)"
+.TER       J802   1
+
+.ADD_TER   P801   1     "Net-(C807-Pad2)"
+.TER       L804   1
+            C807   2
+
+.ADD_TER   L803   1     "Net-(C807-Pad1)"
+.TER       C807   1
+            J801   2
+
+.ADD_TER   U801   32     "Net-(J801-Pad1)"
+.TER       J801   1
+
+.ADD_TER   J802   2     "Net-(J802-Pad2)"
+.TER       R802   1
+
+.ADD_TER   U801   27     "Net-(TP801-PadP)"
+.TER       TP801   P
+
+.ADD_TER   U801   26     "Net-(TP802-PadP)"
+.TER       TP802   P
+
+.ADD_TER   R803   2     "/WLAN, Bluetooth, FM/WL_RSV"
+.TER       U801   64
+
+.ADD_TER   TP808   P     "/WLAN, Bluetooth, FM/WL_GPIO9"
+.TER       U801   3
+
+.ADD_TER   U801   4     "/WLAN, Bluetooth, FM/WL_GPIO10"
+.TER       TP809   P
+
+.ADD_TER   U801   2     "/WLAN, Bluetooth, FM/WL_GPIO11"
+.TER       TP807   P
+
+.ADD_TER   U801   5     "/WLAN, Bluetooth, FM/WL_GPIO12"
+.TER       TP810   P
+
+.ADD_TER   TP811   P     "/WLAN, Bluetooth, FM/WL_RSV1"
+.TER       U801   21
+
+.ADD_TER   TP812   P     "/WLAN, Bluetooth, FM/WL_RSV2"
+.TER       U801   22
+
+.ADD_TER   TP813   P     "/WLAN, Bluetooth, FM/WL_GPIO4"
+.TER       U801   25
+
+.ADD_TER   TP814   P     "/WLAN, Bluetooth, FM/WL_RSV3"
+.TER       U801   62
+
+.ADD_TER   U802   4     "/WLAN, Bluetooth, FM/FM_TXO"
+.TER       L802   1
+            L801   1
+
+.ADD_TER   C810   1     "Net-(C810-Pad1)"
+.TER       U802   15
+
+.ADD_TER   C1008   1     "HSR_P_FMR"
+.TER       C1106   1
+            C810   2
+            R1011   2
+
+.ADD_TER   R1009   2     "HSL_P_FML"
+.TER       C811   2
+            C1105   1
+            C1007   1
+
+.ADD_TER   C809   1     "Net-(C809-Pad1)"
+.TER       U802   13
+
+.ADD_TER   C809   2     "FM_R_OUT"
+.TER       U1001   F10
+
+.ADD_TER   C808   1     "Net-(C808-Pad1)"
+.TER       U802   14
+
+.ADD_TER   C808   2     "FM_L_OUT"
+.TER       U1001   H10
+
+.ADD_TER   S902   19     "SENS_INT1"
+.TER       P2301   21A
+            S902   14
+            S901   8
+            R903   2
+
+.ADD_TER   R904   2     "SENS_INT2"
+.TER       S901   9
+            S902   15
+            S902   1
+            P2301   19A
+
+.ADD_TER   R2402   2     "I2C3_SDA_U"
+.TER       U2303   9
+            S901   13
+            S902   11
+            P2301   15B
+            S903   3
+            U902   8
+            U2301   20
+            P1501   5
+            U2103   C5
+            U2101   C5
+            P2001   20
+
+.ADD_TER   P1501   6     "I2C3_SCL_U"
+.TER       P2001   19
+            U2103   B3
+            S902   9
+            S901   14
+            U2303   8
+            S903   4
+            U2101   B3
+            U2301   23
+            P2301   14C
+            R2401   2
+            U902   2
+            U2301   19
+
+.ADD_TER   R901   2     "Net-(R901-Pad2)"
+.TER       S902   2
+            R904   1
+
+.ADD_TER   R902   2     "Net-(R902-Pad2)"
+.TER       R903   1
+            S902   10
+
+.ADD_TER   U902   6     "Net-(U902-Pad5)"
+.TER       U902   5
+
+.ADD_TER   U902   7     "STYLUS_INT"
+.TER       P2301   17A
+
+.ADD_TER   U901   2     "SLIDE_SW"
+.TER       P2301   7A
+            C909   1
+            R906   2
+
+.ADD_TER   U902   1     "Net-(C907-Pad1)"
+.TER       R905   2
+            C907   1
+
+.ADD_TER   R1003   2     "Net-(C1009-Pad1)"
+.TER       C1009   1
+            U1001   F11
+
+.ADD_TER   C1007   2     "HSL_M"
+.TER       C1103   1
+            R1010   2
+
+.ADD_TER   C1008   2     "HSR_M"
+.TER       C1104   1
+            R1012   2
+
+.ADD_TER   U1001   E11     "Net-(C1009-Pad2)"
+.TER       C1009   2
+            R1002   2
+
+.ADD_TER   U1001   G2     "CODEC_nRESET"
+.TER       U1001   G1
+
+.ADD_TER   R1001   2     "Net-(R1001-Pad2)"
+.TER       U1001   J2
+
+.ADD_TER   U1001   K2     "CODEC_MCLK"
+.TER       U1001   L1
+
+.ADD_TER   U1001   L2     "CODEC_BCLK"
+.TER       U1001   K3
+
+.ADD_TER   U1001   K4     "CODEC_WCLK"
+.TER       U1001   L3
+
+.ADD_TER   U1001   L4     "CODEC_DIN"
+.TER       U1001   K5
+
+.ADD_TER   U1001   K6     "CODEC_DOUT"
+.TER       R1004   1
+
+.ADD_TER   U1001   B7     "Net-(R1006-Pad1)"
+.TER       R1006   1
+
+.ADD_TER   R1005   1     "Net-(R1005-Pad1)"
+.TER       U1001   B8
+
+.ADD_TER   R1007   1     "Net-(R1007-Pad1)"
+.TER       U1001   B5
+
+.ADD_TER   R1008   1     "Net-(R1008-Pad1)"
+.TER       U1001   B6
+
+.ADD_TER   U1001   C2     "Net-(R1009-Pad1)"
+.TER       R1009   1
+
+.ADD_TER   R1010   1     "Net-(R1010-Pad1)"
+.TER       U1001   D2
+
+.ADD_TER   R1003   1     "Net-(R1003-Pad1)"
+.TER       U1001   A2
+
+.ADD_TER   R1002   1     "Net-(R1002-Pad1)"
+.TER       U1001   A3
+
+.ADD_TER   R1011   1     "Net-(R1011-Pad1)"
+.TER       U1001   E2
+
+.ADD_TER   U1001   F2     "Net-(R1012-Pad1)"
+.TER       R1012   1
+
+.ADD_TER   C1101   1     "MIC_P"
+.TER       U1001   K9
+
+.ADD_TER   C1102   1     "MIC_M"
+.TER       U1001   L10
+
+.ADD_TER   R1101   1     "MIC_BIAS"
+.TER       U1001   B11
+
+.ADD_TER   L1101   2     "VAUDIO"
+.TER       L1004   2
+            L1003   2
+
+.ADD_TER   U1001   B3     "Net-(C1017-Pad1)"
+.TER       L1003   1
+            C1020   1
+            C1017   1
+
+.ADD_TER   U1001   A4     "Net-(C1018-Pad1)"
+.TER       U1001   A9
+            U1001   B9
+            U1001   B4
+            C1018   1
+            C1021   1
+            L1004   1
+
+.ADD_TER   C1022   1     "Net-(C1019-Pad1)"
+.TER       L1005   1
+            C1019   1
+            U1001   H7
+            U1001   K1
+            U1001   K7
+
+.ADD_TER   U1001   K10     "IR_AUDIOIN"
+.TER       C1401   1
+
+.ADD_TER   U1001   L5     "Net-(R1004-Pad2)"
+.TER       R1004   2
+
+.ADD_TER   U1001   K8     "LINE_IN_L"
+.TER       C1118   1
+
+.ADD_TER   C1117   1     "LINE_IN_R"
+.TER       U1001   K11
+
+.ADD_TER   TP1606   P     "HB_LINE_OUT_L"
+.TER       U1001   C1
+
+.ADD_TER   TP1607   P     "HB_LINE_OUT_R"
+.TER       U1001   E1
+
+.ADD_TER   U1001   H11     "HB_LINE_IN"
+.TER       TP1608   P
+
+.ADD_TER   U1001   H1     "HB_DMIC_DATA"
+.TER       TP1615   P
+
+.ADD_TER   U1001   J1     "HB_DMIC_CLOCK"
+.TER       TP1614   P
+
+.ADD_TER   D1003   1     "Net-(C1023-Pad2)"
+.TER       C1023   2
+            L1007   1
+            TP1002   P
+            P1001   -
+
+.ADD_TER   TP1001   P     "Net-(C1025-Pad2)"
+.TER       P1001   +
+            C1025   2
+            L1006   1
+            D1001   1
+
+.ADD_TER   P1002   +     "/Audio Codec/SPKRR+"
+.TER       C1024   1
+            TP1003   P
+            L1008   1
+            D1004   2
+
+.ADD_TER   C1026   1     "Net-(C1026-Pad1)"
+.TER       TP1004   P
+            D1002   2
+            P1002   -
+            L1009   1
+
+.ADD_TER   L1007   2     "Net-(L1007-Pad2)"
+.TER       U1002   2
+
+.ADD_TER   L1006   2     "Net-(L1006-Pad2)"
+.TER       U1002   5
+
+.ADD_TER   C1014   2     "Net-(C1014-Pad2)"
+.TER       U1002   20
+
+.ADD_TER   C1013   2     "Net-(C1013-Pad2)"
+.TER       U1002   19
+
+.ADD_TER   U1002   8     "SPEAKER_EN"
+.TER       U1002   7
+
+.ADD_TER   L1008   2     "Net-(L1008-Pad2)"
+.TER       U1002   11
+
+.ADD_TER   L1009   2     "Net-(L1009-Pad2)"
+.TER       U1002   14
+
+.ADD_TER   C1016   2     "Net-(C1016-Pad2)"
+.TER       U1002   16
+
+.ADD_TER   C1015   2     "Net-(C1015-Pad2)"
+.TER       U1002   17
+
+.ADD_TER   M1001   1     "Net-(C1003-Pad1)"
+.TER       L1001   1
+            C1003   1
+
+.ADD_TER   C1004   1     "Net-(C1004-Pad1)"
+.TER       L1002   1
+            M1002   1
+            M1002   2
+
+.ADD_TER   R1005   2     "/Audio Codec/SPKR_L_P"
+.TER       C1005   1
+            C1013   1
+
+.ADD_TER   C1014   1     "/Audio Codec/SPKR_L_M"
+.TER       C1005   2
+            R1006   2
+
+.ADD_TER   C1015   1     "/Audio Codec/SPKR_R_P"
+.TER       C1006   1
+            R1007   2
+
+.ADD_TER   C1016   1     "/Audio Codec/SPKR_R_M"
+.TER       C1006   2
+            R1008   2
+
+.ADD_TER   M1002   3     "/Audio Codec/DMIC_CLOCK"
+.TER       C1002   1
+            C1001   1
+            R1001   1
+            M1001   3
+
+.ADD_TER   M1001   4     "/Audio Codec/DMIC_DATA"
+.TER       U1001   H2
+            M1002   4
+
+.ADD_TER   L1002   2     "DMIC_BIAS"
+.TER       U1001   B10
+            R1202   1
+            L1001   2
+
+.ADD_TER   U1101   17     "Net-(C1112-Pad2)"
+.TER       C1112   2
+
+.ADD_TER   HS-1105   P     "Net-(C1120-Pad1)"
+.TER       L1105   1
+            C1120   1
+            P1101   3
+
+.ADD_TER   P1101   1     "Net-(C1121-Pad1)"
+.TER       C1121   1
+            L1103   1
+            HS-1103   P
+
+.ADD_TER   C1101   2     "Net-(C1101-Pad2)"
+.TER       C1107   1
+            R1102   1
+
+.ADD_TER   L1104   2     "Net-(D1104-Pad1)"
+.TER       D1104   1
+            R1123   1
+            R1120   1
+            R1122   2
+
+.ADD_TER   C1103   2     "Net-(C1103-Pad2)"
+.TER       U1101   1
+
+.ADD_TER   C1105   2     "Net-(C1105-Pad2)"
+.TER       U1101   2
+
+.ADD_TER   C1106   2     "Net-(C1106-Pad2)"
+.TER       U1101   4
+
+.ADD_TER   U1101   5     "Net-(C1104-Pad2)"
+.TER       C1104   2
+
+.ADD_TER   R1501   7     "HEADPH_EN"
+.TER       U1101   6
+            U1502   12
+
+.ADD_TER   U1101   3     "HB_AUDIO_GND"
+.TER       U1101   9
+            U1101   10
+            U1101   21
+            U1101   13
+            U1101   19
+            C1109   2
+            U1103   3
+            U1103   4
+            U1103   E
+            U1103   10
+            U401   C1
+            U1103   12
+            U403   C1
+            U404   C1
+            U406   C1
+            U407   6
+            U407   8
+            U407   9
+            U408   6
+            U408   8
+            U408   9
+            U1102   B2
+            U1102   C2
+            U402   11
+            C1111   2
+            C1110   2
+            C1114   2
+            C411   2
+            R1110   1
+            R1103   2
+            C412   2
+            C414   2
+            C416   2
+            U1502   24
+            C413   2
+            C415   2
+            U405   B1
+            R413   1
+            R416   1
+            U1502   25
+            C204   2
+            C205   1
+            C1501   2
+            C208   2
+            C207   2
+            C1502   2
+            C408   2
+            R202   1
+            R204   1
+            C1503   2
+            C403   2
+            R407   1
+            R403   1
+            C401   2
+            C402   2
+            D1105   1
+            D1103   1
+            C419   2
+            D1101   1
+            C418   2
+            C417   2
+            D1104   2
+            U409   C1
+            C420   2
+            D1102   2
+            C1107   2
+            C1108   2
+            C1113   2
+            R314   1
+            G303   1
+            G302   1
+            G301   1
+            R303   1
+            C302   2
+            R1122   1
+            U301   3
+            R313   1
+            C308   2
+            C307   2
+            U303   B2
+            R1114   1
+            U303   C1
+            R1116   1
+            D1807   1
+            D1806   1
+            D1801   1
+            D1804   1
+            D1805   2
+            U1105   4
+            D1802   1
+            P-CAMERA1801   3
+            P-CAMERA1801   S1
+            P-CAMERA1801   S2
+            P-LOCK1801   3
+            P-LOCK1801   2
+            P-LOCK1801   4
+            P-MINUS1801   2
+            P-MINUS1801   S1
+            P-MINUS1801   S2
+            P-ON1801   2
+            P-ON1801   S1
+            P-ON1801   S2
+            P-PLUS1801   2
+            P-PLUS1801   S1
+            P-PLUS1801   S2
+            U1001   J11
+            C1119   2
+            R1124   1
+            R1124   2
+            C1122   1
+            C1122   2
+            C1123   2
+            C1124   2
+            C1125   2
+            U203   9
+            U203   E
+            C1116   2
+            C1115   2
+            R305   1
+            U203   17
+            U203   18
+            R301   1
+            VIB1201   SHIE
+            R312   1
+            D302   1
+            D301   1
+            C305   2
+            C304   2
+            C303   2
+            C310   2
+            C309   2
+            C301   2
+            C509   2
+            C501   2
+            C503   2
+            C505   2
+            C507   2
+            C508   2
+            C510   2
+            C502   2
+            C504   2
+            C506   2
+            M501   C15
+            T501   2
+            J502   GND1
+            U1001   H8
+            U1001   G8
+            U1001   F8
+            J502   GND2
+            R1209   2
+            C1302   2
+            C1303   2
+            C1304   1
+            C1305   1
+            U1001   E8
+            U1001   D8
+            C1308   2
+            C1320   2
+            C1321   2
+            J501   GND1
+            J501   GND2
+            C1325   2
+            C1326   2
+            M501   D1
+            C1329   2
+            U1501   9
+            C1309   2
+            C1310   2
+            M501   C2
+            C1319   2
+            M501   D2
+            C1324   2
+            C1311   2
+            M501   C3
+            C1312   2
+            C1313   2
+            M501   D3
+            C1306   2
+            M501   B4
+            C1307   2
+            U1501   23
+            C1314   2
+            C1315   2
+            M501   C4
+            U1001   D7
+            U1501   24
+            M501   D4
+            R1307   1
+            M501   A5
+            U1501   18
+            U1001   H6
+            M501   B5
+            U1501   25
+            M501   C5
+            U1302   6
+            U1302   7
+            M501   A6
+            M501   B6
+            U1302   10
+            U1001   D6
+            M501   C6
+            M501   D6
+            U1001   H5
+            M501   B7
+            M501   C7
+            U1001   D5
+            U1502   9
+            U1001   H4
+            U1001   G4
+            U1302   33
+            U1001   F4
+            U1001   E4
+            U1302   15
+            U1302   25
+            U1001   D4
+            U1302   17
+            U1302   29
+            X1301   2
+            X1301   4
+            M501   D7
+            M501   A8
+            M501   B8
+            C1301   2
+            U1001   E10
+            U1001   L11
+            U1001   G10
+            U1001   L7
+            M501   C8
+            U1502   23
+            M501   D8
+            M501   A9
+            M501   B9
+            M501   C9
+            M501   D9
+            U1002   18
+            U1002   15
+            M501   A10
+            U2301   25
+            M501   B10
+            M501   C10
+            C1022   2
+            U1002   12
+            C1019   2
+            U1002   21
+            U1002   4
+            C1021   2
+            C1018   2
+            M501   A11
+            M501   B11
+            M501   C11
+            M501   B12
+            M501   A13
+            U1002   1
+            C1020   2
+            M501   B13
+            M501   F1
+            M501   G1
+            M501   H1
+            M501   J1
+            M501   L1
+            M501   E2
+            M501   F2
+            M501   G2
+            M501   H2
+            M501   J2
+            M501   K2
+            M501   L2
+            M501   M2
+            M501   E3
+            M501   F3
+            M501   G3
+            M501   H3
+            M501   J3
+            M501   K3
+            M501   L3
+            M501   M3
+            M501   E4
+            M501   F4
+            M501   H4
+            M501   J4
+            R1502   10
+            M501   K4
+            M501   L4
+            M501   E5
+            M501   K5
+            R1502   5
+            M501   M6
+            M501   D10
+            M501   D11
+            M501   N11
+            U2301   24
+            C1017   2
+            CON2502   3
+            U2301   9
+            D2301   K
+            P2302   19
+            CON2502   8
+            P2302   20
+            CON2502   26
+            CON2502   27
+            CON2502   30
+            CON2502   33
+            CON2502   34
+            M501   J13
+            C2301   2
+            U1001   L8
+            C2302   2
+            S902   17
+            U2302   8
+            U2302   6
+            S902   12
+            S902   20
+            S902   6
+            S902   4
+            C1330   2
+            C1331   2
+            U1301   33
+            U1301   8
+            U1301   16
+            S903   7
+            S903   5
+            S903   1
+            C410   2
+            C2303   2
+            U2303   11
+            C409   2
+            CON1601   15
+            CON1601   5
+            CON1601   16
+            CON1601   17
+            CON1601   7
+            C605   2
+            C407   2
+            P2301   28A
+            P2301   27A
+            S901   11
+            S901   10
+            C406   2
+            S901   5
+            S901   4
+            S901   2
+            C405   2
+            C905   2
+            C404   2
+            C903   2
+            C901   2
+            TP1609   P
+            D1004   1
+            D1002   1
+            C904   2
+            C902   2
+            D1003   2
+            D1001   2
+            C1026   2
+            C1024   2
+            C1025   1
+            R803   1
+            P802   1
+            C2202   2
+            U2204   2
+            C2201   2
+            U2203   2
+            R802   2
+            J802   GND2
+            J802   GND1
+            J801   GND2
+            J801   GND1
+            L803   2
+            L804   2
+            C802   2
+            C801   2
+            C803   2
+            C1603   2
+            C1602   2
+            U201   2
+            U1601   10
+            U1601   EXP
+            U1601   8
+            U1601   12
+            R508   2
+            C1601   2
+            U801   G29
+            U801   G19
+            U801   G28
+            U801   G18
+            U801   G27
+            U801   G17
+            U801   G36
+            U801   G26
+            U801   G16
+            U801   G35
+            U801   G25
+            U801   G15
+            U801   G34
+            CON1602   11
+            U801   G24
+            U801   G14
+            U801   G33
+            U801   G23
+            U801   G13
+            U801   G32
+            U801   G22
+            U801   G12
+            U801   G31
+            U801   G21
+            U801   G11
+            U801   G30
+            U801   G20
+            U801   G10
+            U801   G9
+            U801   G8
+            U801   G7
+            U801   G6
+            U801   G5
+            CON1602   1
+            CON1601   11
+            U801   G4
+            U801   G3
+            U801   G2
+            U801   G1
+            U801   59
+            C201   2
+            C1023   1
+            U801   49
+            U801   39
+            C1403   2
+            U801   29
+            U801   19
+            U801   48
+            U801   28
+            U801   37
+            U801   17
+            U801   16
+            U801   55
+            U801   45
+            U801   35
+            U801   15
+            U801   54
+            U801   44
+            U801   34
+            R1402   1
+            U801   24
+            R1411   1
+            U801   63
+            R1405   1
+            U801   33
+            U801   23
+            C1012   2
+            U801   61
+            U801   31
+            U801   30
+            U801   20
+            U801   9
+            U801   7
+            U801   1
+            U1402   11
+            R1410   1
+            U802   EXP
+            U802   12
+            C1404   2
+            U802   6
+            U802   3
+            P804   1
+            L802   2
+            D801   1
+            C805   2
+            C804   2
+            R709   1
+            R711   1
+            C711   2
+            C712   2
+            L706   2
+            L705   2
+            U1401   3
+            C710   2
+            U706   11
+            U702   5
+            U702   4
+            C1402   2
+            J701   GND2
+            J701   GND1
+            U701   7
+            P705   1
+            P703   1
+            U703   3
+            U704   3
+            U705   2
+            U705   1
+            R701   1
+            L704   2
+            L702   2
+            L701   2
+            P702   1
+            C703   2
+            C706   2
+            C705   2
+            C704   2
+            C707   2
+            C702   2
+            D601   1
+            C1011   2
+            R1501   5
+            C1010   2
+            R1501   10
+            U602   6
+            U613   2
+            U1503   9
+            C609   2
+            C611   2
+            U1503   24
+            P602   SW2
+            U1503   18
+            P602   C5
+            U1503   25
+            P602   S2
+            P602   S1
+            U612   2
+            C608   2
+            C610   2
+            C203   2
+            C202   2
+            U605   3
+            U603   2
+            U604   3
+            C607   2
+            C606   2
+            C601   2
+            C603   2
+            C604   2
+            U611   11
+            U610   11
+            U609   4
+            U608   4
+            U601   A1
+            U606   3
+            U607   3
+            P601   C5
+            P601   S2
+            P601   S1
+            R512   2
+            U202   C1
+            R510   2
+            R509   2
+            R507   2
+            R506   2
+            R505   2
+            R504   2
+            R503   2
+            R502   2
+            R501   2
+
+.ADD_TER   C1113   1     "Net-(C1113-Pad1)"
+.TER       U1101   16
+            U1101   15
+
+.ADD_TER   U1101   18     "Net-(C1112-Pad1)"
+.TER       C1112   1
+
+.ADD_TER   R1103   1     "Net-(C1102-Pad2)"
+.TER       C1109   1
+            C1102   2
+
+.ADD_TER   D1101   2     "HB_JACK_4GND"
+.TER       U1103   15
+            U1103   6
+            L1102   2
+            C1124   1
+            TP1613   P
+
+.ADD_TER   TP1612   P     "HB_JACK_3M"
+.TER       C1125   1
+            U1103   7
+            U1103   14
+            D1105   2
+            L1106   2
+
+.ADD_TER   U1103   8     "MIC_nPRESENT"
+.TER       R1501   1
+            U1502   6
+
+.ADD_TER   U1402   13     "HEADPH_SENSE"
+.TER       R1123   2
+
+.ADD_TER   U1102   C3     "Net-(U1102-PadB1)"
+.TER       U1102   B1
+
+.ADD_TER   U1501   12     "TVOUT_EN"
+.TER       U1102   A1
+
+.ADD_TER   D1102   1     "HB_JACK_2R"
+.TER       TP1611   P
+            R1108   1
+            U1101   11
+            L1103   2
+
+.ADD_TER   R1107   1     "HB_JACK_1L"
+.TER       U1103   9
+            TP1610   P
+            L1105   2
+            R1110   2
+            D1103   2
+            U1101   14
+
+.ADD_TER   R1101   2     "Net-(C1108-Pad1)"
+.TER       R1104   1
+            C1108   1
+
+.ADD_TER   HS-1101   P     "Net-(HS-1101-PadP)"
+.TER       HS-1102   P
+            P1101   2
+            P1101   6
+            L1102   1
+
+.ADD_TER   L1104   1     "Net-(HS-1104-PadP)"
+.TER       HS-1104   P
+            P1101   4
+
+.ADD_TER   P1101   5     "Net-(HS-1106-PadP)"
+.TER       L1106   1
+            HS-1106   P
+
+.ADD_TER   U1101   12     "Net-(C1110-Pad1)"
+.TER       L1101   1
+            C1110   1
+            C1114   1
+            U1101   20
+
+.ADD_TER   U1102   C1     "/Audio Headset, ECI/MIC_P_B"
+.TER       U1103   11
+
+.ADD_TER   R1107   2     "Net-(C1117-Pad2)"
+.TER       C1117   2
+
+.ADD_TER   R1108   2     "Net-(C1118-Pad2)"
+.TER       C1118   2
+
+.ADD_TER   U1105   3     "Net-(R1111-Pad2)"
+.TER       R1111   2
+            R1117   1
+
+.ADD_TER   U1105   1     "ECI1"
+.TER       R1119   1
+            R1117   2
+
+.ADD_TER   R1118   1     "Net-(R1112-Pad2)"
+.TER       U1105   5
+            R1112   2
+
+.ADD_TER   U1105   7     "ECI0"
+.TER       R1121   1
+            R1118   2
+
+.ADD_TER   R1114   2     "Net-(R1113-Pad1)"
+.TER       U1105   2
+            R1113   1
+
+.ADD_TER   R1116   2     "Net-(R1115-Pad1)"
+.TER       U1105   6
+            R1115   1
+
+.ADD_TER   U1503   4     "ECI_EN"
+.TER       R1502   4
+
+.ADD_TER   U1105   8     "/Audio Headset, ECI/2V5"
+.TER       C1119   1
+            R1115   2
+            C1116   1
+            R1113   2
+            R1109   2
+
+.ADD_TER   U1102   B3     "/Audio Headset, ECI/ECI_HIGH"
+.TER       R1109   1
+            R1111   1
+
+.ADD_TER   C1123   1     "/Audio Headset, ECI/ECI_LOW"
+.TER       U1102   D3
+            R1102   2
+            R1106   1
+            R1112   1
+            R1104   2
+
+.ADD_TER   U1402   12     "DET_TRIGGER"
+.TER       U1103   5
+
+.ADD_TER   TP1201   P     "VIB_P"
+.TER       VIB1201   2
+
+.ADD_TER   VIB1201   1     "VIB_M"
+.TER       TP1202   P
+
+.ADD_TER   R1201   2     "Net-(D1201-PadA)"
+.TER       D1201   A
+
+.ADD_TER   D1202   A     "Net-(D1202-PadA)"
+.TER       R1202   2
+
+.ADD_TER   D1203   A     "Net-(D1203-PadA)"
+.TER       R1203   2
+
+.ADD_TER   D1204   A     "Net-(D1204-PadA)"
+.TER       R1204   2
+
+.ADD_TER   D1205   A     "Net-(D1205-PadA)"
+.TER       R1205   2
+
+.ADD_TER   D1206   A     "Net-(D1206-PadA)"
+.TER       R1206   2
+
+.ADD_TER   D1207   A     "Net-(D1207-PadA)"
+.TER       R1207   2
+
+.ADD_TER   R1208   2     "Net-(D1208-PadA)"
+.TER       D1208   A
+
+.ADD_TER   TP1203   P     "Net-(R1206-Pad1)"
+.TER       R1206   1
+
+.ADD_TER   TP1205   P     "Net-(R1207-Pad1)"
+.TER       R1207   1
+
+.ADD_TER   TP1207   P     "Net-(R1208-Pad1)"
+.TER       R1208   1
+
+.ADD_TER   D1206   K     "Net-(D1201-PadK)"
+.TER       D1205   K
+            TP1204   P
+            D1204   K
+            TP1206   P
+            TP1208   P
+            D1202   K
+            D1208   K
+            R1209   1
+            D1207   K
+            D1201   K
+
+.ADD_TER   C1305   2     "Net-(C1304-Pad2)"
+.TER       C1304   2
+            U1302   11
+
+.ADD_TER   C1322   1     "Net-(C1318-Pad1)"
+.TER       C1318   1
+            C1320   1
+            C1321   1
+            L1301   1
+            L1302   2
+
+.ADD_TER   C1326   1     "Net-(C1322-Pad2)"
+.TER       L1302   1
+            C1325   1
+            C1328   1
+            C1327   1
+            C1322   2
+            C1323   1
+
+.ADD_TER   C1313   1     "Net-(C1312-Pad1)"
+.TER       C1312   1
+            U1302   1
+
+.ADD_TER   C1315   1     "Net-(C1314-Pad1)"
+.TER       C1314   1
+            U1302   32
+
+.ADD_TER   C1328   2     "NFC_ANT"
+.TER       C1329   1
+            C1327   2
+            R1307   2
+            CON1601   6
+
+.ADD_TER   C1309   1     "Net-(C1308-Pad1)"
+.TER       C1308   1
+            U1302   3
+            U1302   4
+
+.ADD_TER   C1316   1     "Net-(C1316-Pad1)"
+.TER       C1317   1
+            U1302   5
+
+.ADD_TER   C1318   2     "Net-(C1318-Pad2)"
+.TER       C1319   1
+            U1302   8
+
+.ADD_TER   C1324   1     "Net-(C1323-Pad2)"
+.TER       C1323   2
+            U1302   9
+
+.ADD_TER   X1301   1     "Net-(C1306-Pad1)"
+.TER       U1302   30
+            C1306   1
+
+.ADD_TER   U1302   31     "Net-(C1307-Pad1)"
+.TER       X1301   3
+            C1307   1
+
+.ADD_TER   U1301   9     "Net-(C1301-Pad1)"
+.TER       C1301   1
+
+.ADD_TER   U1301   13     "NFC_SWD_DIO"
+.TER       U1501   16
+            U1302   12
+
+.ADD_TER   U1301   29     "/RFID/NFC/SELF"
+.TER       U1301   25
+
+.ADD_TER   U1301   19     "NFC_nRESET"
+.TER       U1503   1
+
+.ADD_TER   D1301   K     "/RFID/NFC/NFC_LED"
+.TER       U1301   14
+
+.ADD_TER   U1301   32     "/RFID/NFC/SWP_1_S1"
+.TER       R1302   1
+
+.ADD_TER   U1301   31     "/RFID/NFC/SWP_2_S1"
+.TER       R1301   1
+
+.ADD_TER   U1301   18     "/RFID/NFC/NFC_IO1"
+.TER       U1302   18
+
+.ADD_TER   U1302   27     "/RFID/NFC/NFC_CLK"
+.TER       U1301   17
+
+.ADD_TER   L1301   2     "Net-(C1316-Pad2)"
+.TER       C1317   2
+            C1316   2
+
+.ADD_TER   U1302   28     "/RFID/NFC/NFC_EN"
+.TER       U1301   12
+
+.ADD_TER   U1301   11     "/RFID/NFC/NFC_IRQ"
+.TER       U1302   13
+
+.ADD_TER   U1501   17     "NFC_SWD_CLK"
+.TER       U1301   10
+            U1302   19
+
+.ADD_TER   U1301   22     "/RFID/NFC/NFC_TXD_MOD"
+.TER       U1302   14
+            U1301   2
+            U1302   20
+
+.ADD_TER   U1302   22     "/RFID/NFC/NFC_TRXCLK"
+.TER       U1301   30
+
+.ADD_TER   R1305   1     "Net-(R1305-Pad1)"
+.TER       U1302   24
+
+.ADD_TER   R1305   2     "/RFID/NFC/NFC_MOSI"
+.TER       U1301   5
+
+.ADD_TER   R1304   1     "Net-(R1304-Pad1)"
+.TER       U1302   23
+
+.ADD_TER   U1301   6     "/RFID/NFC/NFC_MISO"
+.TER       R1304   2
+            U1301   1
+            U1301   26
+
+.ADD_TER   U1302   21     "Net-(R1303-Pad1)"
+.TER       R1303   1
+
+.ADD_TER   R1303   2     "/RFID/NFC/NFC_SS"
+.TER       U1301   3
+
+.ADD_TER   R1306   2     "/RFID/NFC/NFC_SCLK"
+.TER       U1302   26
+            R1306   1
+            U1301   4
+
+.ADD_TER   R1608   2     "Net-(Q1604-Pad4)"
+.TER       Q1604   4
+
+.ADD_TER   R1606   2     "Net-(Q1603-Pad4)"
+.TER       Q1603   4
+
+.ADD_TER   R1604   2     "Net-(Q1602-Pad4)"
+.TER       Q1602   4
+
+.ADD_TER   R1602   2     "Net-(Q1601-Pad4)"
+.TER       Q1601   4
+
+.ADD_TER   R1604   1     "UART3_RX_IRRX"
+.TER       R1409   2
+
+.ADD_TER   R1408   1     "HB_CTS_RCTX"
+.TER       R1602   1
+            U1402   16
+
+.ADD_TER   CON1602   10     "/Hackerbus/HB_GPIO_A"
+.TER       Q1603   6
+
+.ADD_TER   CON1602   21     "/Hackerbus/HB_GPIO_B"
+.TER       Q1603   3
+
+.ADD_TER   Q1604   6     "/Hackerbus/HB_GPIO_C"
+.TER       CON1602   20
+
+.ADD_TER   Q1604   3     "VHB"
+.TER       CON1601   19
+
+.ADD_TER   R1607   2     "Net-(Q1604-Pad1)"
+.TER       Q1604   1
+
+.ADD_TER   R1605   2     "Net-(Q1603-Pad1)"
+.TER       Q1603   1
+
+.ADD_TER   Q1601   6     "/Hackerbus/HB_UART_TX"
+.TER       CON1601   9
+
+.ADD_TER   CON1601   10     "/Hackerbus/HB_UART_CTS"
+.TER       Q1601   3
+
+.ADD_TER   CON1601   21     "/Hackerbus/HB_UART_RTS"
+.TER       Q1602   6
+
+.ADD_TER   Q1602   3     "/Hackerbus/HB_UART_RX"
+.TER       CON1601   20
+
+.ADD_TER   U1402   17     "HB_TX_IRTX"
+.TER       R1407   1
+            R1601   1
+
+.ADD_TER   Q1602   1     "Net-(Q1602-Pad1)"
+.TER       R1603   2
+
+.ADD_TER   R1601   2     "Net-(Q1601-Pad1)"
+.TER       Q1601   1
+
+.ADD_TER   CON1601   12     "/Hackerbus/FLASH_K"
+.TER       U1601   9
+
+.ADD_TER   C1603   1     "/Hackerbus/FLASH_A"
+.TER       D1601   K
+            CON1601   1
+            U1601   7
+
+.ADD_TER   R1501   9     "FLASH_EN"
+.TER       U1601   15
+            U1502   14
+
+.ADD_TER   U1601   13     "Net-(D1601-PadA)"
+.TER       L1602   1
+            D1601   A
+
+.ADD_TER   C1602   1     "Net-(C1602-Pad1)"
+.TER       L1602   2
+            L1601   1
+            U1601   14
+            U1601   1
+            U1601   2
+            U1601   5
+
+.ADD_TER   CON1602   2     "CAM_COVER_INT"
+.TER       U1501   2
+
+.ADD_TER   C1601   1     "BATT_LID"
+.TER       U1501   3
+            R1609   2
+            CON1602   13
+
+.ADD_TER   U1501   5     "SD_CD"
+.TER       CON1602   7
+
+.ADD_TER   F1601   2     "/Hackerbus/VBAT_RAW"
+.TER       CON1601   2
+            CON1601   13
+            CON1601   3
+
+.ADD_TER   R1404   2     "/Infrared/IR_COMP_P"
+.TER       U1402   6
+            R1406   1
+
+.ADD_TER   U1402   5     "/Infrared/IR_COMP_OUT"
+.TER       R1406   2
+
+.ADD_TER   U1401   2     "Net-(C1401-Pad2)"
+.TER       D1401   A
+            C1401   2
+            R1403   1
+
+.ADD_TER   C1403   1     "Net-(C1403-Pad1)"
+.TER       R1404   1
+            R1403   2
+            R1401   1
+            R1402   2
+
+.ADD_TER   U1402   14     "Net-(R1409-Pad1)"
+.TER       R1409   1
+
+.ADD_TER   R1411   2     "Net-(Q1401-Pad2)"
+.TER       Q1401   2
+
+.ADD_TER   Q1401   3     "Net-(D1402-PadK)"
+.TER       D1402   K
+
+.ADD_TER   U1402   18     "/Infrared/IR_TX_LED"
+.TER       R1412   1
+            R1410   2
+
+.ADD_TER   U1401   1     "/Infrared/IR_COMP_N"
+.TER       U1402   7
+            R1405   2
+
+.ADD_TER   R1412   2     "Net-(Q1401-Pad1)"
+.TER       Q1401   1
+
+.ADD_TER   P2301   4A     "BT_UART_CTS_U"
+.TER       P1503   49
+
+.ADD_TER   P2301   8A     "BT_UART_RX_U"
+.TER       P1503   47
+
+.ADD_TER   R2302   2     "I2C2_SDA_U"
+.TER       P1901   12
+            U1903   27
+            U1908   5
+            P1501   3
+            P2301   23A
+
+.ADD_TER   U1908   6     "I2C2_SCL_U"
+.TER       R2303   2
+            P1901   13
+            P1501   4
+            U1903   26
+            P2301   24A
+
+.ADD_TER   U2101   F3     "nRESWARM_U"
+.TER       P1501   7
+            P2301   26A
+            U2103   F3
+
+.ADD_TER   P1501   13     "POWERON_U"
+.TER       P2302   18
+
+.ADD_TER   P2301   17B     "CAM_CAP_1_U"
+.TER       P1501   14
+
+.ADD_TER   P2301   17C     "CAM_CAP_2_U"
+.TER       P1501   15
+
+.ADD_TER   P1501   40     "FLASH_INT_U"
+.TER       CON2502   4
+
+.ADD_TER   U2204   3     "CODEC_MCLK_U"
+.TER       P1503   41
+            C2202   1
+
+.ADD_TER   P2502   1     "CODEC_DIN_U"
+.TER       P1503   40
+
+.ADD_TER   P1503   38     "CODEC_BCLK_U"
+.TER       P2502   4
+
+.ADD_TER   P2502   2     "CODEC_WCLK_U"
+.TER       P1503   37
+
+.ADD_TER   P2502   3     "CODEC_DOUT_U"
+.TER       P1503   39
+
+.ADD_TER   P1501   54     "SD_VDD_U"
+.TER       P2302   2
+
+.ADD_TER   P1501   21     "PRIVACY_R_U"
+.TER       U2103   E5
+
+.ADD_TER   P1501   22     "PRIVACY_G_U"
+.TER       U2103   D5
+
+.ADD_TER   P1501   23     "PRIVACY_B_U"
+.TER       U2103   D6
+
+.ADD_TER   P1501   43     "USB_MODEM_DM_U"
+.TER       P2201   2/D-
+
+.ADD_TER   P2201   3/D+     "USB_MODEM_DP_U"
+.TER       P1501   42
+
+.ADD_TER   R1801   2     "VOL_UP_U"
+.TER       P1501   11
+            Q1801   2
+
+.ADD_TER   Q1801   5     "VOL_DOWN_U"
+.TER       R1802   2
+            P1501   12
+
+.ADD_TER   U2103   E1     "CHG_IND_U"
+.TER       LED2111   K
+            P1501   16
+
+.ADD_TER   P1501   50     "EAR_P_U"
+.TER       L1905   3
+            C1919   1
+
+.ADD_TER   L1905   4     "EAR_M_U"
+.TER       C1918   1
+            P1501   49
+
+.ADD_TER   P2301   15C     "UART1_TX_U"
+.TER       P1503   10
+
+.ADD_TER   P2301   9C     "UART1_RX_U"
+.TER       P1503   12
+
+.ADD_TER   P1501   41     "CELL_DETECT_IRQ_U"
+.TER       P2302   4
+
+.ADD_TER   P2301   13C     "UART3_TX_IRTX_U"
+.TER       P1501   24
+
+.ADD_TER   P1501   25     "UART3_CTS_RCTX_U"
+.TER       P2302   9
+
+.ADD_TER   P1501   27     "UART3_RX_IRRX_U"
+.TER       P2301   11C
+
+.ADD_TER   P2302   7     "UART3_RTS_U"
+.TER       P1501   26
+
+.ADD_TER   U2303   15     "BT_PCM_DX_U"
+.TER       P1503   46
+
+.ADD_TER   P1503   45     "BT_PCM_DR_U"
+.TER       U2303   20
+
+.ADD_TER   P1503   44     "BT_PCM_FSYNC_U"
+.TER       U2303   19
+
+.ADD_TER   P1503   43     "BT_PCM_CLK_U"
+.TER       U2303   16
+
+.ADD_TER   P1503   6     "MCBSP4_DX_U"
+.TER       U2303   12
+
+.ADD_TER   U2303   14     "MCBSP4_DR_U"
+.TER       P1503   5
+
+.ADD_TER   U2303   13     "MCBSP4_CLKX_U"
+.TER       P1503   7
+
+.ADD_TER   P1503   8     "MCBSP4_FSX_U"
+.TER       U2303   7
+
+.ADD_TER   P1501   56     "2V7_U"
+.TER       C908   1
+            U2201   5
+            C902   1
+            C904   1
+            U2001   D2
+            L1908   1
+            S901   3
+            C2302   1
+            S901   6
+            L1906   1
+            C2002   1
+            U2302   16
+            L2001   1
+            R2201   2
+            P1503   3
+            C906   1
+            U901   1
+            R905   1
+            L1910   1
+            U902   4
+            U2002   D2
+
+.ADD_TER   U2203   3     "CLK32KHZ_U"
+.TER       P1501   8
+
+.ADD_TER   U2302   13     "ADC1_U"
+.TER       P1503   21
+
+.ADD_TER   U2302   14     "ADC2_U"
+.TER       P1503   22
+
+.ADD_TER   U2302   15     "ECI_ADC_U"
+.TER       P1503   28
+
+.ADD_TER   P2301   8C     "MODEM_EN_U"
+.TER       P1501   17
+
+.ADD_TER   P2302   6     "INA231_INT_U"
+.TER       P1501   18
+
+.ADD_TER   P1503   25     "NFC_INT_U"
+.TER       CON2502   24
+
+.ADD_TER   P2301   9A     "ECI0_U"
+.TER       P1503   35
+
+.ADD_TER   P1503   34     "ECI1_U"
+.TER       P2301   22A
+
+.ADD_TER   P1503   33     "ECI_OUT_U"
+.TER       P2301   12B
+
+.ADD_TER   P2301   5A     "WLAN_IRQ_U"
+.TER       P1503   51
+
+.ADD_TER   P1501   10     "SCREEN_LOCK_U"
+.TER       P2301   3A
+
+.ADD_TER   P1503   13     "MODEM_EMERG_U"
+.TER       P2301   6C
+
+.ADD_TER   P2301   11B     "CPU_SIM_CLK_U"
+.TER       P1503   14
+
+.ADD_TER   P1503   15     "CPU_SIM_IO_U"
+.TER       P2301   18C
+
+.ADD_TER   P1503   20     "IOX1_INT_U"
+.TER       P2301   15A
+
+.ADD_TER   P2301   20A     "IOX2_INT_U"
+.TER       P1503   24
+
+.ADD_TER   P1503   9     "UART1_RTS_U"
+.TER       CON2502   17
+
+.ADD_TER   CON2502   11     "UART1_CTS_U"
+.TER       P1503   11
+
+.ADD_TER   P1501   52     "BATTEMP_COMPANION_U"
+.TER       U2302   1
+
+.ADD_TER   P1501   39     "FLASH_STROBE_U"
+.TER       CON2502   25
+
+.ADD_TER   U2302   5     "VSIM_SENSE_U"
+.TER       P1503   4
+
+.ADD_TER   P2302   10     "HEADPH_IND_U"
+.TER       P1503   23
+
+.ADD_TER   P1503   16     "HB_A_U"
+.TER       U2301   10
+
+.ADD_TER   P1503   17     "HB_B_U"
+.TER       U2301   11
+
+.ADD_TER   P1503   18     "HB_C_U"
+.TER       U2301   12
+
+.ADD_TER   P1503   19     "HB_D_U"
+.TER       U2301   13
+
+.ADD_TER   P1501   38     "SD_CMD_U"
+.TER       U2301   2
+
+.ADD_TER   P1501   37     "SD_CLK_U"
+.TER       U2301   3
+
+.ADD_TER   P1501   36     "SD_DAT0_U"
+.TER       U2301   4
+
+.ADD_TER   U2301   5     "SD_DAT1_U"
+.TER       P1501   35
+
+.ADD_TER   U2301   6     "SD_DAT2_U"
+.TER       P1501   34
+
+.ADD_TER   U2301   7     "SD_DAT3_U"
+.TER       P1501   33
+
+.ADD_TER   P1503   36     "TVOUT_U"
+.TER       CON2401   1
+
+.ADD_TER   P1501   9     "VAUDIO_U"
+.TER       CON2502   2
+            CON2502   1
+
+.ADD_TER   P1501   53     "VHB_U"
+.TER       CON2502   28
+            CON2502   29
+
+.ADD_TER   U2301   8     "SPEAKER_EN_U"
+.TER       P1503   58
+
+.ADD_TER   D1807   2     "SCREEN_LOCK"
+.TER       P-LOCK1801   1
+
+.ADD_TER   P-PLUS1801   1     "VOL_UP"
+.TER       D1801   2
+
+.ADD_TER   P-MINUS1801   1     "VOL_DOWN"
+.TER       D1802   2
+
+.ADD_TER   D1806   2     "POWERON"
+.TER       P-ON1801   1
+
+.ADD_TER   D1804   2     "CAM_CAP_1"
+.TER       P-CAMERA1801   1
+
+.ADD_TER   D1805   1     "CAM_CAP_2"
+.TER       P-CAMERA1801   2
+
+.ADD_TER   P1503   30     "VSYS_U"
+.TER       P1503   1
+            P1501   30
+            P1501   60
+            P1503   60
+            P1503   31
+            P1501   31
+            P1501   1
+            U2202   1
+            U2201   1
+
+.ADD_TER   P2302   12     "WLAN_SDIO_CMD_U"
+.TER       P1503   57
+
+.ADD_TER   P2302   14     "WLAN_SDIO_CLK_U"
+.TER       P1503   56
+
+.ADD_TER   P1503   55     "WLAN_SDIO_DAT0_U"
+.TER       P2302   11
+
+.ADD_TER   P1503   54     "WLAN_SDIO_DAT1_U"
+.TER       P2302   8
+
+.ADD_TER   P2302   3     "WLAN_SDIO_DAT2_U"
+.TER       P1503   53
+
+.ADD_TER   P1503   52     "WLAN_SDIO_DAT3_U"
+.TER       P2302   5
+
+.ADD_TER   P1503   50     "BT_UART_RTS_U"
+.TER       P2301   10A
+
+.ADD_TER   P1503   48     "BT_UART_TX_U"
+.TER       P2301   6A
+
+.ADD_TER   P2302   16     "CODEC_nRESET_U"
+.TER       P1503   42
+
+.ADD_TER   P1501   19     "Net-(P1501-Pad19)"
+.TER       TP1501   P
+
+.ADD_TER   P1501   20     "Net-(P1501-Pad20)"
+.TER       TP1502   P
+
+.ADD_TER   P1501   48     "Net-(P1501-Pad48)"
+.TER       TP1503   P
+
+.ADD_TER   P1501   47     "Net-(P1501-Pad47)"
+.TER       TP1504   P
+
+.ADD_TER   P1501   46     "Net-(P1501-Pad46)"
+.TER       TP1505   P
+
+.ADD_TER   P1501   45     "Net-(P1501-Pad45)"
+.TER       TP1506   P
+
+.ADD_TER   P1503   26     "Net-(P1503-Pad26)"
+.TER       TP1507   P
+
+.ADD_TER   TP1508   P     "Net-(P1503-Pad27)"
+.TER       P1503   27
+
+.ADD_TER   CON1702   13     "/uSD Breakout Board/BATT_LID"
+.TER       U1704   2
+            U1705   9
+
+.ADD_TER   U1702   5     "Net-(U1702-Pad5)"
+.TER       U1702   6
+
+.ADD_TER   U1703   8     "/uSD Breakout Board/I2C2_SDA"
+.TER       CON1702   3
+            U1702   8
+
+.ADD_TER   U1706   1     "/uSD Breakout Board/I2C2_SCL"
+.TER       CON1702   14
+            U1702   2
+
+.ADD_TER   U1703   7     "/uSD Breakout Board/CAM_COVER_INT"
+.TER       U1702   7
+            CON1702   2
+
+.ADD_TER   LED1702   K     "Net-(LED1702-PadK)"
+.TER       LED1703   A
+
+.ADD_TER   U1702   1     "Net-(C1702-Pad1)"
+.TER       C1702   1
+            R1701   2
+
+.ADD_TER   CON1703   1     "/uSD Breakout Board/VBAT_RAW"
+.TER       CON1703   2
+            CON1701   2
+            CON1701   13
+            CON1701   3
+            U1701   1
+
+.ADD_TER   CON1703   4     "/uSD Breakout Board/USB_HB_DM"
+.TER       U1701   2
+            CON1701   4
+
+.ADD_TER   U1701   4     "/uSD Breakout Board/NFC_ANT"
+.TER       CON1701   6
+            CON1703   7
+
+.ADD_TER   LED1701   3     "/uSD Breakout Board/VBAT_SWITCHED"
+.TER       CON1703   12
+            LED1701   2
+            U1701   5
+            CON1701   8
+            LED1701   1
+
+.ADD_TER   CON1703   17     "/uSD Breakout Board/HB_UART_TX"
+.TER       U1701   6
+            CON1701   9
+
+.ADD_TER   CON1703   19     "/uSD Breakout Board/HB_UART_CTS"
+.TER       U1701   7
+            CON1701   10
+
+.ADD_TER   CON1701   16     "/uSD Breakout Board/NFC_GND"
+.TER       U1703   1
+            CON1703   8
+
+.ADD_TER   CON1703   11     "/uSD Breakout Board/VBUS_OTG"
+.TER       CON1701   18
+            U1703   2
+
+.ADD_TER   CON1701   19     "/uSD Breakout Board/HB_GPIO_D_VDD"
+.TER       U1703   4
+            CON1703   13
+
+.ADD_TER   CON1703   18     "/uSD Breakout Board/HB_UART_RX"
+.TER       U1703   5
+            CON1701   20
+
+.ADD_TER   U1703   6     "/uSD Breakout Board/HB_UART_RTS"
+.TER       CON1703   20
+            CON1701   21
+
+.ADD_TER   LED1701   5     "/uSD Breakout Board/PRIVACY_R"
+.TER       U1703   9
+            CON1702   4
+
+.ADD_TER   U1705   1     "/uSD Breakout Board/PRIVACY_B"
+.TER       CON1702   5
+            LED1701   6
+
+.ADD_TER   U1705   2     "/uSD Breakout Board/SD_DAT1"
+.TER       CON1702   6
+            P1701   8
+
+.ADD_TER   P1701   SW     "/uSD Breakout Board/SD_CD"
+.TER       TP1701   P
+            U1705   4
+            CON1702   7
+
+.ADD_TER   P1701   3     "/uSD Breakout Board/SD_CMD"
+.TER       U1705   5
+            CON1702   8
+
+.ADD_TER   P1701   1     "/uSD Breakout Board/SD_DAT2"
+.TER       U1705   6
+            CON1702   9
+
+.ADD_TER   U1705   7     "/uSD Breakout Board/HB_GPIO_A"
+.TER       CON1702   10
+            CON1703   15
+
+.ADD_TER   CON1702   15     "/uSD Breakout Board/PRIVACY_G"
+.TER       U1706   2
+            LED1701   4
+
+.ADD_TER   CON1702   16     "/uSD Breakout Board/SD_DAT0"
+.TER       P1701   7
+            U1706   4
+
+.ADD_TER   P1701   5     "/uSD Breakout Board/SD_CLK"
+.TER       U1706   5
+            CON1702   17
+
+.ADD_TER   U1706   6     "/uSD Breakout Board/SD_VDD"
+.TER       C1705   1
+            CON1702   18
+            P1701   4
+
+.ADD_TER   CON1702   19     "/uSD Breakout Board/SD_DAT3"
+.TER       P1701   2
+            U1706   7
+
+.ADD_TER   CON1703   14     "/uSD Breakout Board/HB_GPIO_C"
+.TER       CON1702   20
+            U1706   8
+
+.ADD_TER   CON1702   21     "/uSD Breakout Board/HB_GPIO_B"
+.TER       CON1703   16
+            U1706   9
+
+.ADD_TER   C1703   1     "/uSD Breakout Board/2V7"
+.TER       CON1702   12
+            U1704   1
+            R1701   1
+            U1705   8
+            C1701   1
+            U1702   4
+            C1704   1
+
+.ADD_TER   U1701   8     "/uSD Breakout Board/FLASH_K"
+.TER       LED1703   K
+            CON1701   12
+
+.ADD_TER   CON1703   3     "/uSD Breakout Board/USB_HB_DP"
+.TER       U1701   9
+            CON1701   14
+
+.ADD_TER   CON1701   1     "/uSD Breakout Board/FLASH_A"
+.TER       D1701   2
+            LED1702   A
+
+.ADD_TER   D1803   4     "Net-(B1803-PadP$2)"
+.TER       B1803   P$2
+
+.ADD_TER   B1831   P$2     "/Keypad and buttons/ROW0"
+.TER       B1835   P$2
+            B1839   P$2
+            B1807   P$2
+            D1803   3
+            B1811   P$2
+            B1815   P$2
+            B1819   P$2
+            B1823   P$2
+            B1827   P$2
+
+.ADD_TER   D1803   2     "/Keypad and buttons/ROW1"
+.TER       B1806   P$2
+            B1826   P$2
+            B1810   P$2
+            B1830   P$2
+            B1814   P$2
+            B1818   P$2
+            B1834   P$2
+            B1838   P$2
+            B1822   P$2
+
+.ADD_TER   B1825   P$2     "/Keypad and buttons/ROW2"
+.TER       B1821   P$2
+            D1803   1
+            B1837   P$2
+            B1817   P$2
+            B1813   P$2
+            B1833   P$2
+            B1805   P$2
+            B1809   P$2
+            B1829   P$2
+
+.ADD_TER   B1814   P$1     "/Keypad and buttons/COL3"
+.TER       B1813   P$1
+            B1812   P$1
+            B1815   P$1
+
+.ADD_TER   Q1801   1     "/Keypad and buttons/ROW7"
+.TER       R1801   1
+
+.ADD_TER   R1802   1     "/Keypad and buttons/ROW6"
+.TER       Q1801   4
+
+.ADD_TER   B1802   P$1     "/Keypad and buttons/COL0"
+.TER       B1803   P$1
+            B1801   P$1
+
+.ADD_TER   B1807   P$1     "/Keypad and buttons/COL1"
+.TER       B1806   P$1
+            B1805   P$1
+            B1804   P$1
+
+.ADD_TER   B1809   P$1     "/Keypad and buttons/COL2"
+.TER       B1811   P$1
+            B1810   P$1
+            B1808   P$1
+
+.ADD_TER   B1816   P$1     "/Keypad and buttons/COL4"
+.TER       B1817   P$1
+            B1819   P$1
+            B1818   P$1
+
+.ADD_TER   B1823   P$1     "/Keypad and buttons/COL5"
+.TER       B1821   P$1
+            B1820   P$1
+            B1822   P$1
+
+.ADD_TER   B1825   P$1     "/Keypad and buttons/COL6"
+.TER       B1824   P$1
+            B1827   P$1
+            B1826   P$1
+
+.ADD_TER   B1829   P$1     "/Keypad and buttons/COL7"
+.TER       B1831   P$1
+            B1828   P$1
+            B1830   P$1
+
+.ADD_TER   B1834   P$1     "/Keypad and buttons/COL8"
+.TER       B1833   P$1
+            B1832   P$1
+            B1835   P$1
+
+.ADD_TER   B1838   P$1     "/Keypad and buttons/COL9"
+.TER       Q1801   3
+            B1836   P$1
+            B1839   P$1
+            B1837   P$1
+            Q1801   6
+
+.ADD_TER   B1824   P$2     "/Keypad and buttons/ROW3"
+.TER       B1812   P$2
+            B1808   P$2
+            B1804   P$2
+            B1820   P$2
+            B1828   P$2
+            B1816   P$2
+            B1832   P$2
+            B1836   P$2
+
+.ADD_TER   D1803   5     "Net-(B1802-PadP$2)"
+.TER       B1802   P$2
+
+.ADD_TER   D1803   6     "Net-(B1801-PadP$2)"
+.TER       B1801   P$2
+
+.ADD_TER   P1901   50     "Net-(L1902-Pad4)"
+.TER       L1902   4
+
+.ADD_TER   L1902   3     "Net-(L1902-Pad3)"
+.TER       P1901   51
+
+.ADD_TER   L1903   4     "Net-(L1903-Pad4)"
+.TER       P1901   46
+
+.ADD_TER   L1903   3     "Net-(L1903-Pad3)"
+.TER       P1901   47
+
+.ADD_TER   P1901   48     "Net-(L1904-Pad4)"
+.TER       L1904   4
+
+.ADD_TER   P1901   49     "Net-(L1904-Pad3)"
+.TER       L1904   3
+
+.ADD_TER   L1902   1     "CDP_D0_P"
+.TER       P2301   16B
+
+.ADD_TER   P2301   10B     "CDP_D0_M"
+.TER       L1902   2
+
+.ADD_TER   P2301   10C     "CDP_D1_P"
+.TER       L1903   1
+
+.ADD_TER   P2301   9B     "CDP_D1_M"
+.TER       L1903   2
+
+.ADD_TER   L1904   1     "CDP_CLK_P"
+.TER       P2301   8B
+
+.ADD_TER   L1904   2     "CDP_CLK_M"
+.TER       P2301   7B
+
+.ADD_TER   U1901   2     "Net-(C1901-Pad1)"
+.TER       C1901   1
+
+.ADD_TER   Q1901   1     "Net-(Q1901-Pad1)"
+.TER       R1907   1
+
+.ADD_TER   U1901   5     "Net-(R1901-Pad2)"
+.TER       R1901   2
+            R1902   2
+            R1903   2
+
+.ADD_TER   P2301   7C     "LCD_LEDS_PWM"
+.TER       R1901   1
+
+.ADD_TER   Q1901   4     "Net-(Q1901-Pad4)"
+.TER       R1911   1
+
+.ADD_TER   D1901   K     "/Display/V_LCD_LED"
+.TER       R1911   2
+            C1904   1
+            R1912   2
+            R1907   2
+
+.ADD_TER   U1902   4     "Net-(R1905-Pad1)"
+.TER       R1905   1
+
+.ADD_TER   U1906   1     "Net-(P1901-Pad31)"
+.TER       Q1901   3
+            P1901   31
+            R1912   1
+
+.ADD_TER   R1913   2     "Net-(P1901-Pad30)"
+.TER       P1901   30
+            R1914   2
+            U1906   3
+
+.ADD_TER   Q1901   2     "Net-(P1901-Pad28)"
+.TER       R1914   1
+            Q1901   5
+            Q1901   6
+            P1901   28
+            U1906   4
+
+.ADD_TER   U1906   5     "Net-(P1901-Pad29)"
+.TER       P1901   29
+            R1915   2
+            U1901   1
+            R1906   2
+
+.ADD_TER   P1901   8     "ALS_INT"
+.TER       U1904   1
+            CON2502   21
+
+.ADD_TER   U1904   3     "PROXY"
+.TER       P1901   10
+            P2302   13
+
+.ADD_TER   CON2502   23     "CAM_B_EN"
+.TER       P1901   15
+            U2001   A3
+            U2001   A1
+            U2002   A1
+            U2002   A3
+            U1904   4
+
+.ADD_TER   P1901   22     "/Display/CABC"
+.TER       R1904   1
+            U1904   5
+
+.ADD_TER   U1904   6     "LCD_CS"
+.TER       P2301   5B
+            P1901   34
+
+.ADD_TER   P1901   59     "CAM_CLK"
+.TER       U1905   1
+            R2002   2
+
+.ADD_TER   P2301   3C     "LCD_RST"
+.TER       U1905   3
+            P1901   37
+
+.ADD_TER   U1905   4     "LCD_MISO"
+.TER       P2301   6B
+            P1901   35
+
+.ADD_TER   P2301   3B     "LCD_MOSI"
+.TER       P1901   36
+            U1905   5
+
+.ADD_TER   U1905   6     "LCD_SCLK"
+.TER       P2301   4B
+            P1901   38
+
+.ADD_TER   P1901   5     "Net-(L1905-Pad1)"
+.TER       L1905   1
+            U1908   3
+
+.ADD_TER   L1905   2     "Net-(L1905-Pad2)"
+.TER       U1908   4
+            P1901   6
+
+.ADD_TER   D1901   A     "Net-(D1901-PadA)"
+.TER       L1901   1
+            U1901   4
+
+.ADD_TER   R1905   2     "Net-(C1905-Pad1)"
+.TER       R1906   1
+            C1905   1
+
+.ADD_TER   P2301   4C     "LCD_CABC"
+.TER       R1902   1
+            R1904   2
+            U1902   2
+
+.ADD_TER   P1901   9     "Net-(C1913-Pad1)"
+.TER       L1906   2
+            C1913   1
+
+.ADD_TER   P1901   24     "Net-(C1914-Pad1)"
+.TER       L1907   2
+            C1914   1
+
+.ADD_TER   P1901   26     "Net-(C1915-Pad1)"
+.TER       L1908   2
+            C1915   1
+
+.ADD_TER   C1916   1     "Net-(C1916-Pad1)"
+.TER       L1909   2
+            P1901   17
+
+.ADD_TER   C1917   1     "Net-(C1917-Pad1)"
+.TER       P1901   19
+            L1910   2
+
+.ADD_TER   R1908   2     "Net-(R1908-Pad2)"
+.TER       U1903   1
+
+.ADD_TER   U1903   17     "Net-(R1909-Pad2)"
+.TER       R1909   2
+
+.ADD_TER   CON2502   20     "PENIRQ"
+.TER       U1903   2
+
+.ADD_TER   U1903   24     "Net-(C1906-Pad1)"
+.TER       R1910   2
+            C1906   1
+            C1907   1
+            U1903   7
+
+.ADD_TER   CON2502   16     "TSC_RST"
+.TER       U1903   28
+
+.ADD_TER   U1903   4     "Net-(C1912-Pad1)"
+.TER       U1907   1
+            P1901   40
+            C1912   1
+
+.ADD_TER   C1911   1     "Net-(C1911-Pad1)"
+.TER       P1901   44
+            U1907   3
+            U1903   5
+
+.ADD_TER   U1903   6     "Net-(C1910-Pad1)"
+.TER       C1910   1
+            P1901   43
+            R1908   1
+            U1907   4
+
+.ADD_TER   R1909   1     "Net-(C1908-Pad1)"
+.TER       P1901   41
+            C1908   1
+            U1903   15
+            U1907   5
+
+.ADD_TER   P2001   6     "Net-(P2001-Pad6)"
+.TER       U2002   D1
+
+.ADD_TER   P2001   7     "Net-(P2001-Pad7)"
+.TER       U2002   D3
+
+.ADD_TER   P2001   9     "Net-(P2001-Pad9)"
+.TER       U2001   D1
+
+.ADD_TER   P2001   10     "Net-(P2001-Pad10)"
+.TER       U2001   D3
+
+.ADD_TER   P2001   1     "Net-(P2001-Pad1)"
+.TER       R2001   2
+
+.ADD_TER   CON2502   14     "CAM_CLK_N"
+.TER       R2003   1
+            U2001   C3
+
+.ADD_TER   CON2502   13     "CAM_DATA_P"
+.TER       R2004   2
+            U2002   C1
+
+.ADD_TER   CON2502   9     "CAM_XCLK"
+.TER       R2002   1
+            R2001   1
+
+.ADD_TER   R2003   2     "CAM_CLK_P"
+.TER       CON2502   15
+            U2001   C1
+
+.ADD_TER   CON2502   12     "CAM_DATA_N"
+.TER       R2004   1
+            U2002   C3
+
+.ADD_TER   C2003   1     "Net-(C2003-Pad1)"
+.TER       L2001   2
+            C2005   1
+            P2001   4
+            P2001   3
+
+.ADD_TER   CON2502   18     "CAM_MAIN_SHDN"
+.TER       P2001   18
+
+.ADD_TER   P1901   57     "/Cameras/CSI_B_DP"
+.TER       U2003   1
+            U2002   B1
+
+.ADD_TER   P1901   56     "/Cameras/CSI_B_DM"
+.TER       U2002   B3
+            U2003   3
+
+.ADD_TER   U2001   B1     "/Cameras/CSI_B_CP"
+.TER       U2003   4
+            P1901   54
+
+.ADD_TER   U2003   6     "/Cameras/CSI_B_CM"
+.TER       P1901   53
+            U2001   B3
+
+.ADD_TER   C2102   2     "Net-(C2102-Pad2)"
+.TER       U2101   B1
+
+.ADD_TER   U2101   C1     "Net-(C2103-Pad2)"
+.TER       C2103   2
+
+.ADD_TER   U2101   C2     "Net-(R2102-Pad2)"
+.TER       R2102   2
+
+.ADD_TER   R2101   2     "Net-(R2101-Pad2)"
+.TER       U2101   B5
+
+.ADD_TER   U2103   E2     "Net-(LED2110-PadK)"
+.TER       LED2110   K
+
+.ADD_TER   U2103   E3     "Net-(LED2109-PadK)"
+.TER       LED2109   K
+
+.ADD_TER   U2103   B1     "Net-(C2109-Pad2)"
+.TER       C2109   2
+
+.ADD_TER   U2103   C1     "Net-(C2110-Pad2)"
+.TER       C2110   2
+
+.ADD_TER   U2103   C2     "Net-(R2104-Pad2)"
+.TER       R2104   2
+
+.ADD_TER   U2103   B5     "Net-(R2103-Pad2)"
+.TER       R2103   2
+
+.ADD_TER   LED2106   1     "Net-(LED2106-Pad1)"
+.TER       LED2106   7
+
+.ADD_TER   LED2105   7     "Net-(LED2105-Pad1)"
+.TER       LED2105   1
+
+.ADD_TER   U2104   4     "Net-(P1901-Pad62)"
+.TER       P1901   62
+
+.ADD_TER   U2104   5     "Net-(P1901-Pad63)"
+.TER       P1901   63
+
+.ADD_TER   P1901   61     "Net-(P1901-Pad61)"
+.TER       U2104   6
+
+.ADD_TER   R2301   1     "HFCLK_EN"
+.TER       U2204   1
+            U2301   1
+
+.ADD_TER   P2301   2C     "BB_1V8"
+.TER       P2302   1
+            U2201   3
+            U2202   3
+            P2301   1A
+
+.ADD_TER   R2201   1     "Net-(R2201-Pad1)"
+.TER       U2201   4
+            R2202   2
+
+.ADD_TER   P2301   16A     "/BB-xM Adapter (CPU)/PCM_MUX_FSYNC"
+.TER       U2303   3
+
+.ADD_TER   P2301   18A     "/BB-xM Adapter (CPU)/PCM_MUX_DR"
+.TER       U2303   4
+
+.ADD_TER   P2301   14A     "/BB-xM Adapter (CPU)/PCM_MUX_CLK"
+.TER       U2303   5
+
+.ADD_TER   U2303   6     "/BB-xM Adapter (CPU)/PCM_MUX_DX"
+.TER       P2301   12A
+
+.ADD_TER   U2301   15     "/BB-xM Adapter (CPU)/ADC_MUX_S0"
+.TER       U2302   11
+
+.ADD_TER   U2302   10     "/BB-xM Adapter (CPU)/ADC_MUX_S1"
+.TER       U2301   16
+
+.ADD_TER   U2302   9     "/BB-xM Adapter (CPU)/ADC_MUX_S2"
+.TER       U2301   17
+
+.ADD_TER   P2302   17     "/BB-xM Adapter (CPU)/AUX_ADC"
+.TER       U2302   3
+
+.ADD_TER   D2301   A     "Net-(D2301-PadA)"
+.TER       R2301   2
+
+.ADD_TER   P2501   25     "Net-(CON2501-Pad22)"
+.TER       CON2501   22
+
+.ADD_TER   P2501   27     "Net-(CON2501-Pad23)"
+.TER       CON2501   23
+
+.ADD_TER   P2501   29     "Net-(CON2501-Pad24)"
+.TER       CON2501   24
+
+.ADD_TER   CON2501   25     "Net-(CON2501-Pad25)"
+.TER       P2501   31
+
+.ADD_TER   CON2501   26     "Net-(CON2501-Pad26)"
+.TER       P2501   33
+
+.ADD_TER   CON2501   10     "Net-(CON2501-Pad10)"
+.TER       P2501   1
+
+.ADD_TER   CON2501   9     "Net-(CON2501-Pad9)"
+.TER       P2501   2
+
+.ADD_TER   CON2501   11     "Net-(CON2501-Pad11)"
+.TER       P2501   3
+
+.ADD_TER   P2501   4     "Net-(CON2501-Pad8)"
+.TER       CON2501   8
+
+.ADD_TER   P2501   5     "Net-(CON2501-Pad12)"
+.TER       CON2501   12
+
+.ADD_TER   P2501   6     "Net-(CON2501-Pad7)"
+.TER       CON2501   7
+
+.ADD_TER   P2501   7     "Net-(CON2501-Pad13)"
+.TER       CON2501   13
+
+.ADD_TER   P2501   8     "Net-(CON2501-Pad6)"
+.TER       CON2501   6
+
+.ADD_TER   P2501   9     "Net-(CON2501-Pad14)"
+.TER       CON2501   14
+
+.ADD_TER   P2501   10     "Net-(CON2501-Pad5)"
+.TER       CON2501   5
+
+.ADD_TER   P2501   20     "Net-(CON2501-Pad34)"
+.TER       CON2501   34
+
+.ADD_TER   CON2501   29     "Net-(CON2501-Pad29)"
+.TER       P2501   30
+
+.ADD_TER   CON2501   15     "Net-(CON2501-Pad15)"
+.TER       P2501   11
+
+.ADD_TER   CON2501   20     "Net-(CON2501-Pad20)"
+.TER       P2501   21
+
+.ADD_TER   CON2501   4     "Net-(CON2501-Pad4)"
+.TER       P2501   12
+
+.ADD_TER   CON2501   33     "Net-(CON2501-Pad33)"
+.TER       P2501   22
+
+.ADD_TER   CON2501   28     "Net-(CON2501-Pad28)"
+.TER       P2501   32
+
+.ADD_TER   CON2501   16     "Net-(CON2501-Pad16)"
+.TER       P2501   13
+
+.ADD_TER   P2501   23     "Net-(CON2501-Pad21)"
+.TER       CON2501   21
+
+.ADD_TER   CON2501   3     "Net-(CON2501-Pad3)"
+.TER       P2501   14
+
+.ADD_TER   CON2501   32     "Net-(CON2501-Pad32)"
+.TER       P2501   24
+
+.ADD_TER   P2501   34     "Net-(CON2501-Pad27)"
+.TER       CON2501   27
+
+.ADD_TER   P2501   15     "Net-(CON2501-Pad17)"
+.TER       CON2501   17
+
+.ADD_TER   P2501   16     "Net-(CON2501-Pad2)"
+.TER       CON2501   2
+
+.ADD_TER   P2501   26     "Net-(CON2501-Pad31)"
+.TER       CON2501   31
+
+.ADD_TER   CON2501   18     "Net-(CON2501-Pad18)"
+.TER       P2501   17
+
+.ADD_TER   CON2501   1     "Net-(CON2501-Pad1)"
+.TER       P2501   18
+
+.ADD_TER   CON2501   30     "Net-(CON2501-Pad30)"
+.TER       P2501   28
+
+.ADD_TER   CON2501   19     "Net-(CON2501-Pad19)"
+.TER       P2501   19
+
+.END

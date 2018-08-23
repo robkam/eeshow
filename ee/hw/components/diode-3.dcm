@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DIODE-3-DIODES
+D BAS16VV triple standard diode, Diodes package (C1 at 1)
+$ENDCMP
+#
+$CMP DIODE-3-NXP
+D BAS16VV triple standard diode, NXP package (A1 at 1)
+$ENDCMP
+#
+#End Doc Library

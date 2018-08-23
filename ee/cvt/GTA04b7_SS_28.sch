@@ -1,0 +1,301 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 29 39
+Title "GTA04b7.sch"
+Date "17 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes -2750 -650 0    200   ~ 0
+PMU+Codec
+Text Notes -9250 350 0    70   ~ 0
+(c) 2014 Golden Delicious Computers GmbH&Co. KG. Licensed under CC-BY-SA.
+Text Notes -9250 -6450 0    70   ~ 0
+INCOMPLETE in V2
+Text Notes -4550 -6250 0    70   ~ 0
+should drive TPS65950
+Text Notes 650 150 0    70   ~ 0
+V2b
+Text Notes -7750 -2650 0    70   ~ 0
+this goes through B2B to OTG socket
+Text Notes -3850 -4850 0    70   ~ 0
+this goes through B2B to modem
+Text Notes -3750 -3650 0    70   ~ 0
+needs a small charge pump to generate 5V 50mA.
+$Comp
+L C-POL1206 C2801
+U 1 1 578D9722
+P -5650 -5750
+F 0 "C2801" H -5605 -5732 50  0000 L BNN
+F 1 "tbd" H -5606 -5931 50  0000 L BNN
+F 2 "SMD-1206" H -5660 -5960 65  0001 L TNN
+	1    -5650 -5750
+	1    0    0    -1
+$EndComp
+$Comp
+L C1210 C2802
+U 1 1 578D97EA
+P -4050 -50
+F 0 "C2802" H -3990 -36 50  0000 L BNN
+F 1 "PAS3225P3R3113" H -3991 -235 50  0000 L BNN
+F 2 "SMD-1210" H -4060 -260 65  0001 L TNN
+	1    -4050 -50 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME20
+U 1 1 578D984E
+P -9350 -450
+	1    -9350 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME20
+U 2 1 578D98B2
+P -2950 -450
+F 0 "#FRAME20" H -2900 500 100  0000 L BNN
+F 1 "Date:" H -2900 500 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+F 0 "#FRAME20" H -2450 499 100  0000 L BNN
+F 1 "16 Jul 2016 23:57:11" H -2450 499 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+F 0 "#FRAME20" H -100 499 100  0000 L BNN
+F 1 "Sheet:" H -100 499 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+F 0 "#FRAME20" H 450 499 100  0000 L BNN
+F 1 "28/38" H 450 499 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+F 0 "#FRAME20" H 550 899 100  0000 L BNN
+F 1 "REV:" H 550 899 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+F 0 "#FRAME20" H -2900 1200 100  0000 L BNN
+F 1 "TITLE:" H -2900 1200 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+F 0 "#FRAME20" H -2900 900 100  0000 L BNN
+F 1 "Document Number:" H -2900 900 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+F 0 "#FRAME20" H -2250 1200 100  0000 L BNN
+F 1 "GTA04b7" H -2250 1200 100  0000 L BNN
+F 2 "" H -2950 450 60 0001 C CNN
+F 3 "" H -2950 450 60 0001 C CNN
+	2    -2950 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L R0603 R2801
+U 1 1 578D997A
+P -6450 -6450
+F 0 "R2801" H -6600 -6391 50  0000 L BNN
+F 1 "(0R)" H -6600 -6559 50  0000 L BNN
+F 2 "SMD-0603" H -6460 -6660 65  0001 L TNN
+	1    -6450 -6450
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-3 #U$113
+U 1 1 578D99DE
+P -5650 5350
+F 0 "#U$113" H -5770 -5449 70  0000 L BNN
+F 1 "GND3" H -5770 -5449 70  0000 L BNN
+F 2 "" H -5650 -5350 60 0001 C CNN
+F 3 "" H -5650 -5350 60 0001 C CNN
+	1    -5650 -5350
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-3 #U$135
+U 1 1 578D9A42
+P -4050 -350
+F 0 "#U$135" H -4170 251 70  0000 L BNN
+F 1 "GND3" H -4170 251 70  0000 L BNN
+F 2 "" H -4050 350 60 0001 C CNN
+F 3 "" H -4050 350 60 0001 C CNN
+	1    -4050 350 
+	1    0    0    -1
+$EndComp
+$Comp
+L MECHANICAL U2801
+U 1 1 578D9B0A
+P -6450 -5950
+F 0 "U2801" H -6650 -5910 70  0000 L BNN
+F 1 "LTC3355" H -6650 -6049 70  0000 L BNN
+F 2 "NONE" H -6460 -6160 65  0001 L TNN
+	1    -6450 -5950
+	1    0    0    -1
+$EndComp
+$Comp
+L USB332XC-GJ-TR U2802
+U 1 1 578D9BD2
+P -4550 -3750
+F 0 "U2802" H -4649 -2250 50  0000 L BNN
+F 1 "USB3322" H -4750 -5250 50  0000 L BNN
+F 2 "WLCSP25-N25-0.4" H -4560 -3960 65  0001 L TNN
+	1    -4550 -3750
+	1    0    0    -1
+$EndComp
+$Comp
+L TPS65950 U2803
+U 2 1 578D9C9A
+P -5850 -950
+F 0 "U2803" H -6019 210 50  0000 L BNN
+F 1 "TPS65950" H -6040 -2130 50  0000 L BNN
+F 2 "PBGA256-N213-0.4" H -5860 -1160 65  0001 L TNN
+	2    -5850 -950
+	1    0    0    -1
+$EndComp
+$Comp
+L TPS65950 U2803
+U 3 1 578D9CFE
+P -4150 -1250
+F 0 "U2803" H -4259 -700 50  0000 L BNN
+F 1 "TPS65950" H -4280 -1830 50  0000 L BNN
+F 2 "PBGA256-N213-0.4" H -4160 -1460 65  0001 L TNN
+	3    -4150 -1250
+	1    0    0    -1
+$EndComp
+$Comp
+L TPS65950 U2803
+U 8 1 578D9D62
+P -8450 -4950
+F 0 "U2803" H -8549 -3950 50  0000 L BNN
+F 1 "TPS65950" H -8540 -6120 50  0000 L BNN
+F 2 "PBGA256-N213-0.4" H -8460 -5160 65  0001 L TNN
+	8    -8450 -4950
+	1    0    0    -1
+$EndComp
+$Comp
+L TPS65950 U2803
+U 10 1 578D9DC6
+P -8150 -2150
+F 0 "U2803" H -8269 -900 50  0000 L BNN
+F 1 "TPS65950" H -8250 -3450 50  0000 L BNN
+F 2 "PBGA256-N213-0.4" H -8160 -2360 65  0001 L TNN
+	10   -8150 -2150
+	1    0    0    -1
+$EndComp
+NoConn ~ -7750 -4650
+Wire Wire Line
+	-5650 -5550 -5650 -5450
+Wire Wire Line
+	-4050 250 -4050 150
+Wire Wire Line
+	-3850 -4250 -3250 -4250
+Text Label -3190 -4215 0    65   ~ 0
+MODEM-CPU-D+/33.2D
+Wire Wire Line
+	-3850 -4450 -3250 -4450
+Text Label -3190 -4415 0    65   ~ 0
+MODEM-CPU-D-/33.2D
+Wire Wire Line
+	-5250 -1950 -5150 -1950
+Wire Wire Line
+	-5650 -5850 -6150 -5850
+Wire Wire Line
+	-9150 -4250 -9450 -2950
+Wire Wire Line
+	-3350 -850 -3150 -850
+Wire Wire Line
+	-3150 -850 -3150 -150
+Wire Wire Line
+	-3150 -150 -4050 -150
+Wire Wire Line
+	-7250 -2050 -7050 -2050
+Text Label -6990 -2015 0    65   ~ 0
+OTG-CPU-D+/33.2D
+Wire Wire Line
+	-7250 -2250 -7050 -2250
+Text Label -6990 -2215 0    65   ~ 0
+OTG-CPU-D-/33.2D
+Wire Wire Line
+	-7250 -1850 -7050 -1850
+Text Label -6990 -1815 0    65   ~ 0
+OTG-CPU-ID
+Wire Wire Line
+	-5650 -6050 -4650 -6050
+Wire Wire Line
+	-6250 -6450 -5650 -6450
+Wire Wire Line
+	-5650 -6450 -5650 -6050
+Wire Wire Line
+	-6150 -6050 -5650 -6050
+Connection ~ -5650 -6050
+Text Label -4590 -6015 0    65   ~ 0
+VBAT(->TPS65950)_UPPER/29.2A
+Wire Wire Line
+	-7250 -2450 -7050 -2450
+Text Label -6990 -2415 0    65   ~ 0
+VBUS-CPU/33.2D
+Wire Wire Line
+	-3850 -4650 -3350 -4650
+Wire Wire Line
+	-3350 -4650 -3250 -4650
+Wire Wire Line
+	-3250 -3750 -3350 -3750
+Wire Wire Line
+	-3350 -3750 -3350 -4650
+Connection ~ -3350 -4650
+Text Label -3190 -4615 0    65   ~ 0
+VBUS-MODEM-CPU/33.2D
+Wire Wire Line
+	-7450 -6050 -7150 -6050
+Wire Wire Line
+	-7150 -6050 -6750 -6050
+Wire Wire Line
+	-7150 -6050 -7150 -6450
+Wire Wire Line
+	-7150 -6450 -6650 -6450
+Connection ~ -7150 -6050
+Text Label -7510 -6001 2    65   ~ 0
+VSYS_UPPER/31.1B
+Text GLabel -5650 -5550 3 10 UnSpc
+GND3
+Text GLabel -5650 -5450 1 10 UnSpc
+GND3
+Text GLabel -4050 150 3 10 UnSpc
+GND3
+Text GLabel -4050 250 1 10 UnSpc
+GND3
+Text GLabel -3850 -4250 2 10 UnSpc
+MODEM-CPU-D+
+Text GLabel -3850 -4450 2 10 UnSpc
+MODEM-CPU-D-
+Text Label -5250 -1950 0    10   ~ 0
+N$16
+Text Label -5650 -5850 1    10   ~ 0
+N$52
+Text Label -9150 -4250 2    10   ~ 0
+N$67
+Text Label -3350 -850 0    10   ~ 0
+N$79
+Text Label -4050 -150 1    10   ~ 0
+N$79
+Text GLabel -7250 -2050 2 10 UnSpc
+OTG-CPU-D+
+Text GLabel -7250 -2250 2 10 UnSpc
+OTG-CPU-D-
+Text Label -7250 -1850 0    10   ~ 0
+OTG-CPU-ID
+Text GLabel -6250 -6450 2 10 UnSpc
+VBAT(->TPS65950)_UPPER
+Text GLabel -7250 -2450 2 10 UnSpc
+VBUS-CPU
+Text GLabel -3850 -4650 2 10 UnSpc
+VBUS-MODEM-CPU
+Text GLabel -6650 -6450 0 10 UnSpc
+VSYS_UPPER
+$EndSCHEMATC

@@ -1,0 +1,80 @@
+#
+# common/Makefile.c-common - Common Makefile items for C
+#
+# Written 2013-2016 by Werner Almesberger
+# Copyright 2013-2016 by Werner Almesberger
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+
+SHELL = /bin/bash
+
+
+OBJ_SUFFIX ?= .o
+
+# Make sure "all" comes first
+
+all::
+
+# ----- YACC settings ---------------------------------------------------------
+
+YACC = bison -y
+YYFLAGS = -v
+
+# ----- Verbosity control -----------------------------------------------------
+
+CC_normal	:= $(CC)
+AS_normal	:= $(AS)
+CPP_normal	:= $(CPP)
+LEX_normal	:= $(LEX)
+YACC_normal	:= $(YACC)
+DEPEND_normal	= $(CPP_normal) $(CFLAGS) -MM -MG
+
+ifeq ($(V),1)
+    CC		= $(CC_normal)
+    AS		= $(AS_normal)
+    LEX		= $(LEX_normal)
+    YACC	= $(YACC_normal)
+    BUILD	=
+    DEPEND	= $(DEPEND_normal)
+else
+    CC		= @echo "  CC       " $@ && $(CC_normal)
+    AS		= @echo "  AS       " $@ && $(AS_normal)
+    LEX		= @echo "  LEX      " $@ && $(LEX_normal)
+    YACC	= @echo "  YACC     " $@ && $(YACC_normal)
+    BUILD	= @echo "  BUILD    " $@ &&
+    DEPEND	= @$(DEPEND_normal)
+endif
+
+# ----- Dependencies ----------------------------------------------------------
+
+-include $(OBJS:$(OBJ_SUFFIX)=.d)
+
+MKDEP =									\
+	$(DEPEND) $< |							\
+	  sed								\
+	    -e 's|^$(basename $(notdir $<))\$(OBJ_SUFFIX):|$@:|'	\
+	    -e '/^\(.*:\)\? */{p;s///;s/ *\\\?$$/ /;s/  */:\n/g;H;}'	\
+	    -e '$${g;p;}'						\
+	    -e d >$(basename $@).d;					\
+	  [ "$${PIPESTATUS[*]}" = "0 0" ] ||				\
+	  { rm -f $(basename $@).d; exit 1; }
+
+#
+# See
+# http://stackoverflow.com/questions/5229561/gnu-make-generating-automatic-dependencies-with-generated-header-files
+#
+
+.PHONY:		generated_headers
+
+%$(OBJ_SUFFIX):	%.c | generated_headers
+		$(CC) $(CFLAGS) -c -o $@ $<
+		$(MKDEP)
+
+# ----- Cleanup ---------------------------------------------------------------
+
+clean::
+		rm -f $(OBJS) $(OBJS:$(OBJ_SUFFIX)=.d)

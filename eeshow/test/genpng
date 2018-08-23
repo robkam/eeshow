@@ -1,0 +1,37 @@
+#!/bin/sh
+
+usage()
+{
+	echo "usage: $0 [[dir] prefix]" 1>&2
+	exit 1
+}
+
+
+[ "$3" ] && usage
+[ "${1#-}" != "$1" ] && usage
+
+dir=.
+if [ "$2" ]; then
+	dir=$1
+	shift
+fi
+prefix=${1:-out}
+
+sheet=1
+while [ $sheet -le 38 ]; do
+	echo -n .
+	sn=`printf '%02d' $sheet`
+	file=$dir/$prefix$sn.png
+	if [ $sheet = 1 ]; then
+		in=$dir/neo900-ee/hw/neo900.sch
+	else
+		in=$dir/neo900-ee/hw/neo900_SS_`expr $sheet - 1`.sch
+	fi
+	file=$dir/$prefix$sn.png
+	$dir/../eeplot -o fig:- -t $dir/frame.fig -DSHEET=$sn \
+	    $dir/neo900-ee/hw/neo900.lib \
+	    $dir/kicad-libs/components/powered.lib "$in" | \
+	    fig2dev -L png -m 2 >$file
+	sheet=`expr $sheet + 1`
+done
+echo

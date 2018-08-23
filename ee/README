@@ -1,0 +1,154 @@
+Quick start
+-----------
+
+This is the quickest way to clone the repository, set up the submodule,
+and generate scripted symbols:
+
+git clone http://neo900.org/git/ee
+cd ee
+make pull
+
+Then you can access the schematics with
+
+cd hw
+make sch
+
+If the above doesn't work for some reason, please read the next section.
+
+
+External dependencies
+---------------------
+
+We use items from the Qi-Hardware libraries, through a git submodule.
+There are two ways to initialize the submodules:
+
+1) when cloning:
+
+git clone --recursive http://neo900.org/git/ee
+
+2) in a separate step, after cloning or if already cloned:
+
+git clone http://neo900.org/git/ee
+cd ee
+git submodule update --init
+cd ..
+
+
+To generate scripted components (schematics symbols), you need to run
+
+cd ee
+make -C hw/kicad-libs/components
+make -C hw/modules
+make -C hw/kicad-libs/modules
+
+
+To generate PDF schematics with a table of contents, we also use the
+"misc" repository of the Neo900 project. It should be at the same level
+as "ee". E.g.,
+
+cd neo900
+git clone http://neo900.org/git/misc
+
+
+Thus, we get the following hierarchy:
+
+neo900			"top-level" directory
+  ee			"neo900/ee" repository
+    hw			subdirectory
+      kicad-libs	submodule, for "qi-hw/kicad-libs" repository
+  misc			"neo900/misc" repository
+
+
+Updating the repository
+-----------------------
+
+Submodules are updated to their "pinned" versions, which may be behind
+the latest commit in the corresponding repo.
+
+cd ee
+git pull
+git submodule update
+make -C hw/modules
+
+In case the scripts in kicad-libs/components changes, also run
+
+make -C hw/kicad-libs/components
+make -C hw/kicad-libs/modules
+
+
+A shortcut for all the above is available as (if in ee/ or ee/hw/):
+
+make pull
+
+
+Going back in history
+---------------------
+
+In general, kicad-libs tries to be backward-compatible, such that new
+changes - except for critical bug fixes - will not affect designs based
+on an older version of the repository.
+
+However, if the exact state of kicad-libs at some point in the history
+of "ee" is needed, it can be obtained as follows:
+
+cd ee
+git checkout <desired_commit_of_neo900-ee>
+make sync
+
+To return to the present,
+
+git checkout master
+make sync
+
+
+Incorporating new changes from kicad-libs
+-----------------------------------------
+
+There is more than one way to do this. A fairly generic one goes like
+this:
+
+cd ee/hw
+cd kicad-libs
+git pull
+make -C components
+make -C modules
+cd ..
+# apply any other changes needed in this commit, if any
+git commit .
+
+
+Viewing documentation
+---------------------
+
+Using eeshow, many data sheets can be accessed directly when viewing
+schematics. This is set up as follows:
+
+Install eeshow, as described on
+https://neo900.org/stuff/eeshow/
+
+Create the cache directory ($HOME/.eeshow-viewer-cache) with
+eeshow-viewer -m
+
+From ee/hw/, run
+make view
+
+This will first download a number of data sheets (which are cached, so
+subsequent invocations will be faster) and then start eeshow. To view
+a part's data sheet, hover over the schematics symbol. A pop-up will
+appear, showing the component reference and the documentation available.
+Clicking on a documentation item will start xpdf as external viewer (see
+below for other choices).
+
+For all non-trivial components, there should be the data sheet. In some
+cases, there are also other documents, such as technical reference
+manuals. In cases where the footprint / land pattern or mechanical
+drawing is not trivial to find, a direct link to the footprint is also
+provided.
+
+
+Customizing the viewer
+- - - - - - - - - - -
+
+A different viewer than xpdf can be selected by setting the environment
+variable EESHOW_PDF_VIEWER. Note that direct links to pages inside a
+document are currently only supported when using xpdf and evince.

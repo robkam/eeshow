@@ -1,0 +1,26 @@
+<span font_desc="Mono 10">
++ or =      zoom in
+-           zoom out
+*           fit to window
+Home        go to the top sheet
+Delete or
+Backspace   go to the next higher sheet in hierarchy
+PgUp        go to the previous sheet in sequence
+PgDn        go to the next sheet in sequence
+Up or Down  invoke the revision history (WIP)
+Tab         toggle between old and new revision
+Esc         cancel current action (exit history, close
+            pop-up, de-highlight glabel, close help)
+E           show/hide extra information (pin types)
+F           toggle showing footprints, even if invisible
+Shift+R     idem, for component references
+Shift+D     toggle between "diff" and experimental
+	    "delta" mode
+H           show/hide help window
+V           if hovering on commit, show/hide commit viewer
+T           toggle performance timer
+D           when comparing revisions, show difference
+N           show newer sheet
+O           show older sheet
+Q           quit the viewer
+</span>

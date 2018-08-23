@@ -1,0 +1,297 @@
+<HTML>
+<TITLE>Eeshow</TITLE>
+<BODY>
+
+<STYLE type="text/css">
+body {
+	background-color:	#e0e0e0;
+}
+
+img {
+	padding:	10px;
+}
+</STYLE>
+
+<H1>Eeshow &dash; Schematics renderer and viewer</H1>
+
+Eeshow is a collection of programs that read schematics made by
+<A href="http://kicad-pcb.org/">KiCad</A>'s
+<A href="http://kicad-pcb.org/discover/eeschema/">Eeschema</A>.
+Eeshow can be used as
+interactive viewer, or as a command-line tool to convert schematics
+to PNG, PDF, Postscript, EPS, or FIG.
+<BR>
+Eeshow can show the differences between two versions of schematics sheets
+and it can retrieve files directly from a
+<A href="https://git-scm.com/">git</A> repository.
+<BR>
+Eeshow was developed as part of the
+<A href="http://neo900.org/">Neo900</A> project.
+<P>
+Sections:
+<UL>
+  <LI><A href="#building">Building eeshow</A>
+  <LI><A href="#motivation">Motivation</A>
+  <LI><A href="#walk-through">Walk-through</A>
+  <LI><A href="#experimental">Experimental features</A>
+    <UL>
+      <LI><A href="#documentation">Documentation</A>
+      <LI><A href="#copy-paste">Copy and paste</A>
+    </UL>
+  <LI><A href="#non-interactive">Non-interactive use</A>
+</UL>
+
+
+<A name="building">
+<H2>Building eeshow</H2>
+
+Eeshow currently only works on Linux.
+
+To build, the development libraries for
+<A href="http://www.gtk.org/">Gtk+ 3</A>,
+<A href="https://cairographics.org/">Cairo</A>, and
+<A href="https://libgit2.github.com/">libgit2</A>
+have to be installed. It also uses the command-line tools from
+transfig and
+<A href="http://www.imagemagick.org/">ImageMagick</A>.
+<BR>
+On Ubuntu 16.04 and Debian 8.5, the names of the corresponding package would be
+<code>libgtk-3-dev</code>,
+<code>libcairo2-dev</code>,
+<code>libgit2-dev</code>,
+<code>transfig</code>, and
+<code>imagemagick</code>, e.g.,<BR>
+<PRE>
+sudo apt-get install libgtk-3-dev libcairo2-dev libgit2-dev transfig imagemagick
+</PRE>
+<P>
+On Fedora 24:
+<PRE>
+sudo dnf install gtk3-devel cairo-devel libgit2-devel transfig ImageMagick
+</PRE>
+<P>
+Then download, compile, and install with
+<BR>
+<PRE>
+git clone http://neo900.org/git/eeshow
+cd eeshow
+make
+sudo make install
+</PRE>
+
+
+<A name="motivation">
+<H2>Motivation</H2>
+
+The Neo900 project uses complex schematics that are edited by several
+people. We keep a revision history in git. For such a collaborative
+project, it is crucial to coordinate changes and to be able to see
+exactly what happened when conflicts occur.
+<BR>
+Unfortunately, it is not
+always easy to tell from a textual difference what has changed between
+two versions of schematics. Worse, even small changes can sometimes
+result in Eeschema producing large numbers of differences.
+<P>
+Eeshow aims to provide a convenient means for visually comparing differences
+in schematics. Furthermore, by being able to work directly from a git
+repository and not requiring files to be changed on disk, it helps
+to streamline the workflow.
+<P>
+Eeshow has evolved from the much older
+<A href="http://projects.qi-hardware.com/index.php/p/eda-tools/source/tree/master/schhist">schhist</A>
+project at
+<A href="http://qi-hardware.com">Qi-Hardware</A>
+that provided a collection of scripts that used Eeschema
+(with the help of Wolfgang Spraul's
+<A href="http://projects.qi-hardware.com/index.php/p/eda-tools/source/tree/master/kicad-patches">command-line patches</A>)
+to render schematics to bitmap images and then to compare these,
+producing a large HTML table.
+<BR>
+However, this system was very slow
+and the approach of using a table would not have scaled to a project
+as large as Neo900.
+
+
+<A name="walk-through">
+<H2>Walk-through</H2>
+
+Below is a quick tour of the key features of eeshow. We use the Neo900
+schematics as an example. You can download them with:
+<pre>
+git clone http://neo900.org/git/ee
+cd ee/hw
+</pre>
+
+Start eeshow with:
+<pre>
+eeshow neo900.pro
+</pre>
+
+Eshow displays a progress bar while loading. Since it retrieves files
+from the project's entire revision history, this can take a moment.
+If the wait gets unbearable, consider using the option
+<CODE>-N <I>depth</I></CODE>
+to limit the number of revision eeshow uses.
+<BR>
+Eeshow will typically complain about not finding files or components.
+Such small problems are common in many projects, and eeshow just omits
+parts it can't find, and skips revisions it cannot load.
+<P>
+Once done, eeshow displays the top-level page of the schematics. In
+our case, this page contains all the sub-sheets.
+<P>
+<IMG src="wt-start.png">
+<P>
+You can drag to pan, use the scroll wheel or the + or - keys to zoom,
+* to fit the sheet to the window,
+click a sub-sheet symbol to open the respective sheet, get help with H,
+or exit with Q.
+<P>
+<IMG src="wt-plain.png">
+<P>
+Sheets are rendered almost like in Eeschema. The main difference is
+that eeshow uses system fonts for text, which can sometimes produce
+small size differences.
+<P>
+To return to the sheet next higher in the hierarchy, click on the box
+with the sheet name. To show eeshow's sheet index, click on the box
+with the name of the top sheet.
+<P>
+<IMG src="wt-index.png"><P>
+<P>
+The index shows thumbnails for all the sheets. Clicking on a
+thumbnail selects the respective sheet. Clicking anywhere else
+(or pressing Escape) returns to the sheet.
+<P>
+While Eeschema largely avoids the use of settings that are invisible
+to the user, there is one major exception: pin types.
+<BR>
+In eeshow,
+displaying symbols representing pin types can be toggled by pressing E.
+<P>
+<IMG src="wt-pin-type.png">
+<P>
+Another extension of eeshow is that it can help navigate nets using
+global labels. When hovering over a global label, a pop-up showing the
+net name and the sheets on which it used appears. Clicking on a sheet
+goes there.
+<BR>
+Furthermore, all occurreces of the global label on the
+sheet are highlighted. This highlighting remains effective also when
+changing sheets. It can be removed by pressing Escape.
+<P>
+<IMG src="wt-glabel.png">
+<P>
+We now come to eeshow's main feature. On the left-hand side of the
+screen, a box with the latest revision in the git history is shown.
+Clicking on it displays the revision history, with all branches.
+<P>
+<IMG src="wt-history.png"><P>
+<P>
+Clicking on an entry shows the schematics as they were at that revision.
+<P>
+To compare two revisions, click on the double triangle symbol and select
+the revision to compare with. Eeshow then displays the difference beteen
+the two.
+<P>
+<IMG src="wt-diff.png">
+<P>
+The difference is generated by rendering both versions, then comparing
+them pixel by pixel for differences. This means that only changes
+resulting in a visible difference will be shown.
+<P>
+<IMG src="wt-diff-old.png">
+<P>
+The two versions being compared can be shown also without differences:
+O shows the old version, N the new version, D the differences. Tab
+toggles between old and new.
+<P>
+Versions can also be selected by clicking on the respective box in the
+upper left corner. Clicking on an already active version opens the
+history viewer for changing the version.
+<P>
+<IMG src="wt-diff-new.png"><P>
+<P>
+When showing differences, sub-sheets containing changes (or that have
+sub-sheets with changes) are highlighted. The same highlighting is
+also applied on the index page.
+<P>
+<IMG src="wt-diff-index.png"><P>
+<P>
+Note: eeshow bases this highlighting on comparing objects and their
+parameters ("delta mode"), not on rendering them and then comparing
+images ("diff mode").
+<BR>
+This can sometimes produce diverging results,
+e.g., a sheet may be highlighted but have no visible changes.
+<BR>
+Delta mode can also be selected for visualization, by pressing Shift-D.
+
+
+<A name="experimental">
+<H2>Experimental features</H2>
+
+The following features are experimental and may exhibit quirks.
+
+
+<A name="documentation">
+<H3>Documentation</H3>
+
+Eeshow can be given a list of documents to show for components (identified
+by their component reference).
+<BR>
+When hovering over a component, a pop-up appears, showing the component
+reference and the documents associated with it.
+<BR>
+When clicking on a document entry, eeshow launches an external viewer
+to display the document.
+<P>
+<IMG src="wt-doc.png">
+<P>
+Further details can be found towards the end of
+<A href="https://neo900.org/git/eeshow/plain/README">README</A>.
+<P>
+The Neo900 project makes use of this functionality, as explained in
+the section "Viewing documentation" in
+<BR>
+<A href="https://neo900.org/git/ee/plain/README"><code>https://neo900.org/git/ee/plain/README</code></A>
+<P>
+
+
+<A name="copy-paste">
+<H3>Copy and paste</H3>
+
+To copy text from schematics to the clipboard, move the mouse on the text
+in question, push and hold the mouse button, and swipe/drag it a little.
+<BR>
+The text is then highlighted and copied to the clipboard.
+<BR>
+This requires the <B>xsel</B> command-line utility to be installed.
+<P>
+<IMG src="wt-cp.png">
+<P>
+
+
+<A name="non-interactive">
+<H2>Non-interactive use</H2>
+
+Eeshow can also be used from the command line to render schematics.
+The most common use may be to render the schematics as PDF, with the
+command <code>eeplot</code>. Example:
+<P>
+<PRE>
+eeplot -o neo900.pdf neo900.pro
+</PRE>
+<P>
+The command <code>eediff</code> makes a pixel-wised comparison of two
+schematics sheets, like "diff mode" in eeshow does:
+<P>
+<PRE>
+eediff -o diff.png -s 2 6a9f71:neo900.pro neo900_SS_5.sch \
+  neo900.pro neo900_SS_5.sch
+</PRE>
+<P>
+Additional functions are explained in the
+<A href="https://neo900.org/git/eeshow/plain/README">README</A>.
+</BODY>

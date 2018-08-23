@@ -1,0 +1,731 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 15 39
+Title "GTA04b7.sch"
+Date "17 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes -2800 -650 0    200   ~ 0
+Audio Handsfree
+Text Notes -9300 350 0    70   ~ 0
+(c) 2014 Golden Delicious Computers GmbH&Co. KG. Licensed under CC-BY-SA.
+Text Notes -5600 -6050 0    70   ~ 0
+Hands Free
+Text Notes 600 150 0    70   ~ 0
+V2b
+$Comp
+L C0603 C1401
+U 1 1 578C80CA
+P -6600 -5450
+F 0 "C1401" H -6540 -5435 50  0000 L BNN
+F 1 "10u" H -6540 -5635 50  0000 L BNN
+F 2 "SMD-0603" H -6610 -5660 65  0001 L TNN
+	1    -6600 -5450
+	-1    0    0    1
+$EndComp
+$Comp
+L C0402 C1402
+U 1 1 578C8192
+P -6300 -5450
+F 0 "C1402" H -6240 -5435 50  0000 L BNN
+F 1 "100n" H -6240 -5635 50  0000 L BNN
+F 2 "SMD-0402" H -6310 -5660 65  0001 L TNN
+	1    -6300 -5450
+	-1    0    0    1
+$EndComp
+$Comp
+L C0402 C1403
+U 1 1 578C825A
+P -6000 -5450
+F 0 "C1403" H -5940 -5435 50  0000 L BNN
+F 1 "27p" H -5940 -5635 50  0000 L BNN
+F 2 "SMD-0402" H -6010 -5660 65  0001 L TNN
+	1    -6000 -5450
+	-1    0    0    1
+$EndComp
+$Comp
+L C0402 C1404
+U 1 1 578C8322
+P -3900 -3450
+F 0 "C1404" H -3840 -3436 50  0000 L BNN
+F 1 "1n" H -3841 -3635 50  0000 L BNN
+F 2 "SMD-0402" H -3910 -3660 65  0001 L TNN
+	1    -3900 -3450
+	1    0    0    -1
+$EndComp
+$Comp
+L C0402 C1405
+U 1 1 578C83EA
+P -3600 -3450
+F 0 "C1405" H -3540 -3436 50  0000 L BNN
+F 1 "1n" H -3541 -3635 50  0000 L BNN
+F 2 "SMD-0402" H -3610 -3660 65  0001 L TNN
+	1    -3600 -3450
+	1    0    0    -1
+$EndComp
+$Comp
+L C0402 C1406
+U 1 1 578C84B2
+P -6100 -3150
+F 0 "C1406" H -6040 -3135 50  0000 L BNN
+F 1 "100n" H -6040 -3335 50  0000 L BNN
+F 2 "SMD-0402" H -6110 -3360 65  0001 L TNN
+	1    -6100 -3150
+	0    1    1    0
+$EndComp
+$Comp
+L C0402 C1407
+U 1 1 578C857A
+P -6100 -2850
+F 0 "C1407" H -6040 -2835 50  0000 L BNN
+F 1 "100n" H -6040 -3035 50  0000 L BNN
+F 2 "SMD-0402" H -6110 -3060 65  0001 L TNN
+	1    -6100 -2850
+	0    1    1    0
+$EndComp
+$Comp
+L C0402 C1408
+U 1 1 578C8642
+P -6100 -2150
+F 0 "C1408" H -6040 -2135 50  0000 L BNN
+F 1 "100n" H -6040 -2335 50  0000 L BNN
+F 2 "SMD-0402" H -6110 -2360 65  0001 L TNN
+	1    -6100 -2150
+	0    1    1    0
+$EndComp
+$Comp
+L C0402 C1409
+U 1 1 578C870A
+P -6100 -1750
+F 0 "C1409" H -6040 -1735 50  0000 L BNN
+F 1 "100n" H -6040 -1935 50  0000 L BNN
+F 2 "SMD-0402" H -6110 -1960 65  0001 L TNN
+	1    -6100 -1750
+	0    1    1    0
+$EndComp
+$Comp
+L C0402 C1410
+U 1 1 578C87D2
+P -3900 -1550
+F 0 "C1410" H -3840 -1536 50  0000 L BNN
+F 1 "1n" H -3841 -1735 50  0000 L BNN
+F 2 "SMD-0402" H -3910 -1760 65  0001 L TNN
+	1    -3900 -1550
+	1    0    0    -1
+$EndComp
+$Comp
+L C0402 C1411
+U 1 1 578C889A
+P -3600 -1550
+F 0 "C1411" H -3540 -1536 50  0000 L BNN
+F 1 "1n" H -3541 -1735 50  0000 L BNN
+F 2 "SMD-0402" H -3610 -1760 65  0001 L TNN
+	1    -3600 -1550
+	1    0    0    -1
+$EndComp
+$Comp
+L V5.5MLA0603N D1401
+U 1 1 578C8962
+P -3100 -3450
+F 0 "D1401" H -3200 -3280 50  0000 L BNN
+F 1 "V5.5MLA0603N" H -3200 -3650 50  0000 L BNN
+F 2 "SMD-0603" H -3110 -3660 65  0001 L TNN
+	1    -3100 -3450
+	0    -1    -1    0
+$EndComp
+$Comp
+L V5.5MLA0603N D1402
+U 1 1 578C8A2A
+P -2700 -3450
+F 0 "D1402" H -2800 -3280 50  0000 L BNN
+F 1 "V5.5MLA0603N" H -2800 -3650 50  0000 L BNN
+F 2 "SMD-0603" H -2710 -3660 65  0001 L TNN
+	1    -2700 -3450
+	0    -1    -1    0
+$EndComp
+$Comp
+L V5.5MLA0603N D1403
+U 1 1 578C8AF2
+P -3100 -1550
+F 0 "D1403" H -3200 -1380 50  0000 L BNN
+F 1 "V5.5MLA0603N" H -3200 -1750 50  0000 L BNN
+F 2 "SMD-0603" H -3110 -1760 65  0001 L TNN
+	1    -3100 -1550
+	0    -1    -1    0
+$EndComp
+$Comp
+L V5.5MLA0603N D1404
+U 1 1 578C8BBA
+P -2700 -1550
+F 0 "D1404" H -2800 -1380 50  0000 L BNN
+F 1 "V5.5MLA0603N" H -2800 -1750 50  0000 L BNN
+F 2 "SMD-0603" H -2710 -1760 65  0001 L TNN
+	1    -2700 -1550
+	0    -1    -1    0
+$EndComp
+$Comp
+L DINA4_L #FRAME29
+U 1 1 578C8C1E
+P -9400 -450
+	1    -9400 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME29
+U 2 1 578C8C82
+P -3000 -450
+F 0 "#FRAME29" H -2950 500 100  0000 L BNN
+F 1 "Date:" H -2950 500 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME29" H -2500 499 100  0000 L BNN
+F 1 "16 Jul 2016 23:57:11" H -2500 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME29" H -150 499 100  0000 L BNN
+F 1 "Sheet:" H -150 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME29" H 400 499 100  0000 L BNN
+F 1 "14/38" H 400 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME29" H 500 899 100  0000 L BNN
+F 1 "REV:" H 500 899 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME29" H -2950 1200 100  0000 L BNN
+F 1 "TITLE:" H -2950 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME29" H -2950 900 100  0000 L BNN
+F 1 "Document Number:" H -2950 900 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME29" H -2300 1200 100  0000 L BNN
+F 1 "GTA04b7" H -2300 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+	2    -3000 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L L0402 L1401
+U 1 1 578C8D4A
+P -4300 -3150
+F 0 "L1401" V -4358 -3300 50  0000 L BNN
+F 1 "" H -4310 -3260 65  0001 L TNN
+F 2 "SMD-0402" H -4310 -3360 65  0001 L TNN
+	1    -4300 -3150
+	0    1    1    0
+$EndComp
+$Comp
+L L0402 L1402
+U 1 1 578C8E12
+P -4300 -2750
+F 0 "L1402" V -4358 -2900 50  0000 L BNN
+F 1 "" H -4310 -2860 65  0001 L TNN
+F 2 "SMD-0402" H -4310 -2960 65  0001 L TNN
+	1    -4300 -2750
+	0    1    1    0
+$EndComp
+$Comp
+L L0402 L1403
+U 1 1 578C8EDA
+P -4300 -2150
+F 0 "L1403" V -4358 -2300 50  0000 L BNN
+F 1 "" H -4310 -2260 65  0001 L TNN
+F 2 "SMD-0402" H -4310 -2360 65  0001 L TNN
+	1    -4300 -2150
+	0    1    1    0
+$EndComp
+$Comp
+L L0402 L1404
+U 1 1 578C8FA2
+P -4300 -1750
+F 0 "L1404" V -4358 -1900 50  0000 L BNN
+F 1 "" H -4310 -1860 65  0001 L TNN
+F 2 "SMD-0402" H -4310 -1960 65  0001 L TNN
+	1    -4300 -1750
+	0    1    1    0
+$EndComp
+$Comp
+L SPEAKER-PETRA SPKR-L3709
+U 1 1 578C906A
+P -2200 -2950
+F 0 "SPKR-L3709" H -2340 -2720 50  0000 L BNN
+F 1 "SPEAKER" H -2350 -3220 50  0000 L BNN
+F 2 "2403-260-00031" H -2210 -3160 65  0001 L TNN
+	1    -2200 -2950
+	1    0    0    -1
+$EndComp
+$Comp
+L SPEAKER-PETRA SPKR-R3709
+U 1 1 578C9132
+P -2200 -1950
+F 0 "SPKR-R3709" H -2340 -1720 50  0000 L BNN
+F 1 "SPEAKER" H -2350 -2220 50  0000 L BNN
+F 2 "2403-260-00031" H -2210 -2160 65  0001 L TNN
+	1    -2200 -1950
+	1    0    0    -1
+$EndComp
+$Comp
+L TEST-POINT-1.25 SPKRL+3709
+U 1 1 578C91FA
+P -3100 -3050
+F 0 "SPKRL+3709" H -3110 -3060 65  0001 L TNN
+F 1 "" H -3110 -3160 65  0001 L TNN
+F 2 "TP-1.25" H -3110 -3260 65  0001 L TNN
+	1    -3100 -3050
+	1    0    0    -1
+$EndComp
+$Comp
+L TEST-POINT-1.25 SPKRL-3709
+U 1 1 578C92C2
+P -3100 -2850
+F 0 "SPKRL-3709" H -3110 -2860 65  0001 L TNN
+F 1 "" H -3110 -2960 65  0001 L TNN
+F 2 "TP-1.25" H -3110 -3060 65  0001 L TNN
+	1    -3100 -2850
+	1    0    0    -1
+$EndComp
+$Comp
+L TEST-POINT-1.25 SPKRR+3709
+U 1 1 578C938A
+P -3100 -2050
+F 0 "SPKRR+3709" H -3110 -2060 65  0001 L TNN
+F 1 "" H -3110 -2160 65  0001 L TNN
+F 2 "TP-1.25" H -3110 -2260 65  0001 L TNN
+	1    -3100 -2050
+	1    0    0    -1
+$EndComp
+$Comp
+L TEST-POINT-1.25 SPKRR-3709
+U 1 1 578C9452
+P -3100 -1850
+F 0 "SPKRR-3709" H -3110 -1860 65  0001 L TNN
+F 1 "" H -3110 -1960 65  0001 L TNN
+F 2 "TP-1.25" H -3110 -2060 65  0001 L TNN
+	1    -3100 -1850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$177
+U 1 1 578C94B6
+P -5800 4050
+F 0 "#U$177" H -5890 -4150 70  0000 L BNN
+F 1 "GND" H -5890 -4150 70  0000 L BNN
+F 2 "" H -5800 -4050 60 0001 C CNN
+F 3 "" H -5800 -4050 60 0001 C CNN
+	1    -5800 -4050
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$178
+U 1 1 578C951A
+P -6000 4950
+F 0 "#U$178" H -6090 -5050 70  0000 L BNN
+F 1 "GND" H -6090 -5050 70  0000 L BNN
+F 2 "" H -6000 -4950 60 0001 C CNN
+F 3 "" H -6000 -4950 60 0001 C CNN
+	1    -6000 -4950
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$179
+U 1 1 578C957E
+P -6300 5150
+F 0 "#U$179" H -6390 -5250 70  0000 L BNN
+F 1 "GND" H -6390 -5250 70  0000 L BNN
+F 2 "" H -6300 -5150 60 0001 C CNN
+F 3 "" H -6300 -5150 60 0001 C CNN
+	1    -6300 -5150
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$213
+U 1 1 578C95E2
+P -2900 1250
+F 0 "#U$213" H -2990 -1350 70  0000 L BNN
+F 1 "GND" H -2990 -1350 70  0000 L BNN
+F 2 "" H -2900 -1250 60 0001 C CNN
+F 3 "" H -2900 -1250 60 0001 C CNN
+	1    -2900 -1250
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$214
+U 1 1 578C9646
+P -2400 3550
+F 0 "#U$214" H -2490 -3650 70  0000 L BNN
+F 1 "GND" H -2490 -3650 70  0000 L BNN
+F 2 "" H -2400 -3550 60 0001 C CNN
+F 3 "" H -2400 -3550 60 0001 C CNN
+	1    -2400 -3550
+	1    0    0    -1
+$EndComp
+$Comp
+L TPA2012D2RTJ U1401
+U 1 1 578C970E
+P -5300 -2950
+F 0 "U1401" H -5600 -2600 70  0000 L BNN
+F 1 "TPA2012D2RTJ" H -5600 -3350 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -5310 -3160 65  0001 L TNN
+	1    -5300 -2950
+	1    0    0    -1
+$EndComp
+$Comp
+L TPA2012D2RTJ U1401
+U 2 1 578C9772
+P -5300 -4950
+F 0 "U1401" H -5599 -4110 70  0000 L BNN
+F 1 "TPA2012D2RTJ" H -5600 -5750 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -5310 -5160 65  0001 L TNN
+	2    -5300 -4950
+	1    0    0    -1
+$EndComp
+$Comp
+L TPA2012D2RTJ U1401
+U 3 1 578C97D6
+P -5300 -1950
+F 0 "U1401" H -5600 -1600 70  0000 L BNN
+F 1 "TPA2012D2RTJ" H -5600 -2350 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -5310 -2160 65  0001 L TNN
+	3    -5300 -1950
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	-5800 -4650 -5800 -4550
+Wire Wire Line
+	-5800 -4550 -5800 -4450
+Wire Wire Line
+	-5800 -4450 -5800 -4350
+Wire Wire Line
+	-5800 -4350 -5800 -4150
+Connection ~ -5800 -4550
+Connection ~ -5800 -4450
+Connection ~ -5800 -4350
+Wire Wire Line
+	-5800 -5250 -5800 -5150
+Wire Wire Line
+	-5800 -5150 -6000 -5150
+Wire Wire Line
+	-6000 -5150 -6000 -5050
+Connection ~ -5800 -5150
+Wire Wire Line
+	-6000 -5350 -6300 -5350
+Wire Wire Line
+	-6300 -5350 -6300 -5250
+Wire Wire Line
+	-6600 -5350 -6300 -5350
+Connection ~ -6300 -5350
+Wire Wire Line
+	-3100 -1350 -2900 -1350
+Wire Wire Line
+	-2900 -1350 -2700 -1350
+Wire Wire Line
+	-3900 -1350 -3600 -1350
+Wire Wire Line
+	-3600 -1350 -3100 -1350
+Connection ~ -2900 -1350
+Connection ~ -3600 -1350
+Connection ~ -3100 -1350
+Wire Wire Line
+	-3100 -3650 -2700 -3650
+Wire Wire Line
+	-2400 -3650 -2700 -3650
+Wire Wire Line
+	-3100 -3650 -3600 -3650
+Wire Wire Line
+	-3600 -3650 -3900 -3650
+Wire Wire Line
+	-3900 -3650 -3900 -3550
+Wire Wire Line
+	-3600 -3550 -3600 -3650
+Connection ~ -2700 -3650
+Connection ~ -3100 -3650
+Connection ~ -3600 -3650
+Wire Wire Line
+	-5800 -4950 -5800 -4850
+Wire Wire Line
+	-5800 -4850 -6900 -4850
+Connection ~ -5800 -4850
+Text Label -6960 -4801 2    65   ~ 0
+GPIO-HF-EN/20.1C
+Wire Wire Line
+	-6300 -3150 -6400 -3150
+Text Label -6460 -3101 2    65   ~ 0
+HFL+/11.2C
+Wire Wire Line
+	-6300 -2850 -6400 -2850
+Text Label -6460 -2801 2    65   ~ 0
+HFL-/11.2C
+Wire Wire Line
+	-6300 -2150 -6400 -2150
+Text Label -6460 -2101 2    65   ~ 0
+HFR+/11.2D
+Wire Wire Line
+	-6300 -1750 -6400 -1750
+Text Label -6460 -1701 2    65   ~ 0
+HFR-/11.2D
+Wire Wire Line
+	-3100 -2750 -3900 -2750
+Wire Wire Line
+	-3900 -2750 -4100 -2750
+Wire Wire Line
+	-3100 -2850 -3100 -2750
+Wire Wire Line
+	-3100 -2850 -2700 -2850
+Wire Wire Line
+	-2700 -2850 -2600 -2850
+Wire Wire Line
+	-2700 -3250 -2700 -2850
+Wire Wire Line
+	-3900 -3250 -3900 -2750
+Connection ~ -3100 -2850
+Connection ~ -2700 -2850
+Connection ~ -3900 -2750
+Wire Wire Line
+	-3100 -1850 -2600 -1850
+Wire Wire Line
+	-3100 -1850 -3100 -1750
+Wire Wire Line
+	-3100 -1750 -3100 -1850
+Wire Wire Line
+	-4100 -1750 -3900 -1750
+Wire Wire Line
+	-3900 -1750 -3100 -1750
+Wire Wire Line
+	-3900 -1650 -3900 -1750
+Connection ~ -3100 -1850
+Connection ~ -3100 -1750
+Connection ~ -3900 -1750
+Wire Wire Line
+	-3100 -3050 -2600 -3050
+Wire Wire Line
+	-3100 -3050 -3100 -3150
+Wire Wire Line
+	-3100 -3150 -3600 -3150
+Wire Wire Line
+	-3600 -3150 -4100 -3150
+Wire Wire Line
+	-3100 -3250 -3100 -3150
+Wire Wire Line
+	-3600 -3250 -3600 -3150
+Connection ~ -3100 -3050
+Connection ~ -3100 -3150
+Connection ~ -3600 -3150
+Wire Wire Line
+	-5800 -3150 -6000 -3150
+Wire Wire Line
+	-6000 -2850 -5800 -2850
+Wire Wire Line
+	-5800 -2850 -5800 -2750
+Wire Wire Line
+	-6000 -2150 -5800 -2150
+Wire Wire Line
+	-6000 -1750 -5800 -1750
+Wire Wire Line
+	-4500 -3150 -4700 -3150
+Wire Wire Line
+	-4500 -2750 -4700 -2750
+Wire Wire Line
+	-4700 -2150 -4500 -2150
+Wire Wire Line
+	-4700 -1750 -4500 -1750
+Wire Wire Line
+	-2700 -2050 -2600 -2050
+Wire Wire Line
+	-2700 -2050 -2700 -1750
+Wire Wire Line
+	-3100 -2050 -2700 -2050
+Wire Wire Line
+	-3100 -2150 -3100 -2050
+Wire Wire Line
+	-4100 -2150 -3600 -2150
+Wire Wire Line
+	-3600 -2150 -3100 -2150
+Wire Wire Line
+	-3600 -1650 -3600 -2150
+Connection ~ -2700 -2050
+Connection ~ -3100 -2050
+Connection ~ -3600 -2150
+Wire Wire Line
+	-5800 -5450 -5800 -5550
+Wire Wire Line
+	-5800 -5550 -5800 -5650
+Wire Wire Line
+	-5800 -5650 -6000 -5650
+Wire Wire Line
+	-6000 -5650 -6200 -5650
+Wire Wire Line
+	-6200 -5650 -6300 -5650
+Wire Wire Line
+	-6300 -5650 -6600 -5650
+Wire Wire Line
+	-6600 -5650 -6900 -5650
+Connection ~ -5800 -5550
+Connection ~ -5800 -5650
+Connection ~ -6000 -5650
+Connection ~ -6300 -5650
+Connection ~ -6600 -5650
+Text Label -6960 -5601 2    65   ~ 0
+VSYS/9.2B
+Wire Notes Line
+-5600 -5750 -4900 -5750
+Wire Notes Line
+-4900 -5750 -4900 -1650
+Wire Notes Line
+-4900 -1650 -5600 -1650
+Wire Notes Line
+-5600 -1650 -5600 -5750
+Text GLabel -5800 -4650 0 10 UnSpc
+GND
+Text GLabel -5800 -4550 0 10 UnSpc
+GND
+Text GLabel -5800 -4450 0 10 UnSpc
+GND
+Text GLabel -5800 -4350 0 10 UnSpc
+GND
+Text GLabel -5800 -4150 1 10 UnSpc
+GND
+Text GLabel -5800 -5250 0 10 UnSpc
+GND
+Text GLabel -5800 -5150 0 10 UnSpc
+GND
+Text GLabel -6000 -5050 1 10 UnSpc
+GND
+Text GLabel -6000 -5350 3 10 UnSpc
+GND
+Text GLabel -6300 -5350 3 10 UnSpc
+GND
+Text GLabel -6300 -5250 1 10 UnSpc
+GND
+Text GLabel -6600 -5350 3 10 UnSpc
+GND
+Text GLabel -3100 -1350 3 10 UnSpc
+GND
+Text GLabel -2700 -1350 3 10 UnSpc
+GND
+Text GLabel -2900 -1350 1 10 UnSpc
+GND
+Text GLabel -3900 -1350 3 10 UnSpc
+GND
+Text GLabel -3600 -1350 3 10 UnSpc
+GND
+Text GLabel -3100 -3650 1 10 UnSpc
+GND
+Text GLabel -2700 -3650 1 10 UnSpc
+GND
+Text GLabel -2400 -3650 1 10 UnSpc
+GND
+Text GLabel -3900 -3550 1 10 UnSpc
+GND
+Text GLabel -3600 -3550 1 10 UnSpc
+GND
+Text Label -5800 -4950 2    10   ~ 0
+GPIO-HF-EN
+Text Label -5800 -4850 2    10   ~ 0
+GPIO-HF-EN
+Text GLabel -6300 -3150 0 10 UnSpc
+HFL+
+Text GLabel -6300 -2850 0 10 UnSpc
+HFL-
+Text GLabel -6300 -2150 0 10 UnSpc
+HFR+
+Text GLabel -6300 -1750 0 10 UnSpc
+HFR-
+Text Label -2600 -2850 2    10   ~ 0
+N$28
+Text Label -4100 -2750 0    10   ~ 0
+N$28
+Text Label -3100 -2850 2    10   ~ 0
+N$28
+Text Label -2700 -3250 3    10   ~ 0
+N$28
+Text Label -3900 -3250 3    10   ~ 0
+N$28
+Text Label -2600 -1850 2    10   ~ 0
+N$29
+Text Label -3100 -1850 2    10   ~ 0
+N$29
+Text Label -3100 -1750 1    10   ~ 0
+N$29
+Text Label -4100 -1750 0    10   ~ 0
+N$29
+Text Label -3900 -1650 1    10   ~ 0
+N$29
+Text Label -4100 -3150 0    10   ~ 0
+N$30
+Text Label -2600 -3050 2    10   ~ 0
+N$30
+Text Label -3100 -3050 2    10   ~ 0
+N$30
+Text Label -3100 -3250 3    10   ~ 0
+N$30
+Text Label -3600 -3250 3    10   ~ 0
+N$30
+Text Label -5800 -3150 2    10   ~ 0
+N$46
+Text Label -6000 -3150 0    10   ~ 0
+N$46
+Text Label -6000 -2850 0    10   ~ 0
+N$47
+Text Label -5800 -2750 2    10   ~ 0
+N$47
+Text Label -6000 -2150 0    10   ~ 0
+N$122
+Text Label -5800 -2150 2    10   ~ 0
+N$122
+Text Label -6000 -1750 0    10   ~ 0
+N$123
+Text Label -5800 -1750 2    10   ~ 0
+N$123
+Text Label -4500 -3150 2    10   ~ 0
+N$243
+Text Label -4700 -3150 0    10   ~ 0
+N$243
+Text Label -4500 -2750 2    10   ~ 0
+N$244
+Text Label -4700 -2750 0    10   ~ 0
+N$244
+Text Label -4500 -2150 2    10   ~ 0
+N$297
+Text Label -4700 -2150 0    10   ~ 0
+N$297
+Text Label -4500 -1750 2    10   ~ 0
+N$298
+Text Label -4700 -1750 0    10   ~ 0
+N$298
+Text Label -2700 -1750 1    10   ~ 0
+SPKRR+
+Text Label -2600 -2050 2    10   ~ 0
+SPKRR+
+Text Label -3100 -2050 2    10   ~ 0
+SPKRR+
+Text Label -4100 -2150 0    10   ~ 0
+SPKRR+
+Text Label -3600 -1650 1    10   ~ 0
+SPKRR+
+Text GLabel -5800 -5450 0 10 UnSpc
+VSYS
+Text GLabel -5800 -5550 0 10 UnSpc
+VSYS
+Text GLabel -5800 -5650 0 10 UnSpc
+VSYS
+Text GLabel -6000 -5650 1 10 UnSpc
+VSYS
+Text GLabel -6300 -5650 1 10 UnSpc
+VSYS
+Text GLabel -6600 -5650 1 10 UnSpc
+VSYS
+$EndSCHEMATC

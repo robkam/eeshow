@@ -1,0 +1,217 @@
+Conversion session transcript
+=============================
+
+git clone https://github.com/lachlanA/eagle-to-kicad.git
+mkdir <base-directory>
+cd <base-directory>
+mkdir eagle
+cp ../gdc/sep18/* eagle
+mkdir cvt
+
+Some of the following interactions are timestamped, to indicate roughly
+when to expect interactions. The timestamps are [minutes:seconds] of
+total CPU time of the "eagle" process on a Q6600.
+
+Note: it is best not type anything else during the conversion, especially
+around the time when new dialogs may pop up. The Eagle pop-ups will appear
+unannounced and grab the input focus. Keystrokes will therefore end up in
+Eagle dialogs, changing inputs.
+
+- open schematics in Eagle
+
+File > Run ULP (.../eagle-to-kicad/renumber-sheet.ulp)
+- set script path to .../eagle-to-kicad/
+- set output directory (.../cvt/)
+
+[10:54] "This ULP will change unconnected VIA's to PADS"
+- accept defaults
+
+[11:01] "Consult log file for unncontded via's and tracks"
+/home/n9/ee/cvt/GTA04b7_conversion_log.txt
+- 1469 unconnected tracks
+- 6 unconnected vias
+- accept
+
+[11:01] /home/n9/ee/cvt/modified_eagle_files/GTA04b7~fix_via_hack.scr, Line 85:
+The Light edition of EAGLE can't perform the requested action!
+You can't add parts to this sheet.
+- accept
+- idem, lines 89, 93, 97, 101, 105. accept.
+
+[11:04] Unknown element VP_0
+line 11889
+- accept
+- idem, VP_1, VP_2, VP_3, VP_4, VP_5. accept.
+
+[11:10] Large dialog
+- Output: set all sheet sizes to A3
+- Sheet size: set to A3
+- accept
+
+[32:11] Library dialog
+- Accept (note: dialog stays open after clicking "OK")
+
+[33:21] "There were Errors during the export please read the log for more
+	 information"
+- Accept
+
+[33:44] /home/n9/ee/cvt/GTA04b7.scr, Line 31320:
+Package SOT223-6 doesn't have enough pads for
+all 10 pins of device TPS73733
+- accept
+
+[33:44] /home/n9/ee/cvt/GTA04b7.scr, Line 31321:
+Use the PACKAGE command to select a package variant first
+- accept
+- idem, lines 31322 to 31326. Accept.
+
+[33:46] Output ... dialog.
+- accept defaults
+
+[33:55] There are: 217 missing part prefix(s).
+	Conversion finished!
+- accept
+
+[33:56] Log file dialog
+- accept
+
+
+Common issues in converted schematics
+=====================================
+
+Component text size
+-------------------
+
+Component text (component reference, value, etc.), should have a size
+of 50 mil. The converted schematics frequently use 45 mil or 70 mil.
+
+KiCad stores the default size, location, and alignment of text fields
+in the definition of the schematics symbol ("component", .lib). This
+is copied into the schematics when placing a symbol, and can then be
+modified individually for each use of the symbol.
+
+To change a symbol in the library, right-click on the symbol in the
+schematics, Edit component > Edit with Library Editor
+Make the changes in the component editor. Important: make sure that
+all pins are aligned with a 50 mil grid. To abort changes, simply
+quit the component editor. To save changes, click
+Update current component in current library
+followed by
+Save current library to disk
+
+Eeschema will pick up changes in geometry and fixed text automatically,
+but it will not change fields of existing symbols. To update fields to
+the definitions in the library, press E to edit the component, then
+click Reset to Library Defaults.
+
+
+Component text alignment
+------------------------
+
+Many text fields in the converted schematics are vertically aligned
+with the bottom of the text. It is often more convenient to align with
+the center, such that a field can be placed near a wire (or anything
+else that follows the 50 mil grid) without getting too close.
+
+
+Pin types
+---------
+
+Some pin types in the converted schematics are incorrect or at least
+unusual. In general, passive components like LED should have their
+terminals marked as "passive", not as "power input" or such.
+
+Pin types can only be corrected by changing the component in the
+library.
+
+
+Label text size
+---------------
+
+Many labels have (or had) a text size of 65 mil. This makes global
+labels overlap when stacked with 100 mil spacing. The text size can
+be changed by pressing "E" on the label.
+
+
+Label type and direction
+------------------------
+
+Labels that should be global were converted to local. To change them
+back to global, right-click, Change type > Change to Global Label
+
+In KiCad, global and hierarchical labels (but not local labels)
+indicate a direction. This can be changed by pressing "E" on the global
+label.
+
+
+Tiny labels
+-----------
+
+The converter flags each net with a tiny label (10 mil), to ensure the
+net is really what Eagle said it was. Most of these labels have already
+been removed, but some remain.
+
+In general, all such labels should be deleted. Since they can sometimes
+indicate conflicts in the design (cf. VBUS), one should check, before
+deleting, that they are consistent with the net that is expected to be
+at this location.
+
+
+Power flag
+----------
+
+KiCad requires all nets that are used as power input to be driven by a
+power output (i.e., a pin marked as such). If a net has no implicit
+power source (e.g., if it is separated from a power output by a choke),
+the POWERED symbol (which is a single-pin power output) has to be placed
+on the net. (POWERED is a nicer form of PWR_FLAG from the default KiCad
+library.)
+
+
+Unusual wiring
+--------------
+
+The "normal" drawing style in KiCad is that pins are connected by a
+single wire that continues for at least 50 mil, better 100 mil, in the
+direction of the pin. This wire can then bend, form T-joints with other
+wires, etc.
+
+The converted schematics contain a large number of wires that are
+perpendicular to the pin they connect to, and some pins are even
+connected directly, without wire. While this "works", it often looks
+confusing and it complicates moving or dragging items. The best way to
+resolve such issues is often to just delete the wires and junctions of
+the net in question, move components to create a bit more room, then
+redraw the net.
+
+Caution: deleting a wire often deletes the entire wire, across
+junctions. Checking the result of major reconstruction against a PDF
+taken from the original state (or the Eagle original) is recommended.
+
+
+Unifying multi-unit components
+------------------------------
+
+Some components are drawn as consisting of a very large number of
+units. E.g., the rather simple digital microphones had no less than
+five units each.
+
+A quick way to reduce the number of units is to invoke the component
+editor on the component, setting the pins in units B and above to
+"Common to all units in component", reducing the number of units in
+"Edit component properties" to one, and finally arranging the pins in
+a suitable pattern.
+
+
+Oversized arcs
+--------------
+
+KiCad arcs can be either clockwise or counter-clockwise, and there is
+no explicit indication of the direction. To avoid ambiguities, arcs are
+limited to < 180 degrees. The converter seems to be unaware of this
+restriction and produces arcs >= 180 degrees. (Even when drawing an arc
+of 180 degrees in KiCad, it is saved with a start and end angle of 0.1
+and 179.9 degrees, respectively.)
+
+To fix this, oversized each arc needs to be broken into two (or more)
+smaller arcs.

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS61160DRV
+D White LED driver
+F http://www.ti.com/lit/ds/symlink/tps61160.pdf
+$ENDCMP
+#
+#End Doc Library

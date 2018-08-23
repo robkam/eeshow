@@ -1,0 +1,83 @@
+#!/bin/sh
+# eeshow-viewer - Caching wrapper for document viewers
+#
+# Written 2016 by Werner Almesberger
+# Copyright 2016 by Werner Almesberger
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+
+#
+# Known issues:
+# - should only cache things we can expect to be able to properly use locally,
+#   e.g., PDF, text, etc., not Web pages
+#
+
+default_dir=$HOME/.eeshow-viewer-cache
+
+
+usage()
+{
+	cat <<EOF 1>&2
+usage: $0 [-c] [-m] [URL]
+
+  -c  cache only, without starting a viewer
+  -m  create the cache directory (default: $default_dir)
+EOF
+	exit 1
+}
+
+
+make_cache=false
+cache_only=false
+while [ "$1" ]; do
+	case "$1" in
+	-c)	cache_only=true;;
+	-m)	make_cache=true;;
+	-*)	usage;;
+	*)	break;;
+	esac
+	shift
+done
+
+dir=${EESHOW_VIEWER_CACHE:-$default_dir}
+
+if [ ! -d "$dir" ]; then
+	if $make_cache; then
+		mkdir -p "$dir" || exit 1
+	else
+		echo "no cache directory \"$dir\"" 1>&2
+		echo "run  eeshow-viewer -m  to create" 1>&2
+		exit 1
+	fi
+fi
+
+[ "$1" ] || exit 0
+
+url=${1%\#[0-9]*}
+page=
+if [ "$url" != "$1" ]; then
+	page=${1##*#}
+fi
+
+hash=`echo -n "$url" | tr -c '[[:alnum:].\-]' _`
+file=$dir/$hash
+if [ ! -r "$file" ]; then
+	wget -O "$file" "$url" || { rm -f "$file"; exit 1; }
+fi
+
+$cache_only && exit
+
+if [ "$page" ]; then
+	v=${EESHOW_PDF_VIEWER:-${PDF_VIEWER:-xdg-open}}
+	case "$v" in
+	*xpdf)	"$v" "$file" "$page";;
+	*evince)"$v" --page-index="$page" "$file";;
+	*)	"$v" "$file";;
+	esac
+else
+	${EESHOW_VIEWER_VIEWER:-xdg-open} "$file"
+fi

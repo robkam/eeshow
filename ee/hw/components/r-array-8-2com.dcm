@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP R-ARRAY-8-2COM
+D 8x1 resistor array, 10 terminations; common (2 contacts); MNR15, 745X101, and similar
+$ENDCMP
+#
+#End Doc Library

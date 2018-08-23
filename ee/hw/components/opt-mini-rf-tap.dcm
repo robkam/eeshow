@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPT-MINI-RF-TAP
+D Optional RF tap or jumper
+F http://neo900.org/stuff/block-diagrams/neo900/opt-tap.png
+$ENDCMP
+#
+#End Doc Library

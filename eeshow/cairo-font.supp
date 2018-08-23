@@ -1,0 +1,27 @@
+{
+	<cairo_text_extents>
+	Memcheck:Leak
+	...
+	fun:FcConfigParseAndLoad
+	...
+	fun:cairo_scaled_font_create
+	...
+	fun:cairo_text_extents
+	...
+}
+
+{
+	<cairo_show_text>
+	Memcheck:Leak
+	...
+	fun:cairo_show_text
+	...
+}
+
+{
+	<cairo_text_extents>
+	Memcheck:Leak
+	...
+	fun:cairo_text_extents
+	...
+}

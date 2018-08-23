@@ -1,0 +1,63 @@
+# Prerequisites (depends on distribution)
+
+apt-get install libcairo2-dev
+apt-get install libgit2-dev
+apt-get install libgtk-3-dev
+apt-get install qiv
+
+# Start with a fresh directory
+
+mkdir newdir
+cd newdir
+
+# Get all the things we need
+
+git clone http://neo900.org/git/ee
+cd ee/hw
+git clone git://projects.qi-hardware.com/kicad-libs.git
+cd ../..
+git clone http://neo900.org/git/eeshow
+make -C eeshow
+make -C eeshow install
+
+# Generate PNG for old, new, and difference
+
+cd ee/hw
+eeplot -o old.png -s 2 neo900.pro 6a9f71:neo900_SS_5.sch
+eeplot -o new.png -s 2 neo900.pro neo900_SS_5.sch
+eediff -o diff.png -s 2 neo900.pro 6a9f71:neo900_SS_5.sch \
+  neo900.pro neo900_SS_5.sch
+
+
+# View the result
+
+qiv -t diff.png old.png new.png
+
+
+# Interactively view the schematics
+
+eeshow neo900.pro
+# or, limiting the history to the last 30 revisions,
+eeshow -N 30 neo900.pro
+
+cd ../..
+
+
+# Other projects: c4puter
+
+mkdir c4puter
+cd c4puter
+git clone https://github.com/c4puter/motherboard.git
+cd motherboard
+git submodule init
+git submodule update
+eeshow schlib/library/*.lib *.lib motherboard.sch
+eeshow motherboard.pro
+cd ../..
+
+
+# Other projects: Olimex A64-OLinuXino
+
+git clone https://github.com/OLIMEX/OLINUXINO.git
+cd OLINUXINO/HARDWARE/A64-OLinuXino/A64-OlinuXino_Rev_A
+eeshow A64-OlinuXino_Rev_A-cache.lib A64-OlinuXino_Rev_A.sch

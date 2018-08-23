@@ -1,0 +1,9 @@
+{
+	<call_init_part_0>
+	Memcheck:Leak
+	...
+	fun:call_init.part.0
+	fun:call_init
+	fun:_dl_init
+	...
+}

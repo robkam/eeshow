@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FUSE
+D Generic fuse with two terminals
+$ENDCMP
+#
+#End Doc Library

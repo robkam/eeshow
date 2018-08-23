@@ -1,0 +1,1210 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 22 39
+Title "GTA04b7.sch"
+Date "17 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes -2800 -650 0    200   ~ 0
+~SD Breakout Board
+Text Notes -9300 350 0    70   ~ 0
+(c) 2014 Golden Delicious Computers GmbH&Co. KG. Licensed under CC-BY-SA.
+Text Notes -3300 -5050 0    70   ~ 0
+FX6-20S-0.8SV
+Text Notes -2700 -6350 0    70   ~ 0
+ESD on CPU side
+Text Notes -6000 -5550 0    70   ~ 0
+(1.5V - 3.6V)
+Text Notes -6200 -5850 0    70   ~ 0
+Battery Cover detect
+Text Notes -8200 -5850 0    70   ~ 0
+Camera Cover detect
+Text Notes -5300 -4350 0    70   ~ 0
+pullup? or through GPIO?
+Text Notes -7600 -3250 0    70   ~ 0
+Flash/Torch
+Text Notes 600 150 0    70   ~ 0
+V2b
+Text Notes -2700 -6250 0    70   ~ 0
+or here?
+$Comp
+L C0402 C2101
+U 1 1 578D03C6
+P -8500 -5250
+F 0 "C2101" H -8440 -5236 50  0000 L BNN
+F 1 "1u" H -8441 -5435 50  0000 L BNN
+F 2 "SMD-0402" H -8510 -5460 65  0001 L TNN
+	1    -8500 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L C0402 C2102
+U 1 1 578D048E
+P -8200 -5250
+F 0 "C2102" H -8140 -5236 50  0000 L BNN
+F 1 "47n" H -8141 -5435 50  0000 L BNN
+F 2 "SMD-0402" H -8210 -5460 65  0001 L TNN
+	1    -8200 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L C0603 C2103
+U 1 1 578D0556
+P -2300 -4750
+F 0 "C2103" H -2240 -4736 50  0000 L BNN
+F 1 "100n" H -2241 -4935 50  0000 L BNN
+F 2 "SMD-0603" H -2310 -4960 65  0001 L TNN
+	1    -2300 -4750
+	1    0    0    -1
+$EndComp
+$Comp
+L C0603 C2104
+U 1 1 578D061E
+P -5700 -3250
+F 0 "C2104" H -5640 -3236 50  0000 L BNN
+F 1 "4u7; 12V" H -5641 -3435 50  0000 L BNN
+F 2 "SMD-0603" H -5710 -3460 65  0001 L TNN
+	1    -5700 -3250
+	1    0    0    -1
+$EndComp
+$Comp
+L C0603 C2105
+U 1 1 578D06E6
+P -7600 -2550
+F 0 "C2105" H -7540 -2536 50  0000 L BNN
+F 1 "10u" H -7541 -2735 50  0000 L BNN
+F 2 "SMD-0603" H -7610 -2760 65  0001 L TNN
+	1    -7600 -2550
+	1    0    0    -1
+$EndComp
+$Comp
+L TEST-POINT-1.25 CD3709
+U 1 1 578D07AE
+P 400 -6050
+F 0 "CD3709" H 390 -6060 65  0001 L TNN
+F 1 "" H 390 -6160 65  0001 L TNN
+F 2 "TP-1.25" H 390 -6260 65  0001 L TNN
+	1    400  -6050
+	1    0    0    -1
+$EndComp
+$Comp
+L V5.5MLA0603N D2101
+U 1 1 578D0876
+P 400 -5250
+F 0 "D2101" H 300 -5080 50  0000 L BNN
+F 1 "V5.5MLA0603N" H 300 -5450 50  0000 L BNN
+F 2 "SMD-0603" H 390 -5460 65  0001 L TNN
+	1    400  -5250
+	0    -1    -1    0
+$EndComp
+$Comp
+L D-SCHOTTKY-CRS02 D2102
+U 1 1 578D093E
+P -6200 -2750
+F 0 "D2102" H -6299 -2580 50  0000 L BNN
+F 1 "RSX101M-30" H -6300 -2950 50  0000 L BNN
+F 2 "CRS02" H -6280 -2759 30  0000 L BNN
+	1    -6200 -2750
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME5
+U 1 1 578D09A2
+P -9400 -450
+	1    -9400 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME5
+U 2 1 578D0A06
+P -3000 -450
+F 0 "#FRAME5" H -2950 500 100  0000 L BNN
+F 1 "Date:" H -2950 500 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME5" H -2500 499 100  0000 L BNN
+F 1 "16 Jul 2016 23:57:11" H -2500 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME5" H -150 499 100  0000 L BNN
+F 1 "Sheet:" H -150 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME5" H 400 499 100  0000 L BNN
+F 1 "21/38" H 400 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME5" H 500 899 100  0000 L BNN
+F 1 "REV:" H 500 899 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME5" H -2950 1200 100  0000 L BNN
+F 1 "TITLE:" H -2950 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME5" H -2950 900 100  0000 L BNN
+F 1 "Document Number:" H -2950 900 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME5" H -2300 1200 100  0000 L BNN
+F 1 "GTA04b7" H -2300 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+	2    -3000 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L L0805 L2101
+U 1 1 578D0ACE
+P -7900 -2750
+F 0 "L2101" V -7958 -2900 50  0000 L BNN
+F 1 "ferrite" V -7770 -2899 50  0000 L BNN
+F 2 "SMD-0805" H -7910 -2960 65  0001 L TNN
+	1    -7900 -2750
+	0    1    1    0
+$EndComp
+$Comp
+L L0805 L2102
+U 1 1 578D0B96
+P -6600 -2750
+F 0 "L2102" V -6658 -2900 50  0000 L BNN
+F 1 "2u2" V -6470 -2899 50  0000 L BNN
+F 2 "SMD-0805" H -6610 -2960 65  0001 L TNN
+	1    -6600 -2750
+	0    1    1    0
+$EndComp
+$Comp
+L CLN6A LED2101
+U 1 1 578D0C5E
+P -4700 -3150
+F 0 "LED2101" H -4820 -2970 50  0000 L BNN
+F 1 "CLN6A-MKW-CJ0K0233" H -4800 -3360 50  0000 L BNN
+F 2 "CLN6A" H -4710 -3360 65  0001 L TNN
+	1    -4700 -3150
+	0    -1    -1    0
+$EndComp
+$Comp
+L LED-0603 LED2102
+U 1 1 578D0D26
+P -7200 -2450
+F 0 "LED2102" H -7400 -2620 50  0000 L BNN
+F 1 "LED-0603" H -7400 -2290 50  0000 L BNN
+F 2 "SMD-0603D" H -7210 -2660 65  0001 L TNN
+	1    -7200 -2450
+	0    -1    -1    0
+$EndComp
+$Comp
+L CLN6A LED2103
+U 1 1 578D0DEE
+P -4700 -2350
+F 0 "LED2103" H -4820 -2170 50  0000 L BNN
+F 1 "CLN6A-MKW-CJ0K0233" H -4800 -2560 50  0000 L BNN
+F 2 "CLN6A" H -4710 -2560 65  0001 L TNN
+	1    -4700 -2350
+	0    -1    -1    0
+$EndComp
+$Comp
+L SD-SLOT+CD P-MICRO-SD3709
+U 1 1 578D0EB6
+P -900 -5550
+F 0 "P-MICRO-SD3709" H -1009 -4710 50  0000 L BNN
+F 1 "ST1W008S4BR1500" H -1200 -6450 50  0000 L BNN
+F 2 "ST1W008S4BR1500" H -1200 -6450 50  0000 L BNN
+	1    -900 -5550
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 1 1 578D0F7E
+P -3200 -6150
+F 0 "P2101" H -3210 -6160 65  0001 L TNN
+F 1 "FX6-20" H -3210 -6260 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -6360 65  0001 L TNN
+	1    -3200 -6150
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 2 1 578D0FE2
+P -2900 -6150
+F 0 "P2101" H -2910 -6160 65  0001 L TNN
+F 1 "FX6-20" H -2910 -6260 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -6360 65  0001 L TNN
+	2    -2900 -6150
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 3 1 578D1046
+P -3200 -6050
+F 0 "P2101" H -3210 -6060 65  0001 L TNN
+F 1 "FX6-20" H -3210 -6160 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -6260 65  0001 L TNN
+	3    -3200 -6050
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 4 1 578D10AA
+P -2900 -6050
+F 0 "P2101" H -2910 -6060 65  0001 L TNN
+F 1 "FX6-20" H -2910 -6160 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -6260 65  0001 L TNN
+	4    -2900 -6050
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 5 1 578D110E
+P -3200 -5950
+F 0 "P2101" H -3210 -5960 65  0001 L TNN
+F 1 "FX6-20" H -3210 -6060 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -6160 65  0001 L TNN
+	5    -3200 -5950
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 6 1 578D1172
+P -2900 -5950
+F 0 "P2101" H -2910 -5960 65  0001 L TNN
+F 1 "FX6-20" H -2910 -6060 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -6160 65  0001 L TNN
+	6    -2900 -5950
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 7 1 578D11D6
+P -3200 -5850
+F 0 "P2101" H -3210 -5860 65  0001 L TNN
+F 1 "FX6-20" H -3210 -5960 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -6060 65  0001 L TNN
+	7    -3200 -5850
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 8 1 578D123A
+P -2900 -5850
+F 0 "P2101" H -2910 -5860 65  0001 L TNN
+F 1 "FX6-20" H -2910 -5960 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -6060 65  0001 L TNN
+	8    -2900 -5850
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 9 1 578D129E
+P -3200 -5750
+F 0 "P2101" H -3210 -5760 65  0001 L TNN
+F 1 "FX6-20" H -3210 -5860 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -5960 65  0001 L TNN
+	9    -3200 -5750
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 10 1 578D1302
+P -2900 -5750
+F 0 "P2101" H -2910 -5760 65  0001 L TNN
+F 1 "FX6-20" H -2910 -5860 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -5960 65  0001 L TNN
+	10   -2900 -5750
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 11 1 578D1366
+P -3200 -5650
+F 0 "P2101" H -3210 -5660 65  0001 L TNN
+F 1 "FX6-20" H -3210 -5760 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -5860 65  0001 L TNN
+	11   -3200 -5650
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 12 1 578D13CA
+P -2900 -5650
+F 0 "P2101" H -2910 -5660 65  0001 L TNN
+F 1 "FX6-20" H -2910 -5760 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -5860 65  0001 L TNN
+	12   -2900 -5650
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 13 1 578D142E
+P -3200 -5550
+F 0 "P2101" H -3210 -5560 65  0001 L TNN
+F 1 "FX6-20" H -3210 -5660 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -5760 65  0001 L TNN
+	13   -3200 -5550
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 14 1 578D1492
+P -2900 -5550
+F 0 "P2101" H -2910 -5560 65  0001 L TNN
+F 1 "FX6-20" H -2910 -5660 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -5760 65  0001 L TNN
+	14   -2900 -5550
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 15 1 578D14F6
+P -3200 -5450
+F 0 "P2101" H -3210 -5460 65  0001 L TNN
+F 1 "FX6-20" H -3210 -5560 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -5660 65  0001 L TNN
+	15   -3200 -5450
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 16 1 578D155A
+P -2900 -5450
+F 0 "P2101" H -2910 -5460 65  0001 L TNN
+F 1 "FX6-20" H -2910 -5560 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -5660 65  0001 L TNN
+	16   -2900 -5450
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 17 1 578D15BE
+P -3200 -5350
+F 0 "P2101" H -3210 -5360 65  0001 L TNN
+F 1 "FX6-20" H -3210 -5460 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -5560 65  0001 L TNN
+	17   -3200 -5350
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 18 1 578D1622
+P -2900 -5350
+F 0 "P2101" H -2910 -5360 65  0001 L TNN
+F 1 "FX6-20" H -2910 -5460 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -5560 65  0001 L TNN
+	18   -2900 -5350
+	-1    0    0    1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 19 1 578D1686
+P -3200 -5250
+F 0 "P2101" H -3210 -5260 65  0001 L TNN
+F 1 "FX6-20" H -3210 -5360 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -3210 -5460 65  0001 L TNN
+	19   -3200 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L FX6-20P-0.8SV P2101
+U 20 1 578D16EA
+P -2900 -5250
+F 0 "P2101" H -2910 -5260 65  0001 L TNN
+F 1 "FX6-20" H -2910 -5360 65  0001 L TNN
+F 2 "FX6-20P-0.8SV" H -2910 -5460 65  0001 L TNN
+	20   -2900 -5250
+	-1    0    0    1
+$EndComp
+$Comp
+L R0402 R2101
+U 1 1 578D17B2
+P -6700 -5450
+F 0 "R2101" H -6850 -5391 50  0000 L BNN
+F 1 "tbd." H -6850 -5559 50  0000 L BNN
+F 2 "SMD-0402" H -6710 -5660 65  0001 L TNN
+	1    -6700 -5450
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$73
+U 1 1 578AF72B
+P 400 3850
+F 0 "#U$73" H 280 -3949 70  0000 L BNN
+F 1 "GND2" H 280 -3949 70  0000 L BNN
+F 2 "" H 400 -3850 60 0001 C CNN
+F 3 "" H 400 -3850 60 0001 C CNN
+	1    400  -3850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$81
+U 1 1 578D1817
+P -5700 4250
+F 0 "#U$81" H -5820 -4349 70  0000 L BNN
+F 1 "GND2" H -5820 -4349 70  0000 L BNN
+F 2 "" H -5700 -4250 60 0001 C CNN
+F 3 "" H -5700 -4250 60 0001 C CNN
+	1    -5700 -4250
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$82
+U 1 1 578D187B
+P -3500 3850
+F 0 "#U$82" H -3620 -3949 70  0000 L BNN
+F 1 "GND2" H -3620 -3949 70  0000 L BNN
+F 2 "" H -3500 -3850 60 0001 C CNN
+F 3 "" H -3500 -3850 60 0001 C CNN
+	1    -3500 -3850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$83
+U 1 1 578D18DF
+P -6300 -50
+F 0 "#U$83" H -6420 -49 70  0000 L BNN
+F 1 "GND2" H -6420 -49 70  0000 L BNN
+F 2 "" H -6300 50 60 0001 C CNN
+F 3 "" H -6300 50 60 0001 C CNN
+	1    -6300 50  
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$84
+U 1 1 578D1943
+P -2500 3850
+F 0 "#U$84" H -2620 -3949 70  0000 L BNN
+F 1 "GND2" H -2620 -3949 70  0000 L BNN
+F 2 "" H -2500 -3850 60 0001 C CNN
+F 3 "" H -2500 -3850 60 0001 C CNN
+	1    -2500 -3850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$85
+U 1 1 578D19A7
+P -2300 3850
+F 0 "#U$85" H -2420 -3949 70  0000 L BNN
+F 1 "GND2" H -2420 -3949 70  0000 L BNN
+F 2 "" H -2300 -3850 60 0001 C CNN
+F 3 "" H -2300 -3850 60 0001 C CNN
+	1    -2300 -3850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$86
+U 1 1 578D1A0B
+P -1500 3850
+F 0 "#U$86" H -1620 -3949 70  0000 L BNN
+F 1 "GND2" H -1620 -3949 70  0000 L BNN
+F 2 "" H -1500 -3850 60 0001 C CNN
+F 3 "" H -1500 -3850 60 0001 C CNN
+	1    -1500 -3850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$87
+U 1 1 578D1A6F
+P -700 3850
+F 0 "#U$87" H -820 -3949 70  0000 L BNN
+F 1 "GND2" H -820 -3949 70  0000 L BNN
+F 2 "" H -700 -3850 60 0001 C CNN
+F 3 "" H -700 -3850 60 0001 C CNN
+	1    -700 -3850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$105
+U 1 1 578D1AD3
+P -7700 4050
+F 0 "#U$105" H -7820 -4149 70  0000 L BNN
+F 1 "GND2" H -7820 -4149 70  0000 L BNN
+F 2 "" H -7700 -4050 60 0001 C CNN
+F 3 "" H -7700 -4050 60 0001 C CNN
+	1    -7700 -4050
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$164
+U 1 1 578D1B37
+P -6900 5150
+F 0 "#U$164" H -7020 -5249 70  0000 L BNN
+F 1 "GND2" H -7020 -5249 70  0000 L BNN
+F 2 "" H -6900 -5150 60 0001 C CNN
+F 3 "" H -6900 -5150 60 0001 C CNN
+	1    -6900 -5150
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$165
+U 1 1 578D1B9B
+P -6500 5250
+F 0 "#U$165" H -6620 -5349 70  0000 L BNN
+F 1 "GND2" H -6620 -5349 70  0000 L BNN
+F 2 "" H -6500 -5250 60 0001 C CNN
+F 3 "" H -6500 -5250 60 0001 C CNN
+	1    -6500 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$166
+U 1 1 578D1BFF
+P -7200 750
+F 0 "#U$166" H -7320 -849 70  0000 L BNN
+F 1 "GND2" H -7320 -849 70  0000 L BNN
+F 2 "" H -7200 -750 60 0001 C CNN
+F 3 "" H -7200 -750 60 0001 C CNN
+	1    -7200 -750
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$212
+U 1 1 578D1C63
+P -5700 2850
+F 0 "#U$212" H -5820 -2949 70  0000 L BNN
+F 1 "GND2" H -5820 -2949 70  0000 L BNN
+F 2 "" H -5700 -2850 60 0001 C CNN
+F 3 "" H -5700 -2850 60 0001 C CNN
+	1    -5700 -2850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND-2 #U$217
+U 1 1 578D1CC7
+P -7600 2150
+F 0 "#U$217" H -7720 -2249 70  0000 L BNN
+F 1 "GND2" H -7720 -2249 70  0000 L BNN
+F 2 "" H -7600 -2150 60 0001 C CNN
+F 3 "" H -7600 -2150 60 0001 C CNN
+	1    -7600 -2150
+	1    0    0    -1
+$EndComp
+$Comp
+L NC #U$265
+U 1 1 578D1D2B
+P -7100 5050
+	1    -7100 -5050
+	1    0    0    -1
+$EndComp
+$Comp
+L MLX90248ESE U2101
+U 1 1 578D1DF3
+P -5700 -5050
+F 0 "U2101" H -6000 -4710 50  0000 L BNN
+F 1 "MLX90248ESE" H -6000 -5450 50  0000 L BNN
+F 2 "SOT23" H -5710 -5260 65  0001 L TNN
+	1    -5700 -5050
+	1    0    0    -1
+$EndComp
+$Comp
+L SFH7741 U2102
+U 1 1 578D1EBB
+P -7600 -4950
+F 0 "U2102" H -7849 -4320 50  0000 L BNN
+F 1 "SFH7741" H -7840 -5530 50  0000 L BNN
+F 2 "SFH7741" H -7840 -5530 50  0000 L BNN
+	1    -7600 -4950
+	1    0    0    -1
+$EndComp
+$Comp
+L ADP1653 U2103
+U 1 1 578D1F83
+P -6100 -2050
+F 0 "U2103" H -6110 -2060 65  0001 L TNN
+F 1 "ADP1653" H -6110 -2160 65  0001 L TNN
+F 2 "QFN-16+E-0.5" H -6110 -2260 65  0001 L TNN
+	1    -6100 -2050
+	1    0    0    -1
+$EndComp
+$Comp
+L ADP1653 U2103
+U 2 1 578D1FE7
+P -5500 -550
+F 0 "U2103" H -5610 -300 50  0000 L BNN
+F 1 "ADP1653" H -5609 -830 50  0000 L BNN
+F 2 "QFN-16+E-0.5" H -5510 -760 65  0001 L TNN
+	2    -5500 -550
+	-1    0    0    1
+$EndComp
+$Comp
+L ADP1653 U2103
+U 3 1 578D204B
+P -6300 -350
+F 0 "U2103" H -6310 -360 65  0001 L TNN
+F 1 "ADP1653" H -6310 -460 65  0001 L TNN
+F 2 "QFN-16+E-0.5" H -6310 -560 65  0001 L TNN
+	3    -6300 -350
+	0    -1    -1    0
+$EndComp
+$Comp
+L ADP1653 U2103
+U 4 1 578D20AF
+P -6400 -350
+F 0 "U2103" H -6410 -360 65  0001 L TNN
+F 1 "ADP1653" H -6410 -460 65  0001 L TNN
+F 2 "QFN-16+E-0.5" H -6410 -560 65  0001 L TNN
+	4    -6400 -350
+	0    -1    -1    0
+$EndComp
+$Comp
+L ADP1653 U2103
+U 5 1 578D2113
+P -6500 -350
+F 0 "U2103" H -6510 -360 65  0001 L TNN
+F 1 "ADP1653" H -6510 -460 65  0001 L TNN
+F 2 "QFN-16+E-0.5" H -6510 -560 65  0001 L TNN
+	5    -6500 -350
+	0    -1    -1    0
+$EndComp
+NoConn ~ -7100 -5050
+Wire Wire Line
+	-3400 -6150 -3500 -6150
+Wire Wire Line
+	-3500 -6150 -3500 -5250
+Wire Wire Line
+	-3500 -5250 -3500 -3950
+Wire Wire Line
+	-3400 -5250 -3500 -5250
+Connection ~ -3500 -5250
+Wire Wire Line
+	-2700 -5650 -2500 -5650
+Wire Wire Line
+	-2500 -5650 -2500 -3950
+Wire Wire Line
+	-2300 -3950 -2300 -4550
+Wire Wire Line
+	-1500 -3950 -1500 -4850
+Wire Wire Line
+	-800 -3950 -800 -4550
+Wire Wire Line
+	-700 -4550 -700 -3950
+Wire Wire Line
+	-600 -4550 -600 -3950
+Wire Wire Line
+	-500 -4550 -500 -3950
+Wire Wire Line
+	-500 -3950 -600 -3950
+Wire Wire Line
+	-600 -3950 -700 -3950
+Wire Wire Line
+	-700 -3950 -800 -3950
+Connection ~ -600 -3950
+Connection ~ -700 -3950
+Wire Wire Line
+	400 -3950 400 -5050
+Wire Wire Line
+	-5700 -4350 -5700 -4550
+Wire Wire Line
+	-8200 -4250 -8200 -5050
+Wire Wire Line
+	-8500 -5050 -8500 -4250
+Wire Wire Line
+	-8500 -4250 -8200 -4250
+Wire Wire Line
+	-8200 -4250 -7700 -4250
+Wire Wire Line
+	-7700 -4250 -7100 -4250
+Wire Wire Line
+	-7100 -4250 -7100 -4550
+Wire Wire Line
+	-7700 -4150 -7700 -4250
+Connection ~ -8200 -4250
+Connection ~ -7700 -4250
+Wire Wire Line
+	-7100 -5350 -6900 -5350
+Wire Wire Line
+	-6900 -5350 -6900 -5250
+Wire Wire Line
+	-6500 -5450 -6500 -5350
+Wire Wire Line
+	-6500 -150 -6400 -150
+Wire Wire Line
+	-6400 -150 -6300 -150
+Wire Wire Line
+	-6300 -150 -6300 -50
+Connection ~ -6400 -150
+Connection ~ -6300 -150
+Wire Wire Line
+	-7100 -950 -7200 -950
+Wire Wire Line
+	-7200 -950 -7200 -850
+Wire Wire Line
+	-7600 -2350 -7600 -2250
+Wire Wire Line
+	-5700 -3050 -5700 -2950
+Wire Wire Line
+	-5200 -5050 -4000 -5050
+Wire Wire Line
+	-3400 -5350 -4000 -5350
+Wire Wire Line
+	-4000 -5350 -4000 -5050
+Wire Wire Line
+	-7100 -4750 -6700 -4750
+Wire Wire Line
+	-6700 -4750 -6700 -4450
+Wire Wire Line
+	-6700 -4450 -4400 -4450
+Wire Wire Line
+	-4400 -4450 -4400 -5550
+Wire Wire Line
+	-4400 -5550 -3400 -5550
+Wire Wire Line
+	-200 -6050 0 -6050
+Wire Wire Line
+	0 -6050 400 -6050
+Wire Wire Line
+	-2700 -5250 -2700 -4350
+Wire Wire Line
+	-2700 -4350 0 -4350
+Wire Wire Line
+	0 -4350 0 -6050
+Wire Wire Line
+	0 -6050 400 -6050
+Wire Wire Line
+	400 -6050 400 -5450
+Connection ~ 400 -6050
+Connection ~ 0 -6050
+Wire Wire Line
+	-1500 -6050 -1500 -6150
+Wire Wire Line
+	-1500 -6150 -2700 -6150
+Wire Wire Line
+	-2700 -6050 -1700 -6050
+Wire Wire Line
+	-1700 -6050 -1700 -6250
+Wire Wire Line
+	-1700 -6250 -1500 -6250
+Wire Wire Line
+	-1500 -5450 -1700 -5450
+Wire Wire Line
+	-1700 -5450 -1700 -5950
+Wire Wire Line
+	-1700 -5950 -2700 -5950
+Wire Wire Line
+	-1500 -5050 -2300 -5050
+Wire Wire Line
+	-2300 -5050 -2300 -5850
+Wire Wire Line
+	-2300 -5850 -2700 -5850
+Wire Wire Line
+	-2300 -4850 -2300 -5050
+Connection ~ -2300 -5050
+Wire Wire Line
+	-1500 -5250 -2100 -5250
+Wire Wire Line
+	-2100 -5250 -2100 -5750
+Wire Wire Line
+	-2100 -5750 -2700 -5750
+Wire Wire Line
+	-1500 -5650 -1500 -5550
+Wire Wire Line
+	-1500 -5550 -2700 -5550
+Wire Wire Line
+	-1500 -5850 -1900 -5850
+Wire Wire Line
+	-1900 -5850 -1900 -5450
+Wire Wire Line
+	-2700 -5450 -2100 -5450
+Wire Wire Line
+	-2100 -5450 -1900 -5450
+Wire Wire Line
+	-4800 -2850 -4700 -2850
+Wire Wire Line
+	-4700 -2850 -4600 -2850
+Wire Wire Line
+	-4700 -2850 -4700 -2650
+Wire Wire Line
+	-4800 -2650 -4700 -2650
+Wire Wire Line
+	-4700 -2650 -4600 -2650
+Wire Wire Line
+	-4600 -2850 -4400 -2850
+Connection ~ -4700 -2850
+Connection ~ -4700 -2650
+Connection ~ -4600 -2850
+Connection ~ -6400 -2750
+Wire Wire Line
+	-7100 -5450 -6900 -5450
+Wire Wire Line
+	-6000 -2750 -6000 -3450
+Wire Wire Line
+	-4600 -3450 -4700 -3450
+Wire Wire Line
+	-4700 -3450 -4800 -3450
+Wire Wire Line
+	-6000 -3450 -5700 -3450
+Wire Wire Line
+	-5700 -3450 -4800 -3450
+Wire Wire Line
+	-5700 -3450 -5700 -3350
+Connection ~ -6000 -2750
+Connection ~ -4700 -3450
+Connection ~ -4800 -3450
+Connection ~ -5700 -3450
+Wire Wire Line
+	-7200 -2150 -7100 -2150
+Wire Wire Line
+	-5400 -2750 -5100 -2750
+Wire Wire Line
+	-5100 -2750 -5100 -2050
+Wire Wire Line
+	-5100 -2050 -4800 -2050
+Wire Wire Line
+	-4800 -2050 -4700 -2050
+Wire Wire Line
+	-4700 -2050 -4600 -2050
+Wire Wire Line
+	-4400 -2050 -4600 -2050
+Connection ~ -4800 -2050
+Connection ~ -4700 -2050
+Connection ~ -4600 -2050
+Wire Wire Line
+	-7100 -1750 -7100 -1850
+Wire Wire Line
+	-7100 -1850 -7100 -1950
+Wire Wire Line
+	-7700 -2750 -7600 -2750
+Wire Wire Line
+	-7600 -2750 -7400 -2750
+Wire Wire Line
+	-7400 -2750 -7200 -2750
+Wire Wire Line
+	-7200 -2750 -6800 -2750
+Wire Wire Line
+	-7600 -2750 -7600 -2650
+Wire Wire Line
+	-7400 -2750 -7400 -1850
+Wire Wire Line
+	-7400 -1850 -7100 -1850
+Connection ~ -7100 -1850
+Connection ~ -6800 -2750
+Connection ~ -7600 -2750
+Connection ~ -7200 -2750
+Connection ~ -7400 -2750
+Wire Wire Line
+	-8200 -5450 -8100 -5450
+Wire Wire Line
+	-8200 -5450 -8200 -5350
+Wire Wire Line
+	-3400 -5450 -5300 -5450
+Wire Wire Line
+	-5300 -5450 -5300 -5750
+Wire Wire Line
+	-5700 -5750 -5700 -5550
+Wire Wire Line
+	-5700 -5750 -5300 -5750
+Wire Wire Line
+	-5700 -5750 -5500 -5750
+Wire Wire Line
+	-5500 -5750 -5700 -5750
+Wire Wire Line
+	-5700 -5750 -8500 -5750
+Wire Wire Line
+	-8500 -5450 -8200 -5450
+Wire Wire Line
+	-8500 -5450 -8500 -5350
+Wire Wire Line
+	-8500 -5450 -8500 -5750
+Connection ~ -8200 -5450
+Connection ~ -5700 -5750
+Connection ~ -8500 -5450
+Text Label -8560 -5401 2    65   ~ 0
+USD-3V3
+Wire Wire Line
+	-7100 -1350 -8100 -1350
+Text Label -8160 -1301 2    65   ~ 0
+USD-EN
+Wire Wire Line
+	-3400 -5750 -4000 -5750
+Text Label -4060 -5701 2    65   ~ 0
+USD-EN
+Wire Wire Line
+	-4400 -450 -5100 -450
+Text Label -4340 -415 0    65   ~ 0
+USD-I2C2-SCL
+Wire Wire Line
+	-3400 -5950 -3800 -5950
+Wire Wire Line
+	-3800 -5950 -4000 -5950
+Text Label -4060 -5901 2    65   ~ 0
+USD-I2C2-SCL
+Wire Wire Line
+	-5100 -650 -4400 -650
+Text Label -4340 -615 0    65   ~ 0
+USD-I2C2-SDA
+Wire Wire Line
+	-3400 -6050 -3900 -6050
+Wire Wire Line
+	-3900 -6050 -4000 -6050
+Text Label -4060 -6001 2    65   ~ 0
+USD-I2C2-SDA
+Wire Wire Line
+	-3400 -5650 -4000 -5650
+Text Label -4060 -5601 2    65   ~ 0
+USD-INT
+Wire Wire Line
+	-7100 -1150 -8100 -1150
+Text Label -8160 -1101 2    65   ~ 0
+USD-INT
+Wire Wire Line
+	-3400 -5850 -4000 -5850
+Text Label -4060 -5801 2    65   ~ 0
+USD-STR
+Wire Wire Line
+	-7100 -1550 -8100 -1550
+Text Label -8160 -1501 2    65   ~ 0
+USD-STR
+Wire Wire Line
+	-8100 -2750 -8200 -2750
+Text Label -8260 -2701 2    65   ~ 0
+USD-VBATT
+Wire Wire Line
+	-2700 -5350 -2600 -5350
+Wire Wire Line
+	-2600 -5350 -2600 -4850
+Wire Wire Line
+	-2600 -4850 -2800 -4850
+Text Label -2860 -4801 2    65   ~ 0
+USD-VBATT
+Wire Notes Line
+-3300 -6250 -2800 -6250
+Wire Notes Line
+-2800 -6250 -2800 -5150
+Wire Notes Line
+-2800 -5150 -3300 -5150
+Wire Notes Line
+-3300 -5150 -3300 -6250
+Wire Notes Line
+-6900 -2550 -5300 -2550
+Wire Notes Line
+-5300 -2550 -5300 -350
+Wire Notes Line
+-5300 -350 -6900 -350
+Wire Notes Line
+-6900 -350 -6900 -2550
+Text GLabel -3400 -5250 0 10 UnSpc
+GND2
+Text GLabel -3400 -6150 0 10 UnSpc
+GND2
+Text GLabel -3500 -3950 1 10 UnSpc
+GND2
+Text GLabel -2700 -5650 2 10 UnSpc
+GND2
+Text GLabel -2500 -3950 1 10 UnSpc
+GND2
+Text GLabel -2300 -4550 3 10 UnSpc
+GND2
+Text GLabel -2300 -3950 1 10 UnSpc
+GND2
+Text GLabel -1500 -4850 0 10 UnSpc
+GND2
+Text GLabel -1500 -3950 1 10 UnSpc
+GND2
+Text GLabel -800 -4550 3 10 UnSpc
+GND2
+Text GLabel -700 -4550 3 10 UnSpc
+GND2
+Text GLabel -600 -4550 3 10 UnSpc
+GND2
+Text GLabel -500 -4550 3 10 UnSpc
+GND2
+Text GLabel -700 -3950 1 10 UnSpc
+GND2
+Text GLabel 400 -3950 1 10 UnSpc
+GND2
+Text GLabel 400 -5050 3 10 UnSpc
+GND2
+Text GLabel -5700 -4550 3 10 UnSpc
+GND2
+Text GLabel -5700 -4350 1 10 UnSpc
+GND2
+Text GLabel -7100 -4550 2 10 UnSpc
+GND2
+Text GLabel -7700 -4150 1 10 UnSpc
+GND2
+Text GLabel -8200 -5050 3 10 UnSpc
+GND2
+Text GLabel -8500 -5050 3 10 UnSpc
+GND2
+Text GLabel -7100 -5350 2 10 UnSpc
+GND2
+Text GLabel -6900 -5250 1 10 UnSpc
+GND2
+Text GLabel -6500 -5450 2 10 UnSpc
+GND2
+Text GLabel -6500 -5350 1 10 UnSpc
+GND2
+Text GLabel -6500 -150 3 10 UnSpc
+GND2
+Text GLabel -6400 -150 3 10 UnSpc
+GND2
+Text GLabel -6300 -150 3 10 UnSpc
+GND2
+Text GLabel -6300 -50 1 10 UnSpc
+GND2
+Text GLabel -7100 -950 0 10 UnSpc
+GND2
+Text GLabel -7200 -850 1 10 UnSpc
+GND2
+Text GLabel -7600 -2350 3 10 UnSpc
+GND2
+Text GLabel -7600 -2250 1 10 UnSpc
+GND2
+Text GLabel -5700 -2950 1 10 UnSpc
+GND2
+Text GLabel -5700 -3050 3 10 UnSpc
+GND2
+Text Label -5200 -5050 0    10   ~ 0
+LID
+Text Label -3400 -5350 2    10   ~ 0
+LID
+Text Label -7100 -4750 0    10   ~ 0
+N$12
+Text Label -3400 -5550 2    10   ~ 0
+N$12
+Text Label -200 -6050 0    10   ~ 0
+N$17
+Text Label 400 -6050 2    10   ~ 0
+N$17
+Text Label -2700 -5250 0    10   ~ 0
+N$17
+Text Label 400 -5450 1    10   ~ 0
+N$17
+Text Label -1500 -6050 2    10   ~ 0
+N$23
+Text Label -2700 -6150 0    10   ~ 0
+N$23
+Text Label -2700 -6050 0    10   ~ 0
+N$24
+Text Label -1500 -6250 2    10   ~ 0
+N$24
+Text Label -1500 -5450 2    10   ~ 0
+N$27
+Text Label -2700 -5950 0    10   ~ 0
+N$27
+Text Label -1500 -5050 2    10   ~ 0
+N$31
+Text Label -2700 -5850 0    10   ~ 0
+N$31
+Text Label -2300 -4850 1    10   ~ 0
+N$31
+Text Label -1500 -5250 2    10   ~ 0
+N$32
+Text Label -2700 -5750 0    10   ~ 0
+N$32
+Text Label -1500 -5650 2    10   ~ 0
+N$37
+Text Label -2700 -5550 0    10   ~ 0
+N$37
+Text Label -1500 -5850 2    10   ~ 0
+N$39
+Text Label -2700 -5450 0    10   ~ 0
+N$39
+Text Label -4800 -2850 3    10   ~ 0
+N$55
+Text Label -4700 -2850 3    10   ~ 0
+N$55
+Text Label -4600 -2850 3    10   ~ 0
+N$55
+Text Label -4700 -2650 1    10   ~ 0
+N$55
+Text Label -4800 -2650 1    10   ~ 0
+N$55
+Text Label -4600 -2650 1    10   ~ 0
+N$55
+Text Label -4400 -2850 3    10   ~ 0
+N$55
+Text Label -6400 -2750 1    10   ~ 0
+N$103
+Text Label -6400 -2750 0    10   ~ 0
+N$103
+Text Label -6400 -2750 2    10   ~ 0
+N$103
+Text Label -7100 -5450 0    10   ~ 0
+N$114
+Text Label -6900 -5450 2    10   ~ 0
+N$114
+Text Label -6000 -2750 1    10   ~ 0
+N$119
+Text Label -6000 -2750 0    10   ~ 0
+N$119
+Text Label -4600 -3450 1    10   ~ 0
+N$119
+Text Label -4700 -3450 1    10   ~ 0
+N$119
+Text Label -4800 -3450 1    10   ~ 0
+N$119
+Text Label -5700 -3350 1    10   ~ 0
+N$119
+Text Label -7200 -2150 3    10   ~ 0
+N$120
+Text Label -7100 -2150 2    10   ~ 0
+N$120
+Text Label -5400 -2750 1    10   ~ 0
+N$121
+Text Label -4800 -2050 3    10   ~ 0
+N$121
+Text Label -4700 -2050 3    10   ~ 0
+N$121
+Text Label -4600 -2050 3    10   ~ 0
+N$121
+Text Label -4400 -2050 3    10   ~ 0
+N$121
+Text Label -7100 -1750 2    10   ~ 0
+USD-1V8
+Text Label -7100 -1850 2    10   ~ 0
+USD-1V8
+Text Label -7100 -1950 2    10   ~ 0
+USD-1V8
+Text Label -6800 -2750 1    10   ~ 0
+USD-1V8
+Text Label -7700 -2750 0    10   ~ 0
+USD-1V8
+Text Label -6800 -2750 2    10   ~ 0
+USD-1V8
+Text Label -7600 -2650 1    10   ~ 0
+USD-1V8
+Text Label -7200 -2750 1    10   ~ 0
+USD-1V8
+Text Label -8200 -5350 1    10   ~ 0
+USD-3V3
+Text Label -8100 -5450 2    10   ~ 0
+USD-3V3
+Text Label -3400 -5450 2    10   ~ 0
+USD-3V3
+Text Label -5700 -5550 1    10   ~ 0
+USD-3V3
+Text Label -8500 -5350 1    10   ~ 0
+USD-3V3
+Text Label -7100 -1350 2    10   ~ 0
+USD-EN
+Text Label -3400 -5750 2    10   ~ 0
+USD-EN
+Text Label -5100 -450 0    10   ~ 0
+USD-I2C2-SCL
+Text Label -3400 -5950 2    10   ~ 0
+USD-I2C2-SCL
+Text Label -5100 -650 0    10   ~ 0
+USD-I2C2-SDA
+Text Label -3400 -6050 2    10   ~ 0
+USD-I2C2-SDA
+Text Label -3400 -5650 2    10   ~ 0
+USD-INT
+Text Label -7100 -1150 2    10   ~ 0
+USD-INT
+Text Label -3400 -5850 2    10   ~ 0
+USD-STR
+Text Label -7100 -1550 2    10   ~ 0
+USD-STR
+Text Label -8100 -2750 2    10   ~ 0
+USD-VBATT
+Text Label -2700 -5350 0    10   ~ 0
+USD-VBATT
+$EndSCHEMATC

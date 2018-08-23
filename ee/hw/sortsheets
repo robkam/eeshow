@@ -1,0 +1,77 @@
+#!/bin/bash
+# (c) J.Reisenweber 2016, GPLv2
+# Usage:
+#   [verbose=true|quiet=true] sortsheets <rootsheet.sch>
+# 
+# each(!) sheet except index/rootsheet #1 MUST have a comment4 of exactly
+#   Xsheetnumber=<int>
+# sheet numbers must be unique
+
+
+set -e
+
+#this is not really safe
+: ${quiet:=false} # true: less output
+: ${verbose:=false} # true: more output
+  $verbose && quiet=false
+
+if ! [ -w "$1" ]; then 
+cat <<'ETX'
+(c) J.Reisenweber 2016, GPLv2
+Usage:
+  [verbose=true|quiet=true] sortsheets <rootsheet.sch>
+
+each(!) sheet except index/rootsheet (1) MUST have a comment4 of exactly
+  Xsheetnumber=<int>
+sheet numbers must be unique
+ETX
+echo "Error: file parameter \"$1\" not writable. Quit"
+exit 1
+fi
+
+
+
+tmp=$(mktemp -dt -p .)
+trap "rm -r $tmp" EXIT
+
+# helper file for sed
+cat >$tmp/firstsheet.sed <<-ETX
+    : start
+    /\\\$Sheet/,/\\\$EndSheet/ {p}
+    /\\\$EndSheet/ ! {n;b start}
+    : rest 
+    n
+    w $tmp/rest.0sch
+    b rest
+ETX
+
+#get header
+sed '/\$Sheet/ Q' $1 >$tmp/header.0sch
+$verbose && ls -l $tmp/header.0sch
+
+# split out the $Sheet $EndSheet sections into separate files, plus rest
+cp $1 $tmp/trest.0sch
+for (( n=2; n<=$(grep -c '$EndSheet' $1)+1; n++ )); do 
+  sed -n -f $tmp/firstsheet.sed $tmp/trest.0sch >$tmp/dollarsheet$(( 100 + n )).0sch; 
+  cp $tmp/rest.0sch $tmp/trest.0sch
+  $verbose && ls -l $tmp/rest.0sch
+  $verbose && ls -l $tmp/dollarsheet$(( 100 + n )).0sch
+  $verbose && echo ====================
+done
+
+# dereference sheet files and fetch their comment4 to 
+# create according sorted newdollarsheet files
+for f in $tmp/dollarsheet*.0sch; do
+  filename=$(sed -n '/^F1 "/ {s/F1 \"\([^"]*\)".*/\1/; p}' $f); #"
+  sheetnumber=$(sed -n '/Comment4/ {s/Comment4 "Xsheetnumber=\([^"]*\)"/\1/; p}' $filename); #"
+  $quiet || echo "$f - $filename: sheetnumber $sheetnumber"
+  mv -n $f $tmp/newdollarsheet$(( sheetnumber +100 )).0sch \
+    || { echo "error! ${filename}: duplicate sheet number $sheetnumber in comment4"; exit 2; };
+done
+
+#create new rootsheet
+cat $tmp/header.0sch $tmp/newdollarsheet*.0sch $tmp/rest.0sch >$tmp/rootsheet.new
+cp $1 $1.ssbak
+mv $tmp/rootsheet.new $1
+$quiet || echo "created new $1 - backup in $1.ssback"
+exit

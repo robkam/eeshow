@@ -1,0 +1,92 @@
+#!/bin/bash
+#
+# sch2pdf - Generate FIG then PDF from schematics, using eeplot
+#
+# Written 2016 by Werner Almesberger
+# Copyright 2016 by Werner Almesberger
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+
+#
+# Known bugs:
+# - expects first sheet to be index page
+# - only renders sub-sheets
+# - has all the limitations of eeplot (see TODO)
+#
+
+
+usage()
+{
+	cat <<EOF 1>&2
+usage: $0 [-n first_num] [-o output.pdf] [-q] [-t template.fig ]
+	  file.lib ... file.sch
+EOF
+	exit 1
+}
+
+
+out=out.pdf
+quiet=false
+template=
+num=1
+while [ "$1" ]; do
+	case "$1" in
+	-n)	num=$2
+		shift 2;;
+	-o)	out=$2
+		shift 2;;
+	-q)	quiet=true
+		shift;;
+	-t)	template="-t $2"
+		shift 2;;
+	-*)	usage;;
+	*)	break;;
+	esac
+done
+
+[ "$1" ] || usage
+
+libs=
+while [ "$2" ]; do
+	libs="$libs $1"
+	shift
+done
+
+./eeplot -o fig:- $template -D"TITLE=`basename \"$1\" .sch`" -DNUMBER=$num \
+    $libs "$1" |
+    fig2dev -L pdf >"$out"
+
+sheet=false
+while read line; do
+	if ! $sheet; then
+		[ "${line#\$Sheet}" != "$line" ] && sheet=true
+		continue
+	else
+		if [ "${line#\$EndSheet}" != "$line" ]; then
+			sheet=false
+			continue
+		fi
+	fi
+
+	if [ "${line#F0 \"}" != "$line" ]; then
+		name=${line#F0 \"}
+		name=${name%%\"*}
+	fi
+	[ "${line#F1 \"}" = "$line" ] && continue
+	file=${line#F1 \"}
+	file=${file%%\"*}
+
+	num=`expr $num + 1`
+
+	$quiet || echo "$file" 1>&2
+	./eeplot -o fig:- $template -D"TITLE=$name" -DNUMBER=$num \
+	    $libs `dirname "$1"`/$file | \
+	    fig2dev -L pdf >_tmp.pdf
+	pdfunite "$out" _tmp.pdf _tmp2.pdf
+	mv _tmp2.pdf "$out"
+done <"$1"
+exit

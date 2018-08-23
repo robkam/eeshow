@@ -1,0 +1,546 @@
+#----- Sheet 2 (OTG) ----------------------------------------------------------
+
+P*_ESE16*
+DS http://industrial.panasonic.com/www-data/pdf/ATB0000/ATB0000CE11.pdf
+
+P*_EVQP4*
+DS http://industrial.panasonic.com/www-data/pdf/ATK0000/ATK0000CE18.pdf
+
+P*_EVQ-Q0*
+DS http://industrial.panasonic.com/www-data/pdf/ATK0000/ATK0000CE24.pdf
+
+D*_V*MLA*
+DS http://www.littelfuse.com/~/media/electronics/datasheets/varistors/littelfuse_varistor_mla_datasheet.pdf.pdf
+
+P*_USB*47590-0001
+DS http://www.molex.com/pdm_docs/sd/475900001_sd.pdf
+
+U*_IP4220CZ6
+DS http://www.nxp.com/documents/data_sheet/IP4220CZ6.pdf
+FP 5
+
+# C201, 2.2 uF, 10 V
+
+#----- Sheet 3 (Charger) ------------------------------------------------------
+
+U*_BQ24297*
+DS http://www.ti.com/lit/ds/symlink/bq24297.pdf
+FP 54
+
+U*_TPS2296?C*
+DS http://www.ti.com/lit/ds/symlink/tps22963c.pdf
+FP 26
+
+R*_NTCG16*
+DS https://product.tdk.com/info/en/catalog/datasheets/tpd_ntc-thermistor_ntcg_en.pdf
+FP 18
+
+L*_MAMK2520T1R0M
+DS http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=MAMK2520T1R0M&fileName=MAMK2520T1R0M_SS&mode=specSheetDownload
+
+# various C, L, R
+
+#----- Sheet 4 (Modem Power) --------------------------------------------------
+
+U*_INA231*
+DS http://www.ti.com/lit/ds/symlink/ina231.pdf
+FP 34
+
+U*_SLG46531
+#DS http://www.silego.com/uploads/Products/product_415/SLG46531_DS_r109_10212016.pdf
+DS `./getsilego 46531
+FP 168
+
+U*_SLG46533V
+#DS http://www.silego.com/uploads/Products/product_482/SLG46533r106_10202016.pdf
+DS `./getsilego 46533
+FP 180
+# the footprint page is obviously not locked to the "random" file from getsilego. This could use more logs and love
+
+U*_ADA4505-1*
+DS http://www.analog.com/media/en/technical-documentation/data-sheets/ADA4505-1_4505-2_4505-4.pdf
+FP 18
+
+U*_TXS4555*
+DS http://www.ti.com/lit/ds/symlink/txs4555.pdf
+FP 20
+
+#----- Sheet 5 (Fuel Gauge) ---------------------------------------------------
+
+U*_BQ27?00*
+DS http://www.ti.com/lit/ds/symlink/bq27200.pdf
+FP 33
+
+U*_BQ27421*-G1*
+DS http://www.ti.com/lit/ds/symlink/bq27421-g1.pdf
+FP 22
+TRM http://www.ti.com/lit/ug/sluuac5c/sluuac5c.pdf
+
+U*_SN74AUP1G04*
+DS http://www.ti.com/lit/ds/symlink/sn74aup1g04.pdf
+# DSF
+FP 29
+
+#----- Sheet 6 (Modem) --------------------------------------------------------
+
+M*_PHS8
+"PHS8" http://www.gemalto.com/brochures-site/download-site/Documents/M2M_PHS8_datasheet.pdf
+"PLS8" http://www.gemalto.com/brochures-site/download-site/Documents/M2M_PLS8_datasheet.pdf
+"PXS8" http://www.gemalto.com/brochures-site/download-site/Documents/M2M_PXS8_datasheet.pdf
+"HW (PHS8-E)" http://web.archive.org/web/20150103113256/http://download.maritex.com.pl/pdfs/wi/phs8.pdf
+
+T*_UMG5N
+DS http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/emg5t2r-e.pdf
+FP 6
+
+#----- Sheet 7 (SIM switch) ---------------------------------------------------
+
+U*_FSA2866
+DS http://www.fairchildsemi.com/datasheets/FS/FSA2866.pdf
+FP 9
+
+U*_LSF0204*
+DS http://www.ti.com/lit/ds/symlink/lsf0204d.pdf
+FP 31
+
+P*_SF7W006S4E*
+DS http://jae-connector.com/en/pdf/SJ106220.pdf
+
+P*_101-00271*
+DS http://media.digikey.com/pdf/Data%20Sheets/Amphenol%20PDFs/101-00271.pdf
+
+U*_ESDA*P6
+DS http://www.st.com/web/en/resource/technical/document/datasheet/CD00091403.pdf
+FP 6
+
+# Note: we now use AUP instead of LVC for the simpler logic gates (if AUP is
+# available). Keeping the LVD entries, just in case.
+
+U*_SN74LVC2G07*
+DS http://www.ti.com/lit/ds/symlink/sn74lvc2g07.pdf
+# DSF
+FP 23
+
+U*_SN74AUP2G07*
+DS http://www.ti.com/lit/ds/symlink/sn74aup2g07.pdf
+# DSF
+FP 20
+
+U*_SN74LVC1G32*
+DS http://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf
+# DSF
+FP 30
+
+U*_SN74AUP1G32*
+DS http://www.ti.com/lit/ds/symlink/sn74aup1g32.pdf
+# DSF
+FP 32
+
+U*_SN74LVC1G04*
+DS http://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf
+# DSF
+FP 31
+
+U*_SN74LVC1G123*
+DS http://www.ti.com/lit/ds/symlink/sn74lvc1g123.pdf
+# YZP
+FP 25
+
+U*_SN74LVC1G74*
+DS http://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf
+# DQE
+FP 23
+
+U*_SN74AUP1G74*
+DS http://www.ti.com/lit/ds/symlink/sn74aup1g74.pdf
+# DQE
+FP 29
+
+#----- Sheet 8 (Antenna connections) ------------------------------------------
+
+U*_BGM1034N7
+DS http://www.mouser.com/ds/2/196/Infineon-BGM1034N7-DS-v03_00-en-767596.pdf
+FP 14
+
+U*_PE4259
+DS http://www.psemi.com/pdf/datasheets/pe4259ds.pdf
+FP 9
+
+U*_CPL-WBF-00D3
+DS http://www.st.com/web/en/resource/technical/document/datasheet/DM00059334.pdf
+FP 5
+
+U*_LMV221*
+DS http://www.ti.com/lit/ds/symlink/lmv221.pdf
+FP 47
+
+#----- Sheet 9 (WLAN, BT, FM) -------------------------------------------------
+
+U*_WL18?7MOD*
+DS http://www.ti.com/lit/ds/symlink/wl1837mod.pdf
+FP 39
+
+U*_SI472?*
+DS http://www.silabs.com/Support%20Documents/TechnicalDocs/Si4720-21-B20.pdf
+FP 45
+"Programming guide" http://www.silabs.com/Support%20Documents/TechnicalDocs/AN332.pdf
+
+L*_MLZ1608*
+DS https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_decoupling_mlz1608_en.pdf
+FP 5
+
+#----- Sheet 10 (Sensors) -----------------------------------------------------
+
+S*_LIS302DL*
+DS http://www.st.com/resource/en/datasheet/lis302dl.pdf
+"PCB design" http://www.st.com/resource/en/technical_note/cd00134799.pdf
+
+S*_BME280
+DS https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf
+FP 42
+
+S*_BMX055
+DS https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX055-DS000-02.pdf
+FP 164
+
+#----- Sheet 11 (Audio Codec) -------------------------------------------------
+
+U*_tlv320aic34
+DS http://www.ti.com/lit/ds/symlink/tlv320aic34.pdf
+FP 97
+
+#----- Sheet 12 (Audio Headset) -----------------------------------------------
+
+U*_TPA6130A2*
+DS http://www.ti.com/lit/ds/symlink/tpa6130a2.pdf
+# RTJ
+FP 37
+
+U*_TS3A225E*
+DS http://www.ti.com/lit/ds/symlink/ts3a225e.pdf
+# RTE
+FP 33
+
+U*_TS5A22366*
+DS http://www.ti.com.cn/cn/lit/ds/symlink/ts5a22366.pdf
+PKG 24
+
+L*_MPZ1608*
+DS https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz1608_en.pdf
+FP 6
+
+#----- Sheet 13 (ECI) ---------------------------------------------------------
+
+U*_TLV702*
+DS http://www.ti.com/lit/ds/symlink/tlv702.pdf
+# DBV
+FP 28
+
+U*_TLV170?*
+DS http://www.ti.com/lit/ds/symlink/tlv1701.pdf
+# DGK
+FP 26
+
+#----- Sheet 14 (Audio Handsfree) ---------------------------------------------
+
+U*_TPA2012D2*
+DS http://www.ti.com/lit/ds/symlink/tpa2012d2.pdf
+# RTJ
+FP 31
+
+M*_SPK0415HM4H
+DS http://www.knowles.com/eng/content/download/3897/49396/version/6/file/SPK0415HM4H-B.pdf
+FP 8
+
+#----- Sheet 15 (Misc) --------------------------------------------------------
+
+U*_TMD2671*
+DS http://www.ams.com/eng/content/download/250304/976107/142395
+FP 32
+
+U*_MLX90248*
+DS https://www.melexis.com/-/media/files/documents/datasheets/mlx90248-datasheet-melexis.pdf
+# SE
+PKG 9
+
+# Use KRKT as example for KxKT
+D*_LTST-S270KxKT
+DS http://optoelectronics.liteon.com/upload/download/DS22-2000-210/S_110_LTST-S270KRKT.pdf
+FP 8
+
+#VIB*_*304-106
+#DS https://www.precisionmicrodrives.com/file/5647/download?token=qDFOrtaf
+#FP 6
+
+#----- Sheet 16 (RFID/NFC Reader) ---------------------------------------------
+
+U*_TRF7970A*
+DS http://www.ti.com/lit/ds/symlink/trf7970a.pdf
+FP 87
+
+X*_27.12MHz
+# NX3225GA-27.12M-STD-CRG-2
+DS http://www.ndk.com/images/products/catalog/c_NX3225GA-STD-CRG-2_e.pdf
+
+#----- Sheet 17 (RFID/NFC Controller) -----------------------------------------
+
+U*_MKL16Z*V*4
+# FM
+DS http://cache.freescale.com/files/microcontrollers/doc/data_sheet/KL16P64M48SF5.pdf
+FP http://cache.freescale.com/files/shared/doc/package_info/98ASA00473D.pdf
+TRM http://cache.freescale.com/files/microcontrollers/doc/ref_manual/KL16P80M48SF4RM.pdf
+
+*D*_LTST-C190KRKT
+DS http://optoelectronics.liteon.com/upload/download/DS-22-99-0151/S_110_LTST-C190KRKT.pdf
+FP 8
+
+#----- Sheet 18 (Hackerbus) ---------------------------------------------------
+
+CON*_DF9-*
+DS http://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/DF9.pdf
+FP 6
+
+U*_ADP1653
+DS http://www.analog.com/static/imported-files/data_sheets/ADP1653.pdf
+FP 21
+
+L*_*MDMK3030T2R2MM
+DS http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=MDMK3030T2R2MM&fileName=MDMK3030T2R2MM_SS&mode=specSheetDownload
+
+D*_RSX101M-30
+DS http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/diode/schottky_barrier/rsx101m-30.pdf
+
+Q*_FC6946010R
+DS http://www.semicon.panasonic.co.jp/ds4/FC694601_E.pdf
+FP 6
+
+F*_0ZCH*
+DS http://www.belfuse.com/pdfs/0ZCH.pdf
+FP 3
+
+#----- Sheet 19 (IR) ----------------------------------------------------------
+
+D*_VEMD10940F
+DS http://www.vishay.com/docs/84171/vemd10940f.pdf
+FP 4
+
+D*_VSMB2948SL
+DS http://www.vishay.com/docs/83498/vsmb2948sl.pdf
+FP 4
+
+Q*_DMN26D0UT
+DS http://www.diodes.com/_files/datasheets/ds31854.pdf
+FP 5
+
+U*_NX3V1G66*
+DS http://www.nxp.com/documents/data_sheet/NX3V1G66.pdf
+# GM
+PKG 14
+"Pkg info" http://www.nxp.com/documents/outline_drawing/SOT886.pdf
+
+#----- Sheet 20 (B2B LOWER-UPPER) ---------------------------------------------
+
+P*_DF40HC*0DS-*
+#DS http://www.hirose.co.jp/cataloge_hp/ed_DF40_20140305.pdf
+DS https://www.hirose.com/product/en/download_file/key_name/DF40/category/Catalog/doc_file_id/31649/?file_category_id=4&item_id=22&is_series=1
+FP 6
+
+P*_DF40C*0DP-*
+#DS http://www.hirose.co.jp/cataloge_hp/ed_DF40_20140305.pdf
+DS https://www.hirose.com/product/en/download_file/key_name/DF40/category/Catalog/doc_file_id/31649/?file_category_id=4&item_id=22&is_series=1
+FP 10
+
+U*_XRA1201*
+DS https://www.exar.com/content/document.ashx?id=20780
+FP 15
+
+R*_MNR15*
+DS http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor_network/mnr_g.pdf
+FP 3
+
+#----- Sheet 21 (BOB) ---------------------------------------------------------
+
+P*_ST1W008S4B*
+DS http://media.digikey.com/PDF/Data%20Sheets/JAE%20PDFs/ST1W008S4BR1500.pdf
+
+CON*_M50-315??42
+DS http://harwin.com/includes/pdfs/M50-315.pdf
+
+LED*_L130-????002011001
+DS http://www.lumileds.com/uploads/461/DS209-pdf
+FP 18
+
+LED*_*SMLP36*
+#DS http://rohmfs.rohm.com/en/products/databook/datasheet/opto/led/chip_multi/smlp36.pdf
+DS http://www.rohm.com/web/global/datasheet/SMLP36RGB2W(R)
+
+U*_SP7538P*
+DS http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sp7538p_datasheet.pdf.pdf
+PKG 4
+
+#----- Sheet 23 (Keypad) ------------------------------------------------------
+
+U*_TCA8418*
+DS http://www.ti.com/lit/ds/symlink/tca8418.pdf
+# RTW
+FP 52
+
+Q*_NX3008PBKV
+DS http://www.nxp.com/documents/data_sheet/NX3008PBKV.pdf
+FP 13
+
+D*_NXP BAS16VV*
+DS http://www.nxp.com/documents/data_sheet/BAS16_SER.pdf
+FP 14
+
+#----- Sheet 24 (Display-Peripherals) -----------------------------------------
+
+U*_CRTOUCH*
+DS http://cache.freescale.com/files/32bit/doc/data_sheet/CRTOUCHDS.pdf
+FP 63
+
+#----- Sheet 25 (Display-Panel & Power) ---------------------------------------
+
+# @@@ confirm choice
+U*_TPS61160*
+DS http://www.ti.com/lit/ds/symlink/tps61160.pdf
+FP 38
+
+L*_*LQH3NPN100NM0
+DS http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0075S0103LQH3NP_M0.pdf
+
+Q*_PMBT3906VS*
+DS http://www.nxp.com/documents/data_sheet/PMBT3906VS.pdf
+FP 8
+
+L*_ACM2012H*
+DS https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_signal_acm2012h_en.pdf
+FP 5
+
+# @@@ set part name to 5000246471
+P*_N900-DISPLAY
+DS http://www.molex.com/pdm_docs/sd/5000244071_sd.pdf
+
+#----- Sheet 29 (TBD) ---------------------------------------------------------
+
+U*_TPS736*
+DS http://www.ti.com/lit/ds/symlink/tps736.pdf
+# DBV
+FP 34
+
+#----- Sheet 30 (Camera) ------------------------------------------------------
+
+P*_DF37NB-20DS-0.4*
+#DS http://www.hirose.co.jp/cataloge_hp/ed_DF37_20140305.pdf
+DS https://www.hirose.com/product/en/download_file/key_name/DF37/category/Catalog/doc_file_id/49052/?file_category_id=4&item_id=249&is_series=1
+# DF37NB-20DS
+FP 3
+
+U*_TS3DS26227
+DS http://www.ti.com/lit/ds/symlink/ts3ds26227.pdf
+FP 18
+
+#----- Sheet 31 (Fancy LEDs) --------------------------------------------------
+
+U*_LP55231
+DS http://www.ti.com/lit/ds/symlink/lp55231.pdf
+FP 56
+
+LED*_MSL0104*
+#DS http://rohmfs.rohm.com/en/products/databook/datasheet/opto/led/chip_multi/msl0104.pdf
+DS http://www.rohm.com/web/global/datasheet/MSL0104RGBW
+
+#----- Sheet 32 (Basic LEDs) --------------------------------------------------
+
+U*_LP55281*
+DS http://www.ti.com/lit/ds/symlink/lp55281.pdf
+# YZR
+FP 34
+
+LED*_MSL0201*
+#DS http://rohmfs.rohm.com/en/products/databook/datasheet/opto/led/chip_multi/msl0201rgb.pdf
+DS http://www.rohm.com/web/global/datasheet/MSL0201RGB
+
+LED*_LTST-C190TBKT
+DS http://optoelectronics.liteon.com/upload/download/DS-22-99-0224/S_110_LTST-C190TBKT(0630).pdf
+FP 8
+
+LED*_LTST-C190KFKT
+DS http://optoelectronics.liteon.com/upload/download/DS-22-99-0186/S_110_LTST-C190KFKT.pdf
+FP 8
+
+#----- Sheet 33 (TBD) ---------------------------------------------------------
+
+P*_105017-0001
+DS http://www.molex.com/pdm_docs/sd/1050170001_sd.pdf
+
+U*_CSX-252FAP32768
+DS http://cfd.citizen.co.jp/english/prod-tech/product/pdf/datasheet_Oscillator/CSX-252F.pdf
+
+U*_SG-210STF*
+DS https://support.epson.biz/td/api/doc_check.php?dl=brief_SG-210STF_en.pdf
+
+#----- bbcpu (34, BB-XM Adapter, CPU) -----------------------------------------
+
+# @@@ TBD
+# P9 LSWSS-114-D-02-T-LF
+# https://mlelectronics.com/part/LSWSS-1
+# https://s3.amazonaws.com/mle-assets/parts/LSWSS-1/LSWSS-1-D+REV+D.pdf
+# Min insertion: 85 mil (2.16 mm)
+# Max insertion: 115 mil (2.92 mm)
+# 14 x Double, TH, Tin/lead, LF = ?? (LT = "Lock Tight")
+# 100 x 100 mil, top 185 mil (4.7 mm), 
+# pin ~40 mil ?
+# http://images.ihscontent.net/vipimages/VipMasterIC/IC/MAJO/MAJOS00042/MAJOS00042-1.pdf
+# older source, height 180 mil (4.57 mm)
+#
+# Selection:
+# Product Index  >  Connectors, Interconnects  >  Rectangular Connectors - Headers, Male Pins -> 117,977
+# Pitch = 2.54 mm -> 73,518
+# Number of Rows = 2 -> 39,434
+# Part Status = Active -> 28,958
+# Mounting Type = Through Hole -> 17,280
+# In stock -> 5,445
+# Contact Mating Length <= 3.2 mm -> 273
+# Number of Positions = 28 -> 7
+#
+#					Base	Contact	Sum
+# Samtec TLW-114-05-T-D			60 mil	105 mil	4.2 mm
+#
+
+# P17 "HDR 10X2_1.27mm"
+#
+# See hdr.pdf
+# M50-350ccpp	3.0 + 1.0 = 4.0 mm
+# M50-3501042
+
+U*_NX3L4051*
+DS http://www.nxp.com/documents/data_sheet/NX3L4051.pdf
+# PW
+PKG 19
+"Pkg info" http://www.nxp.com/documents/outline_drawing/SOT403-1.pdf
+
+P*_435-??-2??-00-160000
+DS http://www.mill-max.com/assets/pdfs/metric/078M.PDF
+
+P*_852-??-???-10-001000
+DS http://www.mill-max.com/assets/pdfs/metric/034M.PDF
+
+#----- Sheet 35 (BB-XM Adapter, DISP) -----------------------------------------
+
+# @@@ TBD
+# P11 "HDR 10X2_1.27mm"
+# P13 "HDR 10X2_1.27mm"
+
+#----- bbcam (36, BB-XM Adapter, CAM) -----------------------------------------
+
+# @@@ TBD
+# P10 "F618-MG -D051-XX-CF358"
+# http://markmail.org/download.xqy?id=l7gxdc4kfmshw7dy&number=1
+# similar:
+# http://php2.twinner.com.tw/files/cherngweei/F607-MGN-D048-XX.pdf
+# base 4.5 mm, unknown insertion (guess: ~2.5 mm)
+# P18 "HDR 2X2_1.27mm"
+
+P*_852-??-???-10-001101
+DS http://www.precidip.com/AppHost/9696,1/Scripts/Modules/Catalog/Default.aspx?c=8&i=522&p=172&pdf=1&dsku=852-PP-NNN-10-001101

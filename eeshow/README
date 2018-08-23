@@ -1,0 +1,372 @@
+eeshow - Eeschema schematics renderer and viewer
+================================================
+
+Eeshow is a collection of programs to render schematics made by KiCad
+Eeschema to FIG, PDF, Postscript, EPS, or PNG, and to generate graphical
+differences between different versions of schematics sheets. It can
+work in plain files but it can also retrieve design files directly
+from a git repository. Furthermore, eeshow has an interactive mode for
+viewing schematics and differences.
+
+This work is distributed under the terms of the GNU GENERAL PUBLIC
+LICENSE, Version 2:
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+For your convenience, a copy of the complete license has been included
+in the file COPYING.GPLv2.
+
+The file page_layout_default_description.cpp is from KiCad and is covered
+by the same license.
+
+
+Prerequisites
+-------------
+
+libcairo2-dev
+libgit2-dev
+libgtk-3-dev
+transfig
+imagemagick
+
+E.g., on Ubuntu and Debian:
+
+sudo apt-get install libgtk-3-dev libcairo2-dev libgit2-dev transfig \
+  imagemagick
+
+On Fedora:
+
+sudo dnf install gtk3-devel cairo-devel libgit2-devel transfig ImageMagick
+
+
+Furthermore, the xsel command-line utility is required for copy & paste.
+
+To build, simply run
+make
+
+To install, run as root (e.g., with sudo)
+make install
+
+
+Development status
+------------------
+
+Eeshow is still incomplete. It should generally be usable, but still has
+many limitations, especially in the following areas:
+
+- not all details are rendered, e.g., pin attributes such as "clock input"
+
+- rendering isn't always exactly the same as in KiCad, e.g., text size may
+  differ significantly
+
+- interactive use is not streamlined yet, e.g., revision selection
+
+- there may be unknown bugs
+
+More details on pending items can be found in the file TODO.
+
+
+Non-interactive rendering
+=========================
+
+Eeshow can be invoked from the command line to render KiCad schematics
+to FIG, PDF, and PNG.
+
+
+Invocation
+----------
+
+The general form of invocation for rendering is as follows:
+
+eeplot -o output [options] file.pro [file.sch]
+
+or
+
+eeplot -o output [options] [-1] [-e] file.lib ... file.sch
+
+The option -o is always required. The filename extension selects the
+output driver, and can be overridden with the type: prefix. If selecting
+standard output the type prefix is always required, e.g., png:-
+
+If using PDF, the option -1 can be used (after "eeshow") to process only
+one sheet, not recursing into sub-sheets. -e enables the rendering of
+additional information, e.g., pin types.
+
+For PDF and PNG, the option -s scale can be used to control the size of
+the output.
+
+Examples:
+
+eeplot -s 2 -o test.png test.lib test.sch
+
+eeplot -o neo900.pdf  neo900.lib kicad-libs/components/powered.lib neo900.sch
+
+eeplot -o neo900-sheet04.pdf neo900.pro neo900_SS_4.sch
+
+More details on the above example can be found in the file DEMO.
+
+
+Revision access
+---------------
+
+If the files are stored in a git repository, a revisions can be selected
+by prefixing file names with the commit ID, e.g.,
+
+eeplot -o old.png -s neo900.lib kicad-libs/components/powered.lib \
+  6a9f71:neo900_SS_5.sch \
+
+Revision selection propagates to dependent files, unless explicitly
+overridden. E.g., the above example selects also revision 6a9f71 of
+neo900.lib.
+
+
+Using the component library cache
+---------------------------------
+
+Eeschema copies all components it uses to a file named <project>-cache.lib
+When operating on files, this library can be used as a convenient
+alternative to listing all the libraries that contributed content.
+
+However, when using eeshow with a revision history, the library cache
+should only be used if it is also kept in the repository. Otherwise,
+library changes in older revisions may get unnoticed.
+
+
+Overriding the sheet date (experimental)
+----------------------------------------
+
+Eeplot can override the sheet date when using the experimental option
+-d string  The specified string then replaces the date on all sheets.
+Example:
+
+eeplot -d "`git log -1 --format='%ai' -s .`" neo900.pro -o neo900.pdf
+
+The date string can also contain the following date formatting options:
+
+  %t	insert the current time
+  %s	insert the modification time of the sheet file, or the author
+	date of the commit containing the latest change to the sheet
+	file
+  %S	like %s, but use the date of the most recently modified sheet
+	that is part of the plot
+  %i	parse the date string in the sheet
+  %u	insert the date previously obtained with %i
+
+Example:
+
+eeplot -d "%s" ...
+
+All the above formatting options accept a format argument in the form
+%{format}x where "format" is a strftime-type string (or stfptime, in
+the case of %i) and "x" is the format character. Closing curly braces
+can be escaped with %}.
+
+If no format is specified, eeplot uses "%F" for %i (example: 2016-10-28)
+and "%F %T %z" for all other options (example: 2016-10-28 17:36:17 -0300).
+
+If %i fails to parse the date string, %u produces an empty string.
+An alternative can be selected with the ! prefix for the format
+character, which only expands the format if there is no user-provided
+date. Example:
+
+eeplot -d "%i%{%D}u%{%D}!s" HEAD:neo900.pro -o neo900.pdf
+
+The HEAD: in the above example makes eeplot retrieve the schematics
+from git. Without this prefix, it would use files (and thus the time
+they were checked out our locally modified, and not the time they were
+changed in the repository).
+
+Date support is still experimental and the syntax may change in future
+versions of eeplot.
+
+
+Non-interactive differences
+===========================
+
+Eeshow can render two versions of a sheet to a bitmap and then compare them
+pixel by pixel, highlighting areas where differences are found. The output
+is written to a PNG file.
+
+
+Invocation
+----------
+
+The general form of invocation for rendering is as follows:
+
+eediff [options] file.pro file.pro
+
+or
+
+eediff [options] file.lib ... file.sch file.lib ... file.sch
+
+The usual options and revision selection can be used here as well.
+
+Example:
+
+LIBS="neo900.lib kicad-libs/components/powered.lib"
+eediff -o diff.png -s 2 $LIBS  6a9f71:neo900_SS_5.sch \
+  $LIBS neo900_SS_5.sch
+
+
+GUI mode
+========
+
+GUI mode allows exploration of schematics and the comparison of different
+git revisions. Compared to eeschema, eeshow currently offers the following
+additional features:
+
+- access to the git revision history with visual differences between
+  versions.
+
+- on hover, global labels show on which other sheets the label is used.
+  Clicking on a name jumps to that sheet.
+
+- fast sheet change with PgUp/PgDn
+
+
+Invocation
+----------
+
+The basic invocation of GUI mode is as follows:
+
+eeshow file.pro
+
+or
+
+eeshow file.lib ... file.sch
+
+If file.sch is in a git repository, eeshow automatically loads the
+revision history. The depth of the history can be limited with the
+option -N number-of-commits
+
+Examples:
+
+eeshow -N 30 neo900.lib kicad-libs/components/powered.lib neo900.sch
+
+eeshow `sed -n '/pcbnew/q;/^LibName[0-9]*=/{s///;s/$/.lib/p;};d' anelok.pro` \
+  anelok.sch
+
+
+Mouse function in GUI mode
+--------------------------
+
+Eeshow uses only the left and middle mouse button (both are equivalent)
+and the scroll wheel.
+
+Hover			show additional details on revisions, sheets, global
+			labels, index
+Click			jump to sheet (on sub-sheet, sheet stack, global
+			label hover box, index), open index page, open history,
+			select revision
+Click and drag		pan sheet, scroll history
+Scroll wheel		zoom in or out; scroll through history
+
+
+Key functions in GUI mode
+-------------------------
+
++ or =			zoom in
+-			zoom out
+*			fit to window
+Home			go to the top sheet
+Delete or Backspace	go to the next higher sheet in hierarchy
+PgUp			go to the previous sheet in sequence
+PgDn			go to the next sheet in sequence
+Up or Down		invoke the revision history (WIP)
+Tab			toggle between old and new revision
+Esc			cancel current action (exit history, close pop-up,
+			de-highlight glabel, close help)
+E			show/hide extra information (pin types)
+F			toggle showing footprints, even if invisible
+Shift + R		idem, for component references
+Shift+D			toggle between "diff" and experimental "delta" mode
+H			show/hide help window
+V			if hovering on commit, show/hide commit viewer
+T			toggle performance timer
+D			when comparing revisions, show difference (default)
+N			show newer sheet
+O			show older sheet
+Q			quit the viewer
+
+
+Providing documentation
+-----------------------
+
+Eeshow can display documentation of components, such as data sheets.
+To provide such documentation, create a file consisting of records of
+the following form:
+
+component_reference
+tag (will be displayed by eeshow)
+url (will be passed to the external viewer)
+
+Records are separated by one or more blank lines. The file may contain
+comment lines, which begin with a hash sign (#). Comment lines are
+ignored and do not act as record separators (unless accompanied by one
+or more empty lines).
+
+Example:
+
+U201
+Data sheet
+http://www.nxp.com/documents/data_sheet/IP4220CZ6.pdf
+
+P201A
+Data sheet
+http://www.molex.com/pdm_docs/sd/475900001_sd.pdf
+
+To make eeshow use the documentation database, specify the name of the
+file with the -d option.
+
+Eeshow will also look for the documentation field (F 3) in schematics
+sheets, and use its content.
+
+Note: this feature is experimental. The documentation database is not
+versioned and its format is likely to change.
+
+
+Viewing documentation
+---------------------
+
+When hovering over a component, a pop-up with the component reference and
+the corresponding documentation items (if any) appears. Clicking on a
+documentation entry invokes an external viewer.
+
+In the above example, hovering over the U201 component would produce a
+pop-up with
+
+U201
+Data sheet
+
+and clicking on "Data sheet" would invoke the viewer with the argument
+"http://www.nxp.com/documents/data_sheet/IP4220CZ6.pdf"
+
+Eeshow invokes the program named in the environment variable EESHOW_VIEWER.
+If EESHOW_VIEWER is not set, it uses xdg-open.
+
+
+Caching PDF documentation
+-------------------------
+
+A caching wrapper for PDF document viewers is provided as "eeshow-viewer".
+To use it with eeshow,
+
+EESHOW_VIEWER=eeshow-viewer
+export EESHOW_VIEWER
+
+Data sheets are cached in the directory $HOME/.eeshow-viewer-cache
+This can be overridden with the environment variable EESHOW_VIEWER_CACHE.
+
+Create the cache directory either with "mkdir", or run
+eeshow-viewer -m
+
+The viewer launched by eeshow-viewer is determined as follows:
+- the value of EESHOW_PDF_VIEWER
+- if not set, the value of PDF_VIEWER
+- if not set, xdg-open
+
+With xpdf or evince, eeshow-viewer supports the URL#page syntax for PDF
+documents.

@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74X4051
+D 74X4051 type 8:1 analog switch
+$ENDCMP
+#
+#End Doc Library

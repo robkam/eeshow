@@ -1,0 +1,559 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 18 39
+Title "GTA04b7.sch"
+Date "17 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes -2800 -650 0    200   ~ 0
+RFID/NFC Controller
+Text Notes -9300 350 0    70   ~ 0
+(c) 2015 Golden Delicious Computers GmbH&Co. KG. Licensed under CC-BY-SA.
+Text Notes 600 150 0    70   ~ 0
+V2b
+Text Notes -3200 -1850 0    70   ~ 0
+to OMAP or I/O-expander
+$Comp
+L C0402 C1701
+U 1 1 578CCFAF
+P -5700 -2350
+F 0 "C1701" H -5640 -2336 50  0000 L BNN
+F 1 "(47pF)" H -5641 -2535 50  0000 L BNN
+F 2 "SMD-0402" H -5710 -2560 65  0001 L TNN
+	1    -5700 -2350
+	1    0    0    -1
+$EndComp
+$Comp
+L C0402 C1702
+U 1 1 578CD077
+P -1200 -2150
+F 0 "C1702" H -1140 -2136 50  0000 L BNN
+F 1 "100n" H -1141 -2335 50  0000 L BNN
+F 2 "SMD-0402" H -1210 -2360 65  0001 L TNN
+	1    -1200 -2150
+	1    0    0    -1
+$EndComp
+$Comp
+L C0402 C1703
+U 1 1 578CD13F
+P -1200 -1550
+F 0 "C1703" H -1140 -1536 50  0000 L BNN
+F 1 "1u" H -1141 -1735 50  0000 L BNN
+F 2 "SMD-0402" H -1210 -1760 65  0001 L TNN
+	1    -1200 -1550
+	1    0    0    -1
+$EndComp
+$Comp
+L LED-0603 D1701
+U 1 1 578CD207
+P -3100 -4050
+F 0 "D1701" H -3300 -4220 50  0000 L BNN
+F 1 "LED-0603" H -3300 -3890 50  0000 L BNN
+F 2 "SMD-0603D" H -3110 -4260 65  0001 L TNN
+	1    -3100 -4050
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME39
+U 1 1 578CD26B
+P -9400 -450
+	1    -9400 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME39
+U 2 1 578CD2CF
+P -3000 -450
+F 0 "#FRAME39" H -2950 500 100  0000 L BNN
+F 1 "Date:" H -2950 500 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME39" H -2500 499 100  0000 L BNN
+F 1 "16 Jul 2016 23:57:11" H -2500 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME39" H -150 499 100  0000 L BNN
+F 1 "Sheet:" H -150 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME39" H 400 499 100  0000 L BNN
+F 1 "17/38" H 400 499 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME39" H 500 899 100  0000 L BNN
+F 1 "REV:" H 500 899 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME39" H -2950 1200 100  0000 L BNN
+F 1 "TITLE:" H -2950 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME39" H -2950 900 100  0000 L BNN
+F 1 "Document Number:" H -2950 900 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+F 0 "#FRAME39" H -2300 1200 100  0000 L BNN
+F 1 "GTA04b7" H -2300 1200 100  0000 L BNN
+F 2 "" H -3000 450 60 0001 C CNN
+F 3 "" H -3000 450 60 0001 C CNN
+	2    -3000 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L R0402 R1701
+U 1 1 578CD397
+P -5400 -5550
+F 0 "R1701" H -5550 -5491 50  0000 L BNN
+F 1 "150R" H -5550 -5660 50  0000 L BNN
+F 2 "SMD-0402" H -5410 -5760 65  0001 L TNN
+	1    -5400 -5550
+	0    -1    -1    0
+$EndComp
+$Comp
+L R0402 R1702
+U 1 1 578CD45F
+P -5300 -5550
+F 0 "R1702" H -5450 -5491 50  0000 L BNN
+F 1 "150R" H -5450 -5660 50  0000 L BNN
+F 2 "SMD-0402" H -5310 -5760 65  0001 L TNN
+	1    -5300 -5550
+	0    -1    -1    0
+$EndComp
+$Comp
+L R0402 R1703
+U 1 1 578CD527
+P -6200 -4350
+F 0 "R1703" H -6350 -4291 50  0000 L BNN
+F 1 "(0R)" H -6350 -4460 50  0000 L BNN
+F 2 "SMD-0402" H -6210 -4560 65  0001 L TNN
+	1    -6200 -4350
+	0    -1    -1    0
+$EndComp
+$Comp
+L R0402 R1704
+U 1 1 578CD5EF
+P -6400 -4050
+F 0 "R1704" H -6550 -3991 50  0000 L BNN
+F 1 "(0R)" H -6550 -4160 50  0000 L BNN
+F 2 "SMD-0402" H -6410 -4260 65  0001 L TNN
+	1    -6400 -4050
+	0    -1    -1    0
+$EndComp
+$Comp
+L GND #U$53
+U 1 1 578CD653
+P 200 1450
+F 0 "#U$53" H 110 -1550 70  0000 L BNN
+F 1 "GND" H 110 -1550 70  0000 L BNN
+F 2 "" H 200 -1450 60 0001 C CNN
+F 3 "" H 200 -1450 60 0001 C CNN
+	1    200  -1450
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$74
+U 1 1 578CD6B7
+P -5700 1950
+F 0 "#U$74" H -5790 -2050 70  0000 L BNN
+F 1 "GND" H -5790 -2050 70  0000 L BNN
+F 2 "" H -5700 -1950 60 0001 C CNN
+F 3 "" H -5700 -1950 60 0001 C CNN
+	1    -5700 -1950
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$75
+U 1 1 578CD71B
+P -1400 1850
+F 0 "#U$75" H -1490 -1950 70  0000 L BNN
+F 1 "GND" H -1490 -1950 70  0000 L BNN
+F 2 "" H -1400 -1850 60 0001 C CNN
+F 3 "" H -1400 -1850 60 0001 C CNN
+	1    -1400 -1850
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$76
+U 1 1 578CD77F
+P -1400 1250
+F 0 "#U$76" H -1490 -1350 70  0000 L BNN
+F 1 "GND" H -1490 -1350 70  0000 L BNN
+F 2 "" H -1400 -1250 60 0001 C CNN
+F 3 "" H -1400 -1250 60 0001 C CNN
+	1    -1400 -1250
+	1    0    0    -1
+$EndComp
+$Comp
+L MKL16Z32VFM4 U1701
+U 1 1 578CD847
+P 400 -1750
+F 0 "U1701" H 460 -1790 70  0000 L BNN
+F 1 "MKL16Z128VFM4" H 390 -1860 65  0001 L TNN
+F 2 "QFN-32+E-0.5" H 390 -1960 65  0001 L TNN
+	1    400  -1750
+	1    0    0    -1
+$EndComp
+$Comp
+L MKL16Z32VFM4 U1701
+U 2 1 578CD8AB
+P -5100 -3550
+F 0 "U1701" H -4530 -2610 70  0000 L BNN
+F 1 "MKL16Z128VFM4" H -4601 -4550 70  0000 L BNN
+F 2 "QFN-32+E-0.5" H -5110 -3760 65  0001 L TNN
+	2    -5100 -3550
+	1    0    0    -1
+$EndComp
+$Comp
+L MKL16Z32VFM4 U1701
+U 3 1 578CD90F
+P -800 -2250
+F 0 "U1701" H -740 -2290 70  0000 L BNN
+F 1 "MKL16Z128VFM4" H -810 -2360 65  0001 L TNN
+F 2 "QFN-32+E-0.5" H -810 -2460 65  0001 L TNN
+	3    -800 -2250
+	1    0    0    -1
+$EndComp
+$Comp
+L MKL16Z32VFM4 U1701
+U 4 1 578CD973
+P -800 -1650
+F 0 "U1701" H -740 -1690 70  0000 L BNN
+F 1 "MKL16Z128VFM4" H -810 -1760 65  0001 L TNN
+F 2 "QFN-32+E-0.5" H -810 -1860 65  0001 L TNN
+	4    -800 -1650
+	1    0    0    -1
+$EndComp
+$Comp
+L MKL16Z32VFM4 U1701
+U 5 1 578CD9D7
+P -800 -1950
+F 0 "U1701" H -740 -1990 70  0000 L BNN
+F 1 "MKL16Z128VFM4" H -810 -2060 65  0001 L TNN
+F 2 "QFN-32+E-0.5" H -810 -2160 65  0001 L TNN
+	5    -800 -1950
+	1    0    0    -1
+$EndComp
+$Comp
+L MKL16Z32VFM4 U1701
+U 6 1 578CDA3B
+P -800 -1350
+F 0 "U1701" H -740 -1390 70  0000 L BNN
+F 1 "MKL16Z128VFM4" H -810 -1460 65  0001 L TNN
+F 2 "QFN-32+E-0.5" H -810 -1560 65  0001 L TNN
+	6    -800 -1350
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	-1000 -2250 -1200 -2250
+Wire Wire Line
+	-1200 -2250 -1600 -2250
+Wire Wire Line
+	-1600 -2250 -1700 -2250
+Wire Wire Line
+	-1200 -1650 -1000 -1650
+Wire Wire Line
+	-1200 -1650 -1600 -1650
+Wire Wire Line
+	-1600 -1650 -1600 -2250
+Connection ~ -1200 -2250
+Connection ~ -1200 -1650
+Connection ~ -1600 -2250
+Text Label -1760 -2201 2    65   ~ 0
+1V8/16.1A
+Wire Wire Line
+	-4000 -3150 -3700 -3150
+Text Label -3640 -3115 0    65   ~ 0
+?-SCL
+Wire Wire Line
+	-4000 -3250 -3700 -3250
+Text Label -3640 -3215 0    65   ~ 0
+?-SDA
+Wire Wire Line
+	-5700 -2150 -5700 -2050
+Wire Wire Line
+	-1000 -1950 -1200 -1950
+Wire Wire Line
+	-1200 -1950 -1400 -1950
+Connection ~ -1200 -1950
+Wire Wire Line
+	-1200 -1350 -1000 -1350
+Wire Wire Line
+	-1200 -1350 -1400 -1350
+Connection ~ -1200 -1350
+Wire Wire Line
+	200 -1750 200 -1550
+Wire Wire Line
+	-4000 -3550 -3500 -3550
+Wire Wire Line
+	-3500 -3550 -3500 -4050
+Wire Wire Line
+	-3500 -4050 -3400 -4050
+Wire Wire Line
+	-2800 -4050 -2600 -4050
+Wire Wire Line
+	-6200 -4550 -6200 -4750
+Wire Wire Line
+	-6200 -4750 -4800 -4750
+Wire Wire Line
+	-4800 -4750 -4800 -4650
+Wire Wire Line
+	-5400 -5350 -5400 -4650
+Wire Wire Line
+	-5400 -2450 -5700 -2450
+Wire Wire Line
+	-4000 -3350 -3800 -3350
+Wire Wire Line
+	-3800 -3350 -3800 -4650
+Wire Wire Line
+	-3800 -4650 -3800 -4950
+Wire Wire Line
+	-3800 -4950 -6400 -4950
+Wire Wire Line
+	-6400 -4950 -6400 -4250
+Wire Wire Line
+	-5300 -4650 -5300 -5350
+Wire Wire Line
+	-6400 -1350 -5000 -1350
+Wire Wire Line
+	-5000 -1350 -5000 -2450
+Wire Wire Line
+	-5000 -1350 -3200 -1350
+Connection ~ -5000 -1350
+Text Label -3140 -1315 0    65   ~ 0
+NFC-ASKOOK/16.2A
+Text Label -6460 -1301 2    65   ~ 0
+NFC-ASKOOK/16.2A
+Wire Wire Line
+	-6600 -1150 -4000 -1150
+Wire Wire Line
+	-4000 -1150 -4000 -2850
+Text Label -6660 -1101 2    65   ~ 0
+NFC-CLK/16.1D
+Wire Wire Line
+	-7200 -1450 -5100 -1450
+Wire Wire Line
+	-5100 -1450 -5100 -2450
+Text Label -7260 -1401 2    65   ~ 0
+NFC-EN/16.1D
+Wire Wire Line
+	-6600 -950 -3900 -950
+Wire Wire Line
+	-3900 -950 -3900 -2950
+Wire Wire Line
+	-3900 -2950 -4000 -2950
+Text Label -6660 -901 2    65   ~ 0
+NFC-IO1/16.1B
+Wire Wire Line
+	-6600 -1550 -5200 -1550
+Wire Wire Line
+	-5200 -1550 -5200 -2450
+Text Label -6660 -1501 2    65   ~ 0
+NFC-IRQ/16.1A
+Wire Wire Line
+	-6200 -3050 -6100 -3050
+Wire Wire Line
+	-6100 -3550 -6200 -3550
+Wire Wire Line
+	-6200 -3550 -6200 -4150
+Wire Wire Line
+	-6200 -3550 -6200 -3050
+Wire Wire Line
+	-6600 -3050 -6200 -3050
+Connection ~ -6200 -3550
+Connection ~ -6200 -3050
+Text Label -6660 -3001 2    65   ~ 0
+NFC-MISO/16.1C
+Wire Wire Line
+	-6100 -3450 -6400 -3450
+Wire Wire Line
+	-6400 -3850 -6400 -3450
+Wire Wire Line
+	-6400 -3450 -6600 -3450
+Connection ~ -6400 -3450
+Text Label -6660 -3401 2    65   ~ 0
+NFC-MOD
+Wire Wire Line
+	-6100 -3150 -7300 -3150
+Text Label -7360 -3101 2    65   ~ 0
+NFC-MOSI/16.1C
+Wire Wire Line
+	-6100 -3250 -6600 -3250
+Text Label -6660 -3201 2    65   ~ 0
+NFC-SCLK/16.1C
+Wire Wire Line
+	-6100 -3350 -7300 -3350
+Text Label -7360 -3301 2    65   ~ 0
+NFC-SS/16.1B
+Wire Wire Line
+	-5200 -4650 -5200 -5250
+Wire Wire Line
+	-5200 -5250 -6600 -5250
+Text Label -6660 -5201 2    65   ~ 0
+NFC-TRXCLK/16.1B
+Wire Wire Line
+	-5300 -2450 -5300 -1650
+Wire Wire Line
+	-5300 -1650 -7200 -1650
+Wire Wire Line
+	-5300 -1650 -3200 -1650
+Connection ~ -5300 -1650
+Text Label -3140 -1615 0    65   ~ 0
+NFC-TXEN/16.1B
+Text Label -7260 -1601 2    65   ~ 0
+NFC-TXEN/16.1B
+Wire Wire Line
+	-3800 -3450 -3200 -3450
+Wire Wire Line
+	-4000 -3450 -3800 -3450
+Text Label -3140 -3415 0    65   ~ 0
+OMAP_NFC_INT
+Wire Wire Line
+	-4000 -3050 -3200 -3050
+Text Label -3140 -3015 0    65   ~ 0
+OMAP_~NFC_RESET
+Wire Wire Line
+	-4700 -4650 -4700 -4850
+Wire Wire Line
+	-4700 -4850 -5100 -4850
+Wire Wire Line
+	-5100 -4850 -5100 -4650
+Text Label -4640 -4815 0    65   ~ 0
+SELF
+Wire Wire Line
+	-5400 -5750 -5400 -5850
+Wire Wire Line
+	-5400 -5850 -5400 -6150
+Wire Wire Line
+	-5000 -4650 -5000 -5750
+Wire Wire Line
+	-5000 -5750 -5000 -5850
+Wire Wire Line
+	-5000 -5850 -5400 -5850
+Connection ~ -5400 -5850
+Text Label -5365 -6210 1    65   ~ 0
+SWIO-A
+Wire Wire Line
+	-5300 -5750 -5300 -5950
+Wire Wire Line
+	-5300 -5950 -5300 -6150
+Wire Wire Line
+	-4900 -4650 -4900 -5950
+Wire Wire Line
+	-4900 -5950 -5300 -5950
+Connection ~ -5300 -5950
+Text Label -5265 -6210 1    65   ~ 0
+SWIO-B
+Text GLabel -1000 -1650 0 10 UnSpc
+1V8
+Text GLabel -1000 -2250 0 10 UnSpc
+1V8
+Text GLabel -1200 -2250 1 10 UnSpc
+1V8
+Text GLabel -1200 -1650 1 10 UnSpc
+1V8
+Text Label -4000 -3150 0    10   ~ 0
+?-SCL
+Text Label -4000 -3250 0    10   ~ 0
+?-SDA
+Text GLabel -5700 -2150 3 10 UnSpc
+GND
+Text GLabel -5700 -2050 1 10 UnSpc
+GND
+Text GLabel -1200 -1950 3 10 UnSpc
+GND
+Text GLabel -1000 -1950 0 10 UnSpc
+GND
+Text GLabel -1400 -1950 1 10 UnSpc
+GND
+Text GLabel -1200 -1350 3 10 UnSpc
+GND
+Text GLabel -1000 -1350 0 10 UnSpc
+GND
+Text GLabel -1400 -1350 1 10 UnSpc
+GND
+Text GLabel 200 -1750 0 10 UnSpc
+GND
+Text GLabel 200 -1550 1 10 UnSpc
+GND
+Text Label -4000 -3550 0    10   ~ 0
+N$334
+Text Label -3400 -4050 2    10   ~ 0
+N$334
+Text Label -2800 -4050 0    10   ~ 0
+N$335
+Text Label -4800 -4650 1    10   ~ 0
+N$336
+Text Label -6200 -4550 1    10   ~ 0
+N$336
+Text Label -5400 -5350 3    10   ~ 0
+N$337
+Text Label -5400 -4650 1    10   ~ 0
+N$337
+Text Label -5400 -2450 3    10   ~ 0
+N$345
+Text Label -5700 -2450 1    10   ~ 0
+N$345
+Text Label -4000 -3350 0    10   ~ 0
+N$348
+Text Label -6400 -4250 1    10   ~ 0
+N$348
+Text Label -5300 -4650 1    10   ~ 0
+N$350
+Text Label -5300 -5350 3    10   ~ 0
+N$350
+Text GLabel -5000 -2450 3 10 UnSpc
+NFC-ASKOOK
+Text GLabel -4000 -2850 2 10 UnSpc
+NFC-CLK
+Text GLabel -5100 -2450 3 10 UnSpc
+NFC-EN
+Text GLabel -4000 -2950 2 10 UnSpc
+NFC-IO1
+Text GLabel -5200 -2450 3 10 UnSpc
+NFC-IRQ
+Text GLabel -6100 -3050 0 10 UnSpc
+NFC-MISO
+Text GLabel -6200 -4150 3 10 UnSpc
+NFC-MISO
+Text GLabel -6100 -3550 0 10 UnSpc
+NFC-MISO
+Text Label -6100 -3450 2    10   ~ 0
+NFC-MOD
+Text Label -6400 -3850 3    10   ~ 0
+NFC-MOD
+Text GLabel -6100 -3150 0 10 UnSpc
+NFC-MOSI
+Text GLabel -6100 -3250 0 10 UnSpc
+NFC-SCLK
+Text GLabel -6100 -3350 0 10 UnSpc
+NFC-SS
+Text GLabel -5200 -4650 1 10 UnSpc
+NFC-TRXCLK
+Text GLabel -5300 -2450 3 10 UnSpc
+NFC-TXEN
+Text Label -4000 -3450 0    10   ~ 0
+OMAP_NFC_INT
+Text Label -4000 -3050 0    10   ~ 0
+OMAP_~NFC_RESET
+Text Label -4700 -4650 1    10   ~ 0
+SELF
+Text Label -5100 -4650 1    10   ~ 0
+SELF
+Text Label -5400 -5750 1    10   ~ 0
+SWIO-A
+Text Label -5000 -4650 1    10   ~ 0
+SWIO-A
+Text Label -5300 -5750 1    10   ~ 0
+SWIO-B
+Text Label -4900 -4650 1    10   ~ 0
+SWIO-B
+$EndSCHEMATC

@@ -1,0 +1,633 @@
+EESchema Schematic File Version 2
+LIBS:GTA04b7
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 8 39
+Title "GTA04b7.sch"
+Date "17 JUL 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes -3150 -650 0    200   ~ 0
+Dual SIM switch
+Text Notes -9650 350 0    70   ~ 0
+(c) 2015 Golden Delicious Computers GmbH&Co. KG. Licensed under CC-BY-SA.
+Text Notes 250 150 0    70   ~ 0
+V2b
+Text Notes -8550 -2650 0    70   ~ 0
+Level shifter
+Text Notes -8650 -2250 1    70   ~ 0
+OMAP SIM Interface
+Text Notes -9550 -150 0    70   ~ 0
+NOTE: mux control missing\nNOTE: CD logic missing\nNOTE: SIM power supply missing
+$Comp
+L DINA4_L #FRAME40
+U 1 1 578B89CF
+P -9750 -450
+	1    -9750 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L DINA4_L #FRAME40
+U 2 1 578B8A33
+P -3350 -450
+F 0 "#FRAME40" H -3300 500 100  0000 L BNN
+F 1 "Date:" H -3300 500 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+F 0 "#FRAME40" H -2850 499 100  0000 L BNN
+F 1 "16 Jul 2016 23:57:11" H -2850 499 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+F 0 "#FRAME40" H -500 499 100  0000 L BNN
+F 1 "Sheet:" H -500 499 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+F 0 "#FRAME40" H 50 499 100  0000 L BNN
+F 1 "7/38" H 50 499 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+F 0 "#FRAME40" H 150 899 100  0000 L BNN
+F 1 "REV:" H 150 899 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+F 0 "#FRAME40" H -3300 1200 100  0000 L BNN
+F 1 "TITLE:" H -3300 1200 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+F 0 "#FRAME40" H -3300 900 100  0000 L BNN
+F 1 "Document Number:" H -3300 900 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+F 0 "#FRAME40" H -2650 1200 100  0000 L BNN
+F 1 "GTA04b7" H -2650 1200 100  0000 L BNN
+F 2 "" H -3350 450 60 0001 C CNN
+F 3 "" H -3350 450 60 0001 C CNN
+	2    -3350 450 
+	1    0    0    -1
+$EndComp
+$Comp
+L SIM-SLOT-6PIN+CD P-SIM701
+U 1 1 578B8AFB
+P -5150 -1650
+F 0 "P-SIM701-CAGE" H -5810 -1040 50  0000 L BNN
+F 1 "SIM-SLOT-6PIN+CD-CHECK-PINS" H -5160 -1760 65  0001 L TNN
+F 2 "SJ106220" H -5160 -1860 65  0001 L TNN
+	1    -5150 -1650
+	1    0    0    -1
+$EndComp
+$Comp
+L R0402 R701
+U 1 1 578B8BC3
+P -3450 -3550
+F 0 "R701" H -3600 -3492 50  0000 L BNN
+F 1 "51R" H -3600 -3660 50  0000 L BNN
+F 2 "SMD-0402" H -3460 -3760 65  0001 L TNN
+	1    -3450 -3550
+	0    1    1    0
+$EndComp
+$Comp
+L NC #U$357
+U 1 1 578B8C27
+P -7950 1150
+	1    -7950 -1150
+	1    0    0    -1
+$EndComp
+$Comp
+L NC #U$358
+U 1 1 578B8C8B
+P -7950 950
+	1    -7950 -950
+	1    0    0    -1
+$EndComp
+$Comp
+L NC #U$359
+U 1 1 578B8CEF
+P -7950 750
+	1    -7950 -750
+	1    0    0    -1
+$EndComp
+$Comp
+L NC #U$360
+U 1 1 578B8D53
+P -7950 550
+	1    -7950 -550
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$361
+U 1 1 578B8DB7
+P -3950 550
+F 0 "#U$361" H -4040 -650 70  0000 L BNN
+F 1 "GND" H -4040 -650 70  0000 L BNN
+F 2 "" H -3950 -550 60 0001 C CNN
+F 3 "" H -3950 -550 60 0001 C CNN
+	1    -3950 -550
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$362
+U 1 1 578B8E1B
+P -6050 550
+F 0 "#U$362" H -6140 -650 70  0000 L BNN
+F 1 "GND" H -6140 -650 70  0000 L BNN
+F 2 "" H -6050 -550 60 0001 C CNN
+F 3 "" H -6050 -550 60 0001 C CNN
+	1    -6050 -550
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$363
+U 1 1 578B8E7F
+P -650 2550
+F 0 "#U$363" H -740 -2650 70  0000 L BNN
+F 1 "GND" H -740 -2650 70  0000 L BNN
+F 2 "" H -650 -2550 60 0001 C CNN
+F 3 "" H -650 -2550 60 0001 C CNN
+	1    -650 -2550
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #U$364
+U 1 1 578B8EE3
+P -650 4150
+F 0 "#U$364" H -740 -4250 70  0000 L BNN
+F 1 "GND" H -740 -4250 70  0000 L BNN
+F 2 "" H -650 -4150 60 0001 C CNN
+F 3 "" H -650 -4150 60 0001 C CNN
+	1    -650 -4150
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U701
+U 1 1 578B8FAB
+P -3150 -5750
+F 0 "U701" H -3249 -5250 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -3250 -6150 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -3160 -5960 65  0001 L TNN
+	1    -3150 -5750
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U701
+U 2 1 578B900F
+P -2750 -2850
+F 0 "U701" H -2849 -2350 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -2850 -3250 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -2760 -3060 65  0001 L TNN
+	2    -2750 -2850
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U701
+U 3 1 578B9073
+P -150 -4850
+F 0 "U701" H -399 -4300 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -410 -5450 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -160 -5060 65  0001 L TNN
+	3    -150 -4850
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U701
+U 4 1 578B90D7
+P -6250 -5750
+F 0 "U701" H -6349 -5250 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -6350 -6150 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -6260 -5960 65  0001 L TNN
+	4    -6250 -5750
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U701
+U 5 1 578B913B
+P -6250 -4450
+F 0 "U701" H -6349 -3950 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -6350 -4850 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -6260 -4660 65  0001 L TNN
+	5    -6250 -4450
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U702
+U 1 1 578B9203
+P -3150 -4650
+F 0 "U702" H -3249 -4150 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -3250 -5050 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -3160 -4860 65  0001 L TNN
+	1    -3150 -4650
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U702
+U 2 1 578B9267
+P -2750 -1450
+F 0 "U702" H -2849 -950 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -2850 -1850 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -2760 -1660 65  0001 L TNN
+	2    -2750 -1450
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U702
+U 3 1 578B92CB
+P -150 -3350
+F 0 "U702" H -399 -2800 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -410 -3950 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -160 -3560 65  0001 L TNN
+	3    -150 -3350
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U702
+U 4 1 578B932F
+P -7550 -2550
+F 0 "U702" H -7649 -2050 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -7650 -2950 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -7560 -2760 65  0001 L TNN
+	4    -7550 -2550
+	1    0    0    -1
+$EndComp
+$Comp
+L FSA2866UMX_CHECK0.5VS0.4PITCH_ U702
+U 5 1 578B9393
+P -7550 -750
+F 0 "U702" H -7649 -250 70  0000 L BNN
+F 1 "FSA2866UMX(CHECK0.5VS0.4PITCH)" H -7650 -1150 70  0000 L BNN
+F 2 "S-PWQFN-N20-0.5" H -7560 -960 65  0001 L TNN
+	5    -7550 -750
+	1    0    0    -1
+$EndComp
+NoConn ~ -650 -4450
+NoConn ~ -650 -2950
+Wire Wire Line
+	-3450 -3750 -3750 -3750
+Text Label -3810 -3701 2    65   ~ 0
+1V8/8.3A
+Wire Wire Line
+	-650 -3750 -850 -3750
+Wire Wire Line
+	-850 -3750 -850 -5250
+Wire Wire Line
+	-850 -5250 -650 -5250
+Wire Wire Line
+	-850 -5250 -850 -5850
+Connection ~ -850 -5250
+Text Label -910 -5801 2    65   ~ 0
+3V3/8.2D
+Wire Wire Line
+	-4050 -1250 -3950 -1250
+Wire Wire Line
+	-3950 -1250 -3950 -650
+Wire Wire Line
+	-4050 -1550 -3950 -1550
+Wire Wire Line
+	-3950 -1550 -3950 -1250
+Connection ~ -3950 -1250
+Wire Wire Line
+	-6050 -950 -6050 -850
+Wire Wire Line
+	-6050 -850 -6050 -650
+Connection ~ -6050 -850
+Wire Wire Line
+	-650 -3150 -650 -2950
+Wire Wire Line
+	-650 -2950 -650 -2650
+Connection ~ -650 -2950
+Wire Wire Line
+	-650 -4650 -650 -4450
+Wire Wire Line
+	-650 -4450 -650 -4250
+Connection ~ -650 -4450
+Wire Wire Line
+	-3550 -6150 -3950 -6150
+Wire Wire Line
+	-3950 -6150 -4050 -6150
+Wire Wire Line
+	-3950 -5050 -3950 -6150
+Wire Wire Line
+	-3550 -5050 -3950 -5050
+Connection ~ -3950 -6150
+Text Label -4110 -6101 2    65   ~ 0
+MODEM-CD_A/6.2C
+Wire Wire Line
+	-8150 -6150 -8850 -6150
+Text Label -8910 -6101 2    65   ~ 0
+MODEM-CD_A/6.2C
+Wire Wire Line
+	-8250 -4850 -8850 -4850
+Text Label -8910 -4801 2    65   ~ 0
+MODEM-CD_B
+Wire Wire Line
+	-6650 -5550 -7050 -5550
+Text Label -7110 -5501 2    65   ~ 0
+MODEM_CLK_A/6.2B
+Wire Wire Line
+	-6650 -4250 -6950 -4250
+Wire Wire Line
+	-6950 -4250 -7050 -4250
+Text Label -7110 -4201 2    65   ~ 0
+MODEM_CLK_B
+Wire Wire Line
+	-6650 -5750 -7050 -5750
+Text Label -7110 -5701 2    65   ~ 0
+MODEM_DATA_A/6.2B
+Wire Wire Line
+	-6650 -4450 -7050 -4450
+Text Label -7110 -4401 2    65   ~ 0
+MODEM_DATA_B
+Wire Wire Line
+	-6650 -5950 -7050 -5950
+Text Label -7110 -5901 2    65   ~ 0
+MODEM_RST_A/6.2B
+Wire Wire Line
+	-6650 -4650 -7050 -4650
+Text Label -7110 -4601 2    65   ~ 0
+MODEM_RST_B
+Wire Wire Line
+	-7950 -2950 -8150 -2950
+Wire Wire Line
+	-7950 -2750 -8150 -2750
+Wire Wire Line
+	-7950 -2550 -8150 -2550
+Wire Wire Line
+	-7950 -2350 -8150 -2350
+Wire Wire Line
+	-6050 -1850 -6050 -2650
+Wire Wire Line
+	-6050 -2650 -3750 -2650
+Wire Wire Line
+	-3750 -2650 -3150 -2650
+Wire Wire Line
+	-3150 -1250 -3750 -1250
+Wire Wire Line
+	-3750 -1250 -3750 -2650
+Connection ~ -3750 -2650
+Wire Wire Line
+	-6050 -1550 -6150 -1550
+Wire Wire Line
+	-6150 -1550 -6150 -3050
+Wire Wire Line
+	-6150 -3050 -3550 -3050
+Wire Wire Line
+	-3550 -3050 -3150 -3050
+Wire Wire Line
+	-3150 -1650 -3550 -1650
+Wire Wire Line
+	-3550 -1650 -3550 -3050
+Connection ~ -3550 -3050
+Wire Wire Line
+	-6050 -1250 -6250 -1250
+Text Label -6310 -1201 2    65   ~ 0
+N$333
+Wire Wire Line
+	-4050 -850 -3450 -850
+Wire Wire Line
+	-3450 -850 -3450 -1850
+Wire Wire Line
+	-3450 -1850 -3150 -1850
+Wire Wire Line
+	-3450 -1850 -3450 -3250
+Wire Wire Line
+	-3450 -3250 -3150 -3250
+Wire Wire Line
+	-3450 -3350 -3450 -3250
+Connection ~ -3450 -1850
+Connection ~ -3450 -3250
+Wire Wire Line
+	-3150 -1450 -3650 -1450
+Wire Wire Line
+	-3650 -1450 -3650 -1850
+Wire Wire Line
+	-3650 -1850 -4050 -1850
+Wire Wire Line
+	-3150 -2850 -3650 -2850
+Wire Wire Line
+	-3650 -2850 -3650 -1850
+Connection ~ -3650 -1850
+Wire Wire Line
+	-650 -5050 -1050 -5050
+Text Label -1110 -5001 2    65   ~ 0
+N$343
+Wire Wire Line
+	-650 -4850 -1050 -4850
+Text Label -1110 -4801 2    65   ~ 0
+N$344
+Wire Wire Line
+	-650 -3550 -1050 -3550
+Text Label -1110 -3501 2    65   ~ 0
+N$346
+Wire Wire Line
+	-650 -3350 -1050 -3350
+Text Label -1110 -3301 2    65   ~ 0
+N$352
+Wire Wire Line
+	-6650 -6150 -7650 -6150
+Wire Wire Line
+	-6650 -4850 -7750 -4850
+Wire Wire Line
+	-4050 -5550 -3650 -5550
+Wire Wire Line
+	-3650 -5550 -3550 -5550
+Wire Wire Line
+	-3550 -4450 -3650 -4450
+Wire Wire Line
+	-3650 -4450 -3650 -5550
+Connection ~ -3650 -5550
+Text Label -4110 -5501 2    65   ~ 0
+SIM-CLK/6.1B
+Wire Wire Line
+	-4050 -5750 -3750 -5750
+Wire Wire Line
+	-3750 -5750 -3550 -5750
+Wire Wire Line
+	-3750 -5750 -3750 -4650
+Wire Wire Line
+	-3750 -4650 -3550 -4650
+Connection ~ -3750 -5750
+Text Label -4110 -5701 2    65   ~ 0
+SIM-DATA/6.1B
+Wire Wire Line
+	-4050 -5950 -3850 -5950
+Wire Wire Line
+	-3850 -5950 -3550 -5950
+Wire Wire Line
+	-3850 -5950 -3850 -4850
+Wire Wire Line
+	-3850 -4850 -3550 -4850
+Connection ~ -3850 -5950
+Text Label -4110 -5901 2    65   ~ 0
+SIM-RST/6.1B
+Wire Notes Line
+-6450 -6250 -2850 -6250
+Wire Notes Line
+-2850 -6250 -2850 -5450
+Wire Notes Line
+-2850 -5450 -2950 -5450
+Wire Notes Line
+-2950 -5450 -4450 -5450
+Wire Notes Line
+-4450 -5450 -4450 -3350
+Wire Notes Line
+-4450 -3350 -2450 -3350
+Wire Notes Line
+-2450 -3350 -2450 -2550
+Wire Notes Line
+-2450 -2550 -6450 -2550
+Wire Notes Line
+-6450 -2550 -6450 -6250
+Wire Notes Line
+-7750 -3050 -6950 -3050
+Wire Notes Line
+-6950 -3050 -6950 -450
+Wire Notes Line
+-6950 -450 -7750 -450
+Wire Notes Line
+-7750 -450 -7750 -3050
+Wire Notes Line
+-2950 -1950 -2250 -1950
+Wire Notes Line
+-2250 -1950 -2250 -4350
+Wire Notes Line
+-2250 -4350 -3350 -4350
+Wire Notes Line
+-3350 -4350 -3350 -5150
+Wire Notes Line
+-3350 -5150 -1850 -5150
+Wire Notes Line
+-1850 -5150 -1850 -3850
+Wire Notes Line
+-1850 -3850 150 -3850
+Wire Notes Line
+150 -3850 150 -2850
+Wire Notes Line
+150 -2850 -1850 -2850
+Wire Notes Line
+-1850 -2850 -1850 -1150
+Wire Notes Line
+-1850 -1150 -2950 -1150
+Wire Notes Line
+-2950 -1150 -2950 -1950
+Wire Notes Line
+-2850 -6250 150 -6250
+Wire Notes Line
+150 -6250 150 -4350
+Wire Notes Line
+150 -4350 -450 -4350
+Wire Notes Line
+-450 -4350 -450 -5450
+Wire Notes Line
+-450 -5450 -2950 -5450
+Text GLabel -3450 -3750 1 10 UnSpc
+1V8
+Text GLabel -650 -3750 0 10 UnSpc
+3V3
+Text GLabel -650 -5250 0 10 UnSpc
+3V3
+Text GLabel -4050 -1250 2 10 UnSpc
+GND
+Text GLabel -3950 -650 1 10 UnSpc
+GND
+Text GLabel -4050 -1550 2 10 UnSpc
+GND
+Text GLabel -6050 -950 0 10 UnSpc
+GND
+Text GLabel -6050 -650 1 10 UnSpc
+GND
+Text GLabel -6050 -850 0 10 UnSpc
+GND
+Text GLabel -650 -3150 0 10 UnSpc
+GND
+Text GLabel -650 -2950 0 10 UnSpc
+GND
+Text GLabel -650 -2650 1 10 UnSpc
+GND
+Text GLabel -650 -4650 0 10 UnSpc
+GND
+Text GLabel -650 -4450 0 10 UnSpc
+GND
+Text GLabel -650 -4250 1 10 UnSpc
+GND
+Text GLabel -3550 -6150 0 10 UnSpc
+MODEM-CD_A
+Text GLabel -3550 -5050 0 10 UnSpc
+MODEM-CD_A
+Text GLabel -6650 -5550 0 10 UnSpc
+MODEM_CLK_A
+Text Label -6650 -4250 2    10   ~ 0
+MODEM_CLK_B
+Text GLabel -6650 -5750 0 10 UnSpc
+MODEM_DATA_A
+Text Label -6650 -4450 2    10   ~ 0
+MODEM_DATA_B
+Text GLabel -6650 -5950 0 10 UnSpc
+MODEM_RST_A
+Text Label -6650 -4650 2    10   ~ 0
+MODEM_RST_B
+Text Label -7950 -2950 2    10   ~ 0
+N$20
+Text Label -7950 -2750 2    10   ~ 0
+N$40
+Text Label -7950 -2550 2    10   ~ 0
+N$53
+Text Label -7950 -2350 2    10   ~ 0
+N$65
+Text Label -6050 -1850 2    10   ~ 0
+N$137
+Text Label -3150 -2650 2    10   ~ 0
+N$137
+Text Label -3150 -1250 2    10   ~ 0
+N$137
+Text Label -6050 -1550 2    10   ~ 0
+N$224
+Text Label -3150 -3050 2    10   ~ 0
+N$224
+Text Label -3150 -1650 2    10   ~ 0
+N$224
+Text Label -6050 -1250 2    10   ~ 0
+N$333
+Text Label -4050 -850 0    10   ~ 0
+N$338
+Text Label -3150 -1850 2    10   ~ 0
+N$338
+Text Label -3150 -3250 2    10   ~ 0
+N$338
+Text Label -3450 -3350 3    10   ~ 0
+N$338
+Text Label -3150 -1450 2    10   ~ 0
+N$342
+Text Label -4050 -1850 0    10   ~ 0
+N$342
+Text Label -3150 -2850 2    10   ~ 0
+N$342
+Text Label -650 -5050 2    10   ~ 0
+N$343
+Text Label -650 -4850 2    10   ~ 0
+N$344
+Text Label -650 -3550 2    10   ~ 0
+N$346
+Text Label -650 -3350 2    10   ~ 0
+N$352
+Text Label -6650 -6150 2    10   ~ 0
+N$353
+Text Label -6650 -4850 2    10   ~ 0
+N$354
+Text GLabel -3550 -5550 0 10 UnSpc
+SIM-CLK
+Text GLabel -3550 -4450 0 10 UnSpc
+SIM-CLK
+Text GLabel -3550 -5750 0 10 UnSpc
+SIM-DATA
+Text GLabel -3550 -4650 0 10 UnSpc
+SIM-DATA
+Text GLabel -3550 -5950 0 10 UnSpc
+SIM-RST
+Text GLabel -3550 -4850 0 10 UnSpc
+SIM-RST
+$EndSCHEMATC

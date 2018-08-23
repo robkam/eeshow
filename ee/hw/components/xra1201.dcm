@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP XRA1201
+D XRA1201/1201P 16 bit GPIO expander
+F https://www.exar.com/content/document.ashx?id=20780
+$ENDCMP
+#
+#End Doc Library
