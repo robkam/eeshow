@@ -1,5 +1,5 @@
 # eeshow
-Eeshow - Eeschema schematics renderer and viewer.
+Eeshow - Eeschema schematics renderer and viewer, a tool to ease KiCad schematic file navigation.
 
 Forked from http://neo900.org/stuff/eeshow/.
 
