@@ -100,6 +100,12 @@ static bool parse_def(struct lib *lib, const char *line)
 		free(s);
 		s = tmp;
 	}
+    char* tmp = alloc_size(strlen(s) + 1 + strlen(lib->namespace) + 1);
+    strcpy(tmp, lib->namespace);
+    strcat(tmp, ":");
+    strcat(tmp, s);
+    free(s);
+    s = tmp;
 	lib->curr_comp->name = s;
 	lib->curr_comp->aliases = NULL;
 	lib->curr_comp->units = units;
@@ -425,7 +431,25 @@ bool lib_parse_search(struct lib *lib, const char *name,
 
 	if (!lib_find_file(&file, name, fn, related))
 		return 0;
+
+    lib->namespace = strdup(name);
+    int i = 0;
+    int j = 0;
+    while (strcmp(name + i, ".lib") != 0 && name[i] != '\0') {
+        if (name[i] == '/') {
+            j = 0;
+            ++i;
+            continue;
+        }
+        lib->namespace[j] = name[i];
+        ++i;
+        ++j;
+    }
+    lib->namespace[j] = '\0';
+    progress(2, "namespace: %s", lib->namespace);
+
 	res = lib_parse_file(lib, &file);
+    free(lib->namespace);
 	file_close(&file);
 	return res;
 }

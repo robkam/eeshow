@@ -120,6 +120,7 @@ struct comp {
 };
 
 struct lib {
+    char* namespace;
 	enum lib_state state;
 
 	struct comp *comps;
