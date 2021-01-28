@@ -1,0 +1,8 @@
+*.d
+*.o
+*.hex
+*.inc
+eediff
+eeplot
+eeshow
+eetest
