@@ -36,7 +36,7 @@
  * too. This is especially important in non-interactive diff mode.
  */
 
-bool suppress_page_layout = 0;
+bool suppress_page_layout = 1;
 
 const char *date_override = NULL;
 
